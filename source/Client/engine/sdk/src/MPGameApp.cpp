@@ -4,7 +4,7 @@
 // Created By   : Ryan Wang
 // Last Modifed : 2004/02/06
 //################################
-
+#include <clocale>
 #include "MindPowerAPI.h"
 #include "Stdafx.h"
 #include "MPGameApp.h"
@@ -70,6 +70,9 @@ MPGameApp::~MPGameApp() {
 }
 
 BOOL MPGameApp::Init(HINSTANCE hInst, const char* pszClassName, int nScrWidth, int nScrHeight, int nColorBit, BOOL bFullScreen) {
+	// Russian Language.
+	// Graf 10.11.2023
+	setlocale(LC_ALL, "ru_RU.utf8"); 
 	_hInst = hInst;
 
 	DWORD dwWindowStyle = WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX;

@@ -1,3 +1,4 @@
+#include <clocale>
 #include "Stdafx.h"
 
 #include "GameApp.h"
@@ -176,6 +177,9 @@ void CGameApp::End() {
 }
 
 BOOL CGameApp::_Init() {
+	// Russian Language.
+	// Graf 10.11.2023
+	setlocale(LC_ALL, "ru_RU.utf8"); 
 	CCozeForm::GetInstance();
 	//InitAllTable();
 
