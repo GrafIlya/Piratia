@@ -541,7 +541,8 @@ void CLoginScene::_Render() {
 
 	g_Render.GetLight(0, &env_light_old);
 	g_Render.SetLight(0, &env_light);
-	dev_obj->SetRenderState(D3DRS_LIGHTING, dwOldState);
+	
+ 	dev_obj->SetRenderState(D3DRS_LIGHTING, dwOldState);
 	g_Render.SetLight(0, &env_light_old);
 
 	rsm->BeginSceneObject();

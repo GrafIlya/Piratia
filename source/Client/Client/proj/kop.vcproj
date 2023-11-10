@@ -13,7 +13,7 @@
 	<Configurations>
 		<Configuration
 			Name="Debug|Win32"
-			OutputDirectory="$(ProjectDir)..\..\..\..\client\system"
+			OutputDirectory="system"
 			IntermediateDirectory="../temp/debug"
 			ConfigurationType="1"
 			CharacterSet="2">
@@ -706,12 +706,6 @@
 						RelativePath="..\src\UIBankForm.h">
 					</File>
 					<File
-						RelativePath="..\src\UIGuildBankForm.cpp">
-					</File>
-					<File
-						RelativePath="..\src\UIGuildBankForm.h">
-					</File>
-					<File
 						RelativePath="..\src\UIBoatForm.cpp">
 					</File>
 					<File
@@ -800,6 +794,12 @@
 					</File>
 					<File
 						RelativePath="..\src\UIGlobalVar.h">
+					</File>
+					<File
+						RelativePath="..\src\UIGuildBankForm.cpp">
+					</File>
+					<File
+						RelativePath="..\src\UIGuildBankForm.h">
 					</File>
 					<File
 						RelativePath="..\src\UIHaircutForm.cpp">
