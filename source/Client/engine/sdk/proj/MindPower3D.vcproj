@@ -33,7 +33,7 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="utild.lib ViMD3DLib_d.lib Common_d.lib"
-				OutputFile="../../../client/client/bin/system/MindPower3D_D8D.dll"
+				OutputFile="../lib/MindPower3D_D8D.dll"
 				LinkIncremental="2"
 				AdditionalLibraryDirectories="&quot;$(ProjectDir)..\..\VimD3DLib\lib&quot;;&quot;$(ProjectDir)..\..\..\Common\Util\lib&quot;;&quot;$(ProjectDir)..\..\..\Common\Common\lib&quot;"
 				IgnoreDefaultLibraryNames="LIBCI.lib;LIBC.lib;LIBCMT.lib"
@@ -65,8 +65,8 @@
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
-			OutputDirectory="$(ProjectDir)..\..\..\..\..\client\system"
-			IntermediateDirectory="$(ProjectDir)..\temp\release"
+			OutputDirectory="..\lib\system"
+			IntermediateDirectory="..\temp\release"
 			ConfigurationType="2"
 			UseOfMFC="0"
 			CharacterSet="2">

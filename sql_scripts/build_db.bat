@@ -11,7 +11,7 @@
 rem made it inline for now to make it only ask password once
 rem will need some readjusting later
 
-@sqlcmd -X 1 -U sa -d "master" -i "DeleteDBs.sql" -i "AccountServer.sql" -i "GameDB.sql" -i "Guild.sql" -i "CreateLogins.sql" -i "CreateInGameAccount.sql" -i "COExtras.sql"
+@sqlcmd -X 1 -U DevilFortune -d "master" -i "DeleteDBs.sql" -i "AccountServer.sql" -i "GameDB.sql" -i "Guild.sql" -i "CreateLogins.sql" -i "CreateInGameAccount.sql" -i "COExtras.sql"
 
 rem sqlcmd -X 1 -U sa -d "master" -i "DeleteDBs.sql"
 rem sqlcmd -X 1 -U sa -d "master" -i "AccountServer.sql" -i "GameDB.sql" -i "Guild.sql" -i "Tradedb.sql"
