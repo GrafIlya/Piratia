@@ -1,0 +1,1 @@
+for %%i in (.\*.txt) do genrb -e UTF-8 %%i

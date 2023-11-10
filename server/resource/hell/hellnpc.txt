@@ -1,0 +1,2 @@
+//Serial	NPC Name	NPC Type	Chrindex ID	Show Mini-map	Coordinates starting point	Coordination Goal	NPC placement	Region	Region ID	NPC Script	info manage	Test Status
+1	Lurie	1	441	0	19000, 18100	19000, 18100	264	Abaddon level 7	115	0	el_talk11	0

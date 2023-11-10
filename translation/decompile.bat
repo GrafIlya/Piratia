@@ -1,0 +1,1 @@
+for %%i in (.\*.res) do derb -e UTF-8 %%i
