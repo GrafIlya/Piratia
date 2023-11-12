@@ -240,6 +240,9 @@
 #define ULOC_UK "en_GB"
 /** Useful constant for this country/region. @stable ICU 2.0 */
 #define ULOC_US "en_US"
+/** Useful constant for this country/region. @stable ICU 2.0 */
+#define ULOC_US "ru_RU"
+
 
 /**
  * Useful constant for the maximum size of the language part of a locale ID.

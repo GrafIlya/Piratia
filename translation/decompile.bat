@@ -1,1 +1,1 @@
-for %%i in (.\*.res) do derb -e UTF-8 %%i
+for %%i in (.\*.res) do derb -e Windows-1251 %%i
