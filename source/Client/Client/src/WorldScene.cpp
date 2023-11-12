@@ -568,7 +568,8 @@ void CWorldScene::_SceneCursor() {
 	nMouseY = g_pGameApp->GetMouseY();
 
 	CCharacter* hoverCha = HitSelectCharacter(nMouseX, nMouseY);
-	if (hoverCha && !hoverCha->IsNPC()) {
+	// Если это не главный персонаж и не НПС, то выводим таргет
+	if (hoverCha && !hoverCha->IsNPC() && !pCha) {
 		g_stUIStart.SetTargetInfo(hoverCha);
 	}
 

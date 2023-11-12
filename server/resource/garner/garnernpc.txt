@@ -1,8 +1,8 @@
 //Serial	NPC Name	NPC Type	Chrindex ID	Show Mini-map	Coordinates starting point	Coordination Goal	NPC placement	Region	Region ID	NPC Script	info manage	Test Status
-0	Argent Teleporter - Jovial	1	11	7	218700,277600	218700,277600	180	Argent City	1	0	GoToWhere	0
+0	[Òåëåïîðò - Äæîâèàë]	1	11	7	218700,277600	218700,277600	180	Argent City	1	0	GoToWhere	0
 1	Argent Secretary - Salvier	1	14	0	221925,274925	221925,274925	180	Argent City	1	0	r_talk01	r_npcstate01
 2	Blacksmith - Goldie	1	20	1	218712,270682	218712,270682	114	Argent City	1	0	r_trade01	0
-3	Castle Guard - Peter	1	5	0	219220,276700	219220,276700	90	Argent City	1	0	r_talk86	0
+3	[Ñòðàæ Àðãåíòà - Ïèòåð]	1	5	0	219220,276700	219220,276700	90	Argent City	1	0	r_talk86	0
 4	Citizen - Margaret	1	28	0	227930,274654	227930,274654	84	Argent City	1	0	r_talk08	0
 5	Granny Beldi	1	18	0	227725,276925	227725,276925	180	Argent City	1	0	r_talk02	r_npcstate02
 6	Little Daniel	1	425	0	219350,273050	219350,273050	90	Argent City	1	0	r_talk06	0
@@ -143,7 +143,7 @@
 142	Cleaner	1	724	0	225321,278235	225321,278235	270	Argent City	1	0	r_talk252	0
 143	Event NPC - Pappa	1	260	0	222275,276827	222275,276827	180	Argent City	1	0	mmm_talk01	0
 144	Mysterious Granny	1	18	0	215800,279200	215800,279200	351	Argent City	1	1	el_talk03	1
-//145	ÅöÅöÀÖ	1	838	0	72900,154400	72900,154400	135	Thundoria Castle	8	0	star_talk03	0
+//145	???	1	838	0	72900,154400	72900,154400	135	Thundoria Castle	8	0	star_talk03	0
 146	Matchstick	1	867	0	206400,273500	206400,273500	135	Belmont Plains	3	0	b_talk25	0
 147	Matchstick	1	867	0	76200,151800	76200,151800	135	Thundoria Castle	8	0	b_talk25	0
 148	Big Furnace	1	882	0	75900,147400	75900,147400	0	Thundoria Castle	8	0	b_talk26	0
@@ -153,11 +153,11 @@
 152	Matchstick Granny	1	25	0	76100,151500	76100,151500	150	Thundoria Castle	8	0	max_talka2	0
 //153	Online GM	1	430	15	221600,278300	221600,278300	180	Argent City	1	0	Leo_talkQ	0
 154	Hatred Shrub	1	221	0	214138,270471	214138,270471	175	Belmont Plains	3	0	ync_talk	0
-//155	Ð£³¤À×Åµ	1	417	0	223200,278100	222200,277500	180	Argent City	1	0	dina_talk01	0
-//156	Ä§·¨Ê¦ÏÄÌì	1	421	0	222900,278200	222900,278200	180	Argent City	1	0	el_talk15	0
-//157	Âå¿Ë¼ÒµÄÊØÃÅÈË	1	735	0	27100,177500	27100,177500	150	Sacred Forest	11	0	el_talk16	0
+//155	????	1	417	0	223200,278100	222200,277500	180	Argent City	1	0	dina_talk01	0
+//156	?????	1	421	0	222900,278200	222900,278200	180	Argent City	1	0	el_talk15	0
+//157	???????	1	735	0	27100,177500	27100,177500	150	Sacred Forest	11	0	el_talk16	0
 //158	Qu Yuan	1	771	0	218200,262700	218200,262700	180	Belmont Plains	3	0	mmm_talk02	0
-0	Argent Teleporter - Jovial	1	11	7	218650,277600	218650,277600	180	Argent City	1	0	GoToWhere	0
-10	Innkeeper - Marriam	1	13	0	220890,277625	220890,277625	180	Argent City	1	0	r_talk09	0
-158	Weird Hat Seller	1	449	0	224200,276332	224200,276332	90	Argent City	1	0	dina_talk08	0
-162	Nurse - Eve	1	29	3	222317,287582	222317,287582	180	Argent City	1	0	x_heal01	r_npcstate04
+//0	Argent Teleporter - Jovial	1	11	7	218650,277600	218650,277600	180	Argent City	1	0	GoToWhere	0
+//10	Innkeeper - Marriam	1	13	0	220890,277625	220890,277625	180	Argent City	1	0	r_talk09	0
+//158	Weird Hat Seller	1	449	0	224200,276332	224200,276332	90	Argent City	1	0	dina_talk08	0
+//162	Nurse - Eve	1	29	3	222317,287582	222317,287582	180	Argent City	1	0	x_heal01	r_npcstate04
