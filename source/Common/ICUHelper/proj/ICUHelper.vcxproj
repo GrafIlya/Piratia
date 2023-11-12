@@ -14,6 +14,7 @@
     <ProjectGuid>{3A1C94CD-CCBA-4F62-9AF1-919B10C582E3}</ProjectGuid>
     <RootNamespace>ICUHelper</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">

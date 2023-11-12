@@ -18,6 +18,7 @@
     <ProjectGuid>{525C57F1-D1F3-4AD2-B31D-F63CEEBA8BA6}</ProjectGuid>
     <RootNamespace>GameServer</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='IOCP_Release|Win32'" Label="Configuration">
