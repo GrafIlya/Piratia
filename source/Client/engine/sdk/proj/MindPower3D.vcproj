@@ -65,7 +65,7 @@
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
-			OutputDirectory="..\..\..\..\..\client\system"
+			OutputDirectory="..\..\..\..\..\source\Client\Client\proj\system"
 			IntermediateDirectory="..\temp\release"
 			ConfigurationType="2"
 			UseOfMFC="0"

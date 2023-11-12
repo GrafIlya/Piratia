@@ -267,7 +267,6 @@ int CMPFont::GetAscLength(float fscale) {
 	return (int)w;
 }
 
-// Размер окна под текст
 SIZE* CMPFont::GetTextSize(char* szText, SIZE* pSize, float fScale) {
 	if (!szText)
 		return pSize;
@@ -321,7 +320,6 @@ SIZE* CMPFont::GetTextSize(char* szText, SIZE* pSize, float fScale) {
 	return pSize;
 }
 
-// Отображение шрифта в игре
 bool CMPFont::TextToTexture(char c1, char c2, float& tX, float& tY) {
 	WORD w = MAKEWORD(c1, c2);
 	vector<WORD>::iterator it = std::find(_vecBuf.begin(), _vecBuf.end(), w);
@@ -344,7 +342,7 @@ bool CMPFont::TextToTexture(char c1, char c2, float& tX, float& tY) {
 
 		FillRect(_hDc, &rect, (HBRUSH)GetStockObject(BLACK_BRUSH));
 
-		::TextOut(_hDc, 0, 0, sz, c1 & 0x80 ? 2 : 1);
+		::TextOut(_hDc, 0, -2, sz, c1 & 0x100 ? 2 : 1);//Фиксация высоты написания текста by Jasper
 
 		D3DLOCKED_RECT d3dlr;
 
@@ -357,7 +355,6 @@ bool CMPFont::TextToTexture(char c1, char c2, float& tX, float& tY) {
 			for (WORD x = 0; x < _TextSize; x++) {
 				BYTE bAlpha = (BYTE)((_pBits[_TextSize * y + x] & 0xff) >> 4);
 				if (bAlpha > 0) {
-					// Цвет текста
 					*pDst16 = (bAlpha << 12) | 0x0fff;
 				} else
 					*pDst16 = 0x0000;
@@ -1463,7 +1460,7 @@ skip:
 
 			FillRect(_hDc, &rect, (HBRUSH)GetStockObject(BLACK_BRUSH));
 
-			::TextOut(_hDc, 0, 0, sz, ch[0] & 0x80 ? 2 : 1);
+			::TextOut(_hDc, 0, -2, sz, ch[0] & 0x100 ? 2 : 1);//Фиксация высоты написания текста by Jasper
 
 			D3DLOCKED_RECT d3dlr;
 #ifdef USE_RENDER

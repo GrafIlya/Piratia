@@ -81,7 +81,7 @@
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
-			OutputDirectory="$(ProjectDir)..\..\..\..\client\system"
+			OutputDirectory="$(ProjectDir)..\..\..\..\source\Client\Client\proj\system"
 			IntermediateDirectory="../temp/Release/"
 			ConfigurationType="1"
 			CharacterSet="2">
