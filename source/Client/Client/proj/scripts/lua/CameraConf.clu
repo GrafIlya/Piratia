@@ -1,33 +1,33 @@
-C_NORMAL    = 0  --Õý³£Ä£Ê½   
-C_NEAR      = 1  --Æ«½üÄ£Ê½  ¾àÀë±ÈÕý³£Ä£Ê½Æ«½ü
-C_HIGHSPEED = 2  --¸ßËÙÄ£Ê½  ¹Ì¶¨¾µÍ·, ²»¿ÉÐý×ª
-C_SHIP      = 3  --º£ÉÏÄ£Ê½  ÔÚ´¬ÉÏ, ¾àÀëºÜÔ¶
+C_NORMAL = 0
+C_NEAR = 1
+C_HIGHSPEED = 2
+C_SHIP = 3
 
-CLU_Call("CameraRangeXY", C_NORMAL, 50, 35)
-CLU_Call("CameraRangeZ", C_NORMAL, 10, 50)
-CLU_Call("CameraRangeFOV", C_NORMAL, 12, 35)
+CLU_Call("CameraRangeXY", C_NORMAL, 45, 36.5)
+CLU_Call("CameraRangeZ", C_NORMAL, 7.5, 62)
+CLU_Call("CameraRangeFOV", C_NORMAL, 17, 20)
 CLU_Call("CameraEnableRotate", C_NORMAL, 1)
-CLU_Call("CameraShowSize", C_NORMAL, 60, 60)
+CLU_Call("CameraShowSize", C_NORMAL, 55, 55)
 
-CLU_Call("CameraRangeXY", C_NEAR, 50, 35)
-CLU_Call("CameraRangeZ", C_NEAR, 10, 50)
-CLU_Call("CameraRangeFOV", C_NEAR, 12, 35)
-CLU_Call("CameraEnableRotate", C_NEAR, 1)
-CLU_Call("CameraShowSize", C_NEAR, 60, 60)
+CLU_Call("CameraRangeXY", C_NEAR, 28, 39.5)
+CLU_Call("CameraRangeZ", C_NEAR, 10.5, 36)
+CLU_Call("CameraRangeFOV", C_NEAR, 17, 20)
+CLU_Call("CameraEnableRotate", C_NEAR, 0)
+CLU_Call("CameraShowSize", C_NEAR, 34, 34)
 
-CLU_Call("CameraRangeXY", C_HIGHSPEED, 50, 35)
-CLU_Call("CameraRangeZ", C_HIGHSPEED, 10, 50)
-CLU_Call("CameraRangeFOV", C_HIGHSPEED, 12, 35)
-CLU_Call("CameraEnableRotate", C_HIGHSPEED, 1)
-CLU_Call("CameraShowSize", C_HIGHSPEED, 60, 60) 
+CLU_Call("CameraRangeXY", C_HIGHSPEED, 40, 45)
+CLU_Call("CameraRangeZ", C_HIGHSPEED, 25, 43)
+CLU_Call("CameraRangeFOV", C_HIGHSPEED, 6, 26)
+CLU_Call("CameraEnableRotate", C_HIGHSPEED, 0)
+CLU_Call("CameraShowSize", C_HIGHSPEED, 42, 42)
 
-CLU_Call("CameraRangeXY", C_SHIP, 50, 35)
-CLU_Call("CameraRangeZ", C_SHIP, 10, 50)
-CLU_Call("CameraRangeFOV", C_SHIP, 12, 35)
+CLU_Call("CameraRangeXY", C_SHIP, 75, 30)
+CLU_Call("CameraRangeZ", C_SHIP, 50, 60)
+CLU_Call("CameraRangeFOV", C_SHIP, 25, 30)
 CLU_Call("CameraEnableRotate", C_SHIP, 1)
-CLU_Call("CameraShowSize", C_SHIP, 60, 60)
+CLU_Call("CameraShowSize", C_SHIP, 60, 55)
 
---ÖØÐÂ¶ÁÈ¡¾µÍ·²ÎÊýÅäÖÃÎÄ¼þ
+--OO?AAE??µI·?IEyAaOAIA??
 function LoadCameraConfig()
-  
+
 end
