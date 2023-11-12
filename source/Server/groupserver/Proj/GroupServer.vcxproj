@@ -14,6 +14,7 @@
     <ProjectGuid>{560A2170-006B-44B8-970D-718E84CAF750}</ProjectGuid>
     <RootNamespace>GroupServer</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
