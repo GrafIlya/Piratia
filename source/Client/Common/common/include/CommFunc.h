@@ -231,99 +231,99 @@ inline bool g_ExistStateIsDie(char chState) {
 inline const char* g_GetItemAttrExplain(int v) {
 	switch (v) {
 	case ITEMATTR_COE_STR:
-		return "Strength Bonus"; // "Б¦БїјУіЙ";
+		return "Сила"; // "Б¦БїјУіЙ";
 	case ITEMATTR_COE_AGI:
-		return "Agility Bonus"; // "ГфЅЭјУіЙ";
+		return "Ловкость"; // "ГфЅЭјУіЙ";
 	case ITEMATTR_COE_DEX:
-		return "Accuracy Bonus"; // "ЧЁЧўјУіЙ";
+		return "Точность"; // "ЧЁЧўјУіЙ";
 	case ITEMATTR_COE_CON:
-		return "Constitution Bonus"; // "МеЦКјУіЙ";
+		return "Телосложение"; // "МеЦКјУіЙ";
 	case ITEMATTR_COE_STA:
-		return "Spirit Bonus"; // "ѕ«ЙсјУіЙ";
+		return "Дух"; // "ѕ«ЙсјУіЙ";
 	case ITEMATTR_COE_LUK:
-		return "Luck Bonus"; // "РТФЛјУіЙ";
+		return "Удача"; // "РТФЛјУіЙ";
 	case ITEMATTR_COE_ASPD:
-		return "Attack Rate Bonus"; // "№Ґ»чЖµВКјУіЙ";
+		return "Скорость Атаки"; // "№Ґ»чЖµВКјУіЙ";
 	case ITEMATTR_COE_ADIS:
-		return "Attack range Bonus"; // "№Ґ»чѕаАлјУіЙ";
+		return "Дальность Атаки"; // "№Ґ»чѕаАлјУіЙ";
 	case ITEMATTR_COE_MNATK:
-		return "Minimum attack Bonus"; // "ЧоРЎ№Ґ»чБ¦јУіЙ";
+		return "Минимальная Атака"; // "ЧоРЎ№Ґ»чБ¦јУіЙ";
 	case ITEMATTR_COE_MXATK:
-		return "Maximum attack Bonus"; // "Чоґу№Ґ»чБ¦јУіЙ";
+		return "Максимальная Атака"; // "Чоґу№Ґ»чБ¦јУіЙ";
 	case ITEMATTR_COE_DEF:
-		return "Defense Bonus"; // "·АУщјУіЙ";
+		return "Бонус Защиты"; // "·АУщјУіЙ";
 	case ITEMATTR_COE_MXHP:
-		return "Maximum HP Bonus"; // "ЧоґуHPјУіЙ";
+		return "Максимальный бонус Здоровья"; // "ЧоґуHPјУіЙ";
 	case ITEMATTR_COE_MXSP:
-		return "Maximum SP Bonus"; // "ЧоґуSPјУіЙ";
+		return "Максимальный Бонус Маны"; // "ЧоґуSPјУіЙ";
 	case ITEMATTR_COE_FLEE:
-		return "Dodge rate Bonus"; // "ЙБ±ЬВКјУіЙ";
+		return "Уклонение"; // "ЙБ±ЬВКјУіЙ";
 	case ITEMATTR_COE_HIT:
-		return "Hit rate Bonus"; // "ГьЦРВКјУіЙ";
+		return "Шанс Урона"; // "ГьЦРВКјУіЙ";
 	case ITEMATTR_COE_CRT:
-		return "Critical hitrate Bonus"; // "±¬»чВКјУіЙ";
+		return "Бонус к Критическому Удару"; // "±¬»чВКјУіЙ";
 	case ITEMATTR_COE_MF:
-		return "Drop rate Bonus"; // "С°±¦ВКјУіЙ";
+		return "Бонус к Шансу Выпадения"; // "С°±¦ВКјУіЙ";
 	case ITEMATTR_COE_HREC:
-		return "HP recovery speed Bonus"; // "HP»ЦёґЛЩ¶ИјУіЙ";
+		return "Скорость Восстановления Здоровья"; // "HP»ЦёґЛЩ¶ИјУіЙ";
 	case ITEMATTR_COE_SREC:
-		return "SP Recovery rate Bonus"; // "SP»ЦёґЛЩ¶ИјУіЙ";
+		return "Скорость Востановления Маны"; // "SP»ЦёґЛЩ¶ИјУіЙ";
 	case ITEMATTR_COE_MSPD:
-		return "Movement speed Bonus"; // "ТЖ¶ЇЛЩ¶ИјУіЙ";
+		return "Скорость Передвижения"; // "ТЖ¶ЇЛЩ¶ИјУіЙ";
 	case ITEMATTR_COE_COL:
-		return "Material Mining Speed Bonus"; // "ЧКФґІЙјЇЛЩ¶ИјУіЙ";
+		return "Скорости Добычи Материалов"; // "ЧКФґІЙјЇЛЩ¶ИјУіЙ";
 
 	case ITEMATTR_VAL_STR:
-		return "Strength Bonus"; // "Б¦БїјУіЙ";
+		return "Сила"; // "Б¦БїјУіЙ";
 	case ITEMATTR_VAL_AGI:
-		return "Agility Bonus"; // "ГфЅЭјУіЙ";
+		return "Ловкость"; // "ГфЅЭјУіЙ";
 	case ITEMATTR_VAL_DEX:
-		return "Accuracy Bonus"; // "ЧЁЧўјУіЙ";
+		return "Точность"; // "ЧЁЧўјУіЙ";
 	case ITEMATTR_VAL_CON:
-		return "Constitution Bonus"; // "МеЦКјУіЙ";
+		return "Телосложение"; // "МеЦКјУіЙ";
 	case ITEMATTR_VAL_STA:
-		return "Spirit Bonus"; // "ѕ«ЙсјУіЙ";
+		return "Дух"; // "ѕ«ЙсјУіЙ";
 	case ITEMATTR_VAL_LUK:
-		return "Luck Bonus"; // "РТФЛјУіЙ";
+		return "Удача"; // "РТФЛјУіЙ";
 	case ITEMATTR_VAL_ASPD:
-		return "Attack Rate Bonus"; // "№Ґ»чЖµВКјУіЙ";
+		return "Скорость Атаки"; // "№Ґ»чЖµВКјУіЙ";
 	case ITEMATTR_VAL_ADIS:
-		return "Attack range Bonus"; // "№Ґ»чѕаАлјУіЙ";
+		return "Дальность Атаки"; // "№Ґ»чѕаАлјУіЙ";
 	case ITEMATTR_VAL_MNATK:
-		return "Minimum attack Bonus"; // "ЧоРЎ№Ґ»чБ¦јУіЙ";
+		return "Минимальная Атака"; // "ЧоРЎ№Ґ»чБ¦јУіЙ";
 	case ITEMATTR_VAL_MXATK:
-		return "Maximum attack Bonus"; // "Чоґу№Ґ»чБ¦јУіЙ";
+		return "Максимальная Атака"; // "Чоґу№Ґ»чБ¦јУіЙ";
 	case ITEMATTR_VAL_DEF:
-		return "Defense Bonus"; // "·АУщјУіЙ";
+		return "Защита"; // "·АУщјУіЙ";
 	case ITEMATTR_VAL_MXHP:
-		return "Maximum HP Bonus"; // "ЧоґуHPјУіЙ";
+		return "Здоровье"; // "ЧоґуHPјУіЙ";
 	case ITEMATTR_VAL_MXSP:
-		return "Maximum SP Bonus"; // "ЧоґуSPјУіЙ";
+		return "Мана"; // "ЧоґуSPјУіЙ";
 	case ITEMATTR_VAL_FLEE:
-		return "Dodge rate Bonus"; // "ЙБ±ЬВКјУіЙ";
+		return "Уклонение"; // "ЙБ±ЬВКјУіЙ";
 	case ITEMATTR_VAL_HIT:
-		return "Hit rate Bonus"; // "ГьЦРВКјУіЙ";
+		return "Шанс Урона"; // "ГьЦРВКјУіЙ";
 	case ITEMATTR_VAL_CRT:
-		return "Critical hitrate Bonus"; // "±¬»чВКјУіЙ";
+		return "Бонус к Критическому Удару"; // "±¬»чВКјУіЙ";
 	case ITEMATTR_VAL_MF:
-		return "Drop rate Bonus"; // "С°±¦ВКјУіЙ";
+		return "Бонус к Шансу Выпадения"; // "С°±¦ВКјУіЙ";
 	case ITEMATTR_VAL_HREC:
-		return "HP recovery speed Bonus"; // "HP»ЦёґЛЩ¶ИјУіЙ";
+		return "Скорость Восстановления Здоровья"; // "HP»ЦёґЛЩ¶ИјУіЙ";
 	case ITEMATTR_VAL_SREC:
-		return "SP Recovery rate Bonus"; // "SP»ЦёґЛЩ¶ИјУіЙ";
+		return "Скорость Востановления Маны"; // "SP»ЦёґЛЩ¶ИјУіЙ";
 	case ITEMATTR_VAL_MSPD:
-		return "Movement speed Bonus"; // "ТЖ¶ЇЛЩ¶ИјУіЙ";
+		return "Скорость Передвижения"; // "ТЖ¶ЇЛЩ¶ИјУіЙ";
 	case ITEMATTR_VAL_COL:
-		return "Material Mining Speed Bonus"; // "ЧКФґІЙјЇЛЩ¶ИјУіЙ";
+		return "Скорости Добычи Материалов"; // "ЧКФґІЙјЇЛЩ¶ИјУіЙ";
 
 	case ITEMATTR_VAL_PDEF:
-		return "Physical resist Bonus"; // "ОпАнµЦї№јУіЙ";
+		return "Физическое Сопротивление"; // "ОпАнµЦї№јУіЙ";
 	case ITEMATTR_MAXURE:
-		return "Max durability"; // "ЧоґуДНѕГ¶И";
+		return "Долговечность"; // "ЧоґуДНѕГ¶И";
 	case ITEMATTR_MAXENERGY:
-		return "Max energy"; // "ЧоґуДЬБї";
+		return "Энергия"; // "ЧоґуДЬБї";
 	default:
-		return "Unknown tools characteristics"; // "ОґЦЄµАѕЯКфРФ";
+		return "Неизвестные характеристики инструментов"; // "ОґЦЄµАѕЯКфРФ";
 	}
 }
 
@@ -331,100 +331,100 @@ inline const char* g_GetServerError(int error_code) // ЅвОцґнОуВл
 {
 	switch (error_code) {
 	case ERR_AP_INVALIDUSER:
-		return "Invalid Account"; // "ОЮР§ХЛєЕ";
+		return "Неверный аккаунт"; // "ОЮР§ХЛєЕ";
 	case ERR_AP_INVALIDPWD:
-		return "Password incorrect"; // "ГЬВлґнОу";
+		return "Неверный пароль"; // "ГЬВлґнОу";
 	case ERR_AP_ACTIVEUSER:
-		return "Account activation failed"; // "ј¤»оУГ»§К§°Ь";
+		return "Активация аккаунта не удалась"; // "ј¤»оУГ»§К§°Ь";
 	case ERR_AP_DISABLELOGIN:
-		return "Your cha is currently in logout save mode, please try logging in again later."; // "ДїЗ°ДъµДЅЗЙ«Хэґ¦УЪПВПЯґжЕМ№эіМЦРЈ¬ЗлЙФєуФЩіўКФµЗВјЎЈ";
+		return "Ваш собеседник в настоящее время находится в режиме сохранения выхода из системы. Попробуйте войти позже."; // "ДїЗ°ДъµДЅЗЙ«Хэґ¦УЪПВПЯґжЕМ№эіМЦРЈ¬ЗлЙФєуФЩіўКФµЗВјЎЈ";
 	case ERR_AP_LOGGED:
-		return "This account is already online"; // "ґЛХКєЕТСґ¦УЪµЗВјЧґМ¬";
+		return "Этот аккаунт уже онлайн"; // "ґЛХКєЕТСґ¦УЪµЗВјЧґМ¬";
 	case ERR_AP_BANUSER:
-		return "Account has been banned"; // "ХКєЕТС·вНЈ";
+		return "Аккаунт заблокирован"; // "ХКєЕТС·вНЈ";
 	case ERR_AP_GPSLOGGED:
-		return "This GroupServer has login"; // "ґЛGroupServerТСµЗВј";
+		return "У этого GroupServer есть логин"; // "ґЛGroupServerТСµЗВј";
 	case ERR_AP_GPSAUTHFAIL:
-		return "This GroupServer Verification failed"; // "ґЛGroupServerИПЦ¤К§°Ь";
+		return "Эта проверка GroupServer не удалась"; // "ґЛGroupServerИПЦ¤К§°Ь";
 	case ERR_AP_SAVING:
-		return "Saving your character, please try again in 15 seconds..."; // "ХэФЪ±ЈґжДгµДЅЗЙ«Ј¬Зл15ГлєуЦШКФ...";
+		return "Сохраняем персонажа. Повторите попытку через 15 секунд...."; // "ХэФЪ±ЈґжДгµДЅЗЙ«Ј¬Зл15ГлєуЦШКФ...";
 	case ERR_AP_LOGINTWICE:
-		return "Your account is logged on far away"; // "ДгµДХЛєЕФЪФ¶ґ¦ФЩґОµЗВј";
+		return "Ваша учетная запись зарегистрирована далеко"; // "ДгµДХЛєЕФЪФ¶ґ¦ФЩґОµЗВј";
 	case ERR_AP_ONLINE:
-		return "Your account is already online"; // "ДгµДХЛєЕТСФЪПЯ";
+		return "Ваш аккаунт уже онлайн"; // "ДгµДХЛєЕТСФЪПЯ";
 	case ERR_AP_DISCONN:
-		return "GroupServer disconnected"; // "GroupServerТС¶ПїЄ";
+		return "Групповой сервер отключен"; // "GroupServerТС¶ПїЄ";
 	case ERR_AP_UNKNOWNCMD:
-		return "unknown agreement, don\'t deal with"; // "ОґЦЄР­ТйЈ¬І»ґ¦Ан";
+		return "неизвестное соглашение, не иметь дело с"; // "ОґЦЄР­ТйЈ¬І»ґ¦Ан";
 	case ERR_AP_TLSWRONG:
-		return "local saving error"; // "±ѕµШґжґўґнОу";
+		return "ошибка локального сохранения"; // "±ѕµШґжґўґнОу";
 	case ERR_AP_NOBILL:
-		return "This account has expired, please topup!"; // "ґЛХЛєЕТС№эЖЪЈ¬ЗлідЦµЈЎ";
+		return "Срок действия этой учетной записи истек, пожалуйста, пополните!"; // "ґЛХЛєЕТС№эЖЪЈ¬ЗлідЦµЈЎ";
 
 	case ERR_PT_LOGFAIL:
-		return "GateServer to GroupServer login failed"; // "GateServerПтGroupServerµДµЗВјК§°Ь";
+		return "Ошибка входа с GateServer на GroupServer"; // "GateServerПтGroupServerµДµЗВјК§°Ь";
 	case ERR_PT_SAMEGATENAME:
-		return "GateServer and login GateServer have similar name"; // "GateServerУлТСµЗВјGateServerЦШГы";
+		return "GateServer и логин GateServer имеют одинаковое имя."; // "GateServerУлТСµЗВјGateServerЦШГы";
 
 	case ERR_PT_INVALIDDAT:
-		return "Ineffective data model"; // "ОЮР§µДКэѕЭёсКЅ";
+		return "Неэффективная модель данных"; // "ОЮР§µДКэѕЭёсКЅ";
 	case ERR_PT_INERR:
-		return "server link operation integrality error "; // "·юОсЖчЦ®јдµДІЩЧчНкХыРФґнОу";
+		return "ошибка целостности операции соединения с сервером "; // "·юОсЖчЦ®јдµДІЩЧчНкХыРФґнОу";
 	case ERR_PT_NETEXCP:
-		return "Account server has encountered a malfunction"; // "ХКєЕ·юОсЖч№КХП";	// GroupServer·ўПЦµДµЅAccuntServerµДНшВз№КХП
+		return "На сервере учетных записей возникла неисправность"; // "ХКєЕ·юОсЖч№КХП";	// GroupServer·ўПЦµДµЅAccuntServerµДНшВз№КХП
 	case ERR_PT_DBEXCP:
-		return "database server malfunction"; // "КэѕЭїв·юОсЖч№КХП";	// GroupServer·ўПЦµДµЅDatabaseµД№КХП
+		return "неисправность сервера базы данных"; // "КэѕЭїв·юОсЖч№КХП";	// GroupServer·ўПЦµДµЅDatabaseµД№КХП
 	case ERR_PT_INVALIDCHA:
-		return "Current account does not have a request (Select/Delete) to character"; // "µ±З°ХКєЕІ»УµУРЗлЗу(СЎФс/Йѕіэ)µДЅЗЙ«";
+		return "На текущем аккаунте нет запроса (Выбрать/Удалить) персонажа"; // "µ±З°ХКєЕІ»УµУРЗлЗу(СЎФс/Йѕіэ)µДЅЗЙ«";
 	case ERR_PT_TOMAXCHA:
-		return "reached the maximum number of characters you can create"; // "ТСѕ­ґпµЅЧо¶аДЬґґЅЁµДЅЗЙ«КэБЛ";
+		return "достигнуто максимальное количество персонажей, которых вы можете создать"; // "ТСѕ­ґпµЅЧо¶аДЬґґЅЁµДЅЗЙ«КэБЛ";
 	case ERR_PT_SAMECHANAME:
-		return "Character name already exist"; // "ЦШёґµДЅЗЙ«Гы";
+		return "Имя персонажа уже существует"; // "ЦШёґµДЅЗЙ«Гы";
 	case ERR_PT_INVALIDBIRTH:
-		return "illegal birth place"; // "·З·ЁµДіцЙъµШ";
+		return "незаконное место рождения"; // "·З·ЁµДіцЙъµШ";
 	case ERR_PT_TOOBIGCHANM:
-		return "Character name is too long"; // "ЅЗЙ«ГыМ«і¤";
+		return "Имя персонажа слишком длинное"; // "ЅЗЙ«ГыМ«і¤";
 	case ERR_PT_ISGLDLEADER:
-		return "Guild must have a leader, please disband your guild first then delete your character"; // "№«»бІ»їЙТ»ИХОЮі¤Ј¬ЗлПИЅвЙў№«»бФЩЙѕіэЅЗЙ«";
+		return "Гильдия должна иметь лидера. Сначала распустите гильдию, а затем удалите своего персонажа."; // "№«»бІ»їЙТ»ИХОЮі¤Ј¬ЗлПИЅвЙў№«»бФЩЙѕіэЅЗЙ«";
 	case ERR_PT_ERRCHANAME:
-		return "Illegal character name"; // "·З·ЁµДЅЗЙ«ГыіЖ";
+		return "Недопустимое имя персонажа"; // "·З·ЁµДЅЗЙ«ГыіЖ";
 	case ERR_PT_SERVERBUSY:
-		return "System is busy, please try again later"; // "ПµНіГ¦Ј¬ЗлЙФєуФЩКФ";
+		return "Система занята, повторите попытку позже"; // "ПµНіГ¦Ј¬ЗлЙФєуФЩКФ";
 	case ERR_PT_TOOBIGPW2:
-		return "second code length illegal"; // "¶юґОГЬВлі¤¶И·З·Ё";
+		return "вторая длина кода недопустима"; // "¶юґОГЬВлі¤¶И·З·Ё";
 	case ERR_PT_INVALID_PW2:
-		return "Cha second password not created"; // "ОґґґЅЁЅЗЙ«±Ј»¤¶юґОГЬВл";
+		return "Второй пароль не создан"; // "ОґґґЅЁЅЗЙ«±Ј»¤¶юґОГЬВл";
 	case ERR_PT_BADBOY:
-		return "My child, you are very bold. You have been reported to the authority. Please do not commit the offense again!"; // "єўЧУЈ¬ДгєЬBTЈ¬ТСѕ­ЧФ¶Ї¶ФДгЧчіцБЛНЁ±ЁЕъЖАЈ¬ТЄТэТФОЄЅдЈ¬І»їЙФЩ·ёЈЎ";
+		return "Дитя Мое, ты очень смелая. О вас сообщили властям. Пожалуйста, больше не совершайте правонарушений!"; // "єўЧУЈ¬ДгєЬBTЈ¬ТСѕ­ЧФ¶Ї¶ФДгЧчіцБЛНЁ±ЁЕъЖАЈ¬ТЄТэТФОЄЅдЈ¬І»їЙФЩ·ёЈЎ";
 
 	case ERR_MC_NETEXCP:
-		return "Discovered exceptional line error on GateServer"; // "GateServer·ўПЦµДНшВзТміЈ";
+		return "Обнаружена исключительная ошибка линии на GateServer."; // "GateServer·ўПЦµДНшВзТміЈ";
 	case ERR_MC_NOTSELCHA:
-		return "current not yet handled character state"; // "µ±З°Оґґ¦УЪСЎФсЅЗЙ«ЧґМ¬";
+		return "текущее еще не обработанное состояние персонажа"; // "µ±З°Оґґ¦УЪСЎФсЅЗЙ«ЧґМ¬";
 	case ERR_MC_NOTPLAY:
-		return "Currently not in gameplay, unable to send ENDPLAY command"; // "µ±З°І»ґ¦УЪНжУОП·ЧґМ¬Ј¬І»ДЬ·ўЛНENDPLAYГьБо";
+		return "В данный момент не в игре, не могу отправить команду ENDPLAY."; // "µ±З°І»ґ¦УЪНжУОП·ЧґМ¬Ј¬І»ДЬ·ўЛНENDPLAYГьБо";
 	case ERR_MC_NOTARRIVE:
-		return "target map cannot be reached"; // "Дї±кµШНјІ»їЙµЅґп";
+		return "целевая карта не может быть достигнута"; // "Дї±кµШНјІ»їЙµЅґп";
 	case ERR_MC_TOOMANYPLY:
-		return "This server is currently full, please select another server!"; // "±ѕ·юОсЖчЧйИЛКэТСВъ, ЗлСЎФсЖдЛьЧйЅшРРУОП·!";
+		return "Этот сервер в настоящее время заполнен, пожалуйста, выберите другой сервер!"; // "±ѕ·юОсЖчЧйИЛКэТСВъ, ЗлСЎФсЖдЛьЧйЅшРРУОП·!";
 	case ERR_MC_NOTLOGIN:
-		return "Youa re not login"; // "ДгЙРОґµЗВЅ";
+		return "Вы не авторизованы"; // "ДгЙРОґµЗВЅ";
 	case ERR_MC_VER_ERROR:
-		return "Client version error, server refused connection!"; // "їН»§¶ЛµД°ж±ѕєЕґнОу,·юОсЖчѕЬѕшµЗВјЈЎ";
+		return "Ошибка версии клиента, сервер отказался подключиться!"; // "їН»§¶ЛµД°ж±ѕєЕґнОу,·юОсЖчѕЬѕшµЗВјЈЎ";
 	case ERR_MC_ENTER_ERROR:
-		return "failed to enter map!"; // "ЅшИлµШНјК§°ЬЈЎ";
+		return "не удалось войти на карту!"; // "ЅшИлµШНјК§°ЬЈЎ";
 	case ERR_MC_ENTER_POS:
-		return "Map position illegal, you\'ll be sent back to your birth city, please relog!"; // "µШНјО»ЦГ·З·ЁЈ¬ДъЅ«±»ЛН»ШіцЙъіЗКРЈ¬ЗлЦШРВµЗВЅЈЎ";
+		return "Положение на карте незаконное, вас отправят обратно в город вашего рождения, пожалуйста, перезайдите в систему.!"; // "µШНјО»ЦГ·З·ЁЈ¬ДъЅ«±»ЛН»ШіцЙъіЗКРЈ¬ЗлЦШРВµЗВЅЈЎ";
 
 	case ERR_TM_OVERNAME:
-		return "GameServer name repeated"; // "GameServerГыЦШёґ";
+		return "Имя игрового сервера повторяется"; // "GameServerГыЦШёґ";
 	case ERR_TM_OVERMAP:
 		return "GameServerMapNameRepeated"; // "GameServerЙПµШНјГыЦШёґ";
 	case ERR_TM_MAPERR:
-		return "GameServer map assign language error"; // "GameServerµШНјЕдЦГУп·ЁґнОу";
+		return "Ошибка назначения языка карты GameServer"; // "GameServerµШНјЕдЦГУп·ЁґнОу";
 
 	case ERR_SUCCESS:
-		return "Jack is too BT, correct also will ask me if anything is wrong!"; // "JackМ«BTБЛЈ¬ХэИ·ТІАґОКОТКІГґґнОуЈЎ";
+		return "Джек слишком БТ, правильно и спросит меня, если что-то не так.!"; // "JackМ«BTБЛЈ¬ХэИ·ТІАґОКОТКІГґґнОуЈЎ";
 	default: {
 		int l_error_code = error_code;
 		l_error_code /= 500;
@@ -433,15 +433,15 @@ inline const char* g_GetServerError(int error_code) // ЅвОцґнОуВл
 		char l_convt[20];
 		switch (l_error_code) {
 		case ERR_MC_BASE:
-			return strcat(strcpy(l_buffer, itoa(error_code, l_convt, 10)), "(GameServer/GateServer->Client return error code space 1-500)"); //"(GameServer/GateServer->Client·µ»ШµДґнОуВлїХјд1Ј­500)");
+			return strcat(strcpy(l_buffer, itoa(error_code, l_convt, 10)), "(GameServer/GateServer->Код ошибки возврата клиента, пространство 1–500)"); //"(GameServer/GateServer->Client·µ»ШµДґнОуВлїХјд1Ј­500)");
 		case ERR_PT_BASE:
-			return strcat(strcpy(l_buffer, itoa(error_code, l_convt, 10)), "(GroupServer->GateServer return error code range 501-1000)"); //"(GroupServer->GateServer·µ»ШµДґнОуВлїХјд501Ј­1000)");
+			return strcat(strcpy(l_buffer, itoa(error_code, l_convt, 10)), "(GroupServer->GateServer возвращает код ошибки в диапазоне 501–1000.)"); //"(GroupServer->GateServer·µ»ШµДґнОуВлїХјд501Ј­1000)");
 		case ERR_AP_BASE:
-			return strcat(strcpy(l_buffer, itoa(error_code, l_convt, 10)), "(AccountServer->GroupServe return error code from 1001-1500)"); //"(AccountServer->GroupServer·µ»ШµДґнОуВлїХјд1001Ј­1500)");
+			return strcat(strcpy(l_buffer, itoa(error_code, l_convt, 10)), "(AccountServer->GroupServe возвращает код ошибки 1001-1500)"); //"(AccountServer->GroupServer·µ»ШµДґнОуВлїХјд1001Ј­1500)");
 		case ERR_MT_BASE:
-			return strcat(strcpy(l_buffer, itoa(error_code, l_convt, 10)), "(GameServer->GateServer return error code range 1501-2000)"); //"(GameServer->GateServer·µ»ШµДґнОуВлїХјд1501Ј­2000)");
+			return strcat(strcpy(l_buffer, itoa(error_code, l_convt, 10)), "(GameServer->GateServer возвращает код ошибки в диапазоне 1501–2000.)"); //"(GameServer->GateServer·µ»ШµДґнОуВлїХјд1501Ј­2000)");
 		default:
-			return strcat(strcpy(l_buffer, itoa(error_code, l_convt, 10)), "(Jack is too insane, he made a mistake that I don\'t even know.)"); //"(JackМ«BTБЛЈ¬ЕЄёцґнОуБ¬ОТ¶јІ»ИПК¶ЎЈ)");
+			return strcat(strcpy(l_buffer, itoa(error_code, l_convt, 10)), "(Джек слишком сумасшедший, он совершил ошибку, о которой я даже не знаю..)"); //"(JackМ«BTБЛЈ¬ЕЄёцґнОуБ¬ОТ¶јІ»ИПК¶ЎЈ)");
 		}
 	}
 	}
@@ -508,61 +508,61 @@ inline bool IsValidName(const char* name, unsigned short len) {
 inline const char* g_GetUseItemFailedInfo(short sErrorID) {
 	switch (sErrorID) {
 	case enumITEMOPT_SUCCESS:
-		return "Item operation succesful"; // "µАѕЯІЩЧчіЙ№¦";
+		return "Операция с объектом прошла успешно"; // "µАѕЯІЩЧчіЙ№¦";
 		break;
 	case enumITEMOPT_ERROR_NONE:
-		return "Equipment does not exist"; // "µАѕЯІ»ґжФЪ";
+		return "Оборудование не существует"; // "µАѕЯІ»ґжФЪ";
 		break;
 	case enumITEMOPT_ERROR_KBFULL:
-		return "Inventory is full"; // "µАѕЯАёТСВъ";
+		return "Инвентарь полон"; // "µАѕЯАёТСВъ";
 		break;
 	case enumITEMOPT_ERROR_UNUSE:
-		return "Failed to use item"; // "µАѕЯК№УГК§°Ь";
+		return "Не удалось использовать предмет"; // "µАѕЯК№УГК§°Ь";
 		break;
 	case enumITEMOPT_ERROR_UNPICKUP:
 		return "µRl??»ДЬE°C?"; // "µАѕЯІ»ДЬК°ИЎ";
 		break;
 	case enumITEMOPT_ERROR_UNTHROW:
-		return "Item cannot be thrown"; // "µАѕЯІ»ДЬ¶ЄЖъ";
+		return "Предмет нельзя бросить"; // "µАѕЯІ»ДЬ¶ЄЖъ";
 		break;
 	case enumITEMOPT_ERROR_UNDEL:
-		return "Item cannot be destroyed"; // "µАѕЯІ»ДЬПъ»Щ";
+		return "Предмет не может быть уничтожен"; // "µАѕЯІ»ДЬПъ»Щ";
 		break;
 	case enumITEMOPT_ERROR_KBLOCK:
-		return "inventory is currently locked"; // "µАѕЯАёґ¦УЪЛш¶ЁЧґМ¬";
+		return "инвентарь на данный момент заблокирован"; // "µАѕЯАёґ¦УЪЛш¶ЁЧґМ¬";
 		break;
 	case enumITEMOPT_ERROR_DISTANCE:
-		return "Distance too far"; // "ѕаАлМ«Ф¶";
+		return "Расстояние слишком большое"; // "ѕаАлМ«Ф¶";
 		break;
 	case enumITEMOPT_ERROR_EQUIPLV:
-		return "Equipment level mismatch"; // "Ч°±ёµИј¶І»ВъЧг";
+		return "Несоответствие уровня оборудования"; // "Ч°±ёµИј¶І»ВъЧг";
 		break;
 	case enumITEMOPT_ERROR_EQUIPJOB:
-		return "Does not meet the class requirement for the equipment"; // "Ч°±ёЦ°ТµІ»ВъЧг";
+		return "Не соответствует классу оборудования"; // "Ч°±ёЦ°ТµІ»ВъЧг";
 		break;
 	case enumITEMOPT_ERROR_STATE:
-		return "Unable to operate items under the current condition"; // "ёГЧґМ¬ПВІ»ДЬІЩЧчµАѕЯ";
+		return "Невозможно управлять предметами в текущем состоянии"; // "ёГЧґМ¬ПВІ»ДЬІЩЧчµАѕЯ";
 		break;
 	case enumITEMOPT_ERROR_PROTECT:
-		return "Item is being protected"; // "µАѕЯ±»±Ј»¤";
+		return "Объект находится под защитой"; // "µАѕЯ±»±Ј»¤";
 		break;
 	case enumITEMOPT_ERROR_AREA:
-		return "different region type"; // "І»Н¬µДЗшУтАаРН";
+		return "другой тип региона"; // "І»Н¬µДЗшУтАаРН";
 		break;
 	case enumITEMOPT_ERROR_BODY:
-		return "type of build does not match"; // "МеРНІ»ЖҐЕд";
+		return "тип сборки не соответствует"; // "МеРНІ»ЖҐЕд";
 		break;
 	case enumITEMOPT_ERROR_TYPE:
-		return "Unable to store this item"; // "ґЛµАѕЯОЮ·Ёґж·Е";
+		return "Невозможно сохранить этот товар"; // "ґЛµАѕЯОЮ·Ёґж·Е";
 		break;
 	case enumITEMOPT_ERROR_INVALID:
-		return "Item not in used"; // "ОЮР§µДµАѕЯ";
+		return "Товар не используется"; // "ОЮР§µДµАѕЯ";
 		break;
 	case enumITEMOPT_ERROR_KBRANGE:
-		return "out of inventory range"; // "і¬іцµАѕЯАё·¶О§";
+		return "вне диапазона инвентаря"; // "і¬іцµАѕЯАё·¶О§";
 		break;
 	default:
-		return "Unknown item usage failure code"; // "ОґЦЄµДµАѕЯІЩЧчК§°ЬВл";
+		return "Неизвестный код ошибки использования элемента"; // "ОґЦЄµДµАѕЯІЩЧчК§°ЬВл";
 		break;
 	}
 }

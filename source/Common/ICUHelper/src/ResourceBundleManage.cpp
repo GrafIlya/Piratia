@@ -74,12 +74,12 @@ CResourceBundleManage::CResourceBundleManage(const char* configFileName)
 	fileName[dirLength + length + 1] = 0;
 
 	UErrorCode status;
-	Locale::setDefault(Locale::getEnglish(), status);
+	Locale::setDefault(Locale::getRU(), status);
 
 	const char* lpAppName = "locale";
 	const char* lpLocaleKeyName = "locale";
 	const char* lpPathKeyName = "path";
-	const char* lpDefaultLocale = "en_US";
+	const char* lpDefaultLocale = "ru_RU";
 	//char* lpDefaultPath = new char[dirLength + 1];
 	char* lpDefaultPath = cnew char[dirLength + 1];
 	memcpy(lpDefaultPath, szPath, dirLength);

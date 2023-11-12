@@ -11,33 +11,33 @@
 
 const char* g_szJobName[MAX_JOB_TYPE] =
 	{
-		"Newbie",
-		"Swordsman",
-		"Hunter",
-		"Sailor",
-		"Explorer",
-		"Herbalist",
-		"Engineer",
-		"Merchant",
-		"Champion",
-		"Crusader",
-		"White Knight",
-		"Animal Tamer",
-		"Sharpshooter",
-		"Cleric",
-		"Seal master",
-		"Captain",
-		"Voyager",
-		"Upstart",
-		"Engineer",
+		"Новичек",
+		"Воин",
+		"Охотник",
+		"Моряк",
+		"Исследователь",
+		"Знахарка",
+		"Инженер",
+		"Торговец",
+		"Чампион",
+		"Воитель",
+		"Белый рыцарь",
+		"Укротитель животных",
+		"Стрелок",
+		"Целитель",
+		"Колдунья",
+		"Капитан",
+		"Мореплаватель",
+		"Выскочка",
+		"Инженер",
 };
 
 const char* g_szCityName[defMAX_CITY_NUM] =
 	{
-		"Argent city",
-		"Thundoria Castle",
-		"Shaitan City",
-		"Icicle",
+		"Аргент",
+		"Громоград",
+		"Шайтан",
+		"Ледынь",
 };
 
 const long g_PartIdRange[PLAY_NUM][enumEQUIP_NUM + 1][2] =
@@ -159,19 +159,19 @@ BOOL IsDist(int x1, int y1, int x2, int y2, DWORD dwDist) {
 const char* g_GetAreaName(int nValue) {
 	switch (nValue) {
 	case 1:
-		return "Land / Sea"; //"й™†ењ°/жµ·жґ‹";
+		return "Земля/Море"; //"й™†ењ°/жµ·жґ‹";
 	case 2:
-		return "safe zone"; //"йќћж€ж–—еЊє";
+		return "безопасная зона"; //"йќћж€ж–—еЊє";
 	case 3:
-		return "Non PK zone"; //"йќћPKеЊє";
+		return "Зона без ПК"; //"йќћPKеЊє";
 	case 4:
-		return "Bridge"; //"жЎҐ";
+		return "Мост"; //"жЎҐ";
 	case 5:
-		return "Forbid monster zone"; //"з¦ЃжЂЄеЊє";
+		return "Запретить зону монстров"; //"з¦ЃжЂЄеЊє";
 	case 6:
-		return "Mining Area"; //"зџїеЊє";
+		return "Горнодобывающая зона"; //"зџїеЊє";
 	default:
-		return "Unknown"; //"жњЄзџҐ";
+		return "Неизвестный"; //"жњЄзџҐ";
 	}
 }
 
