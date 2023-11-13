@@ -48,9 +48,9 @@ UI_LoadImage( imgLoading12, "texture/ui/loading/l12.tga", NORMAL, 300, 256, 0, 0
 imgLoading = UI_CreateCompent( frmLoading, IMAGE_TYPE, "imgLoading", 120,123, 132, 418)
 UI_LoadImage( imgLoading, "texture/ui/LoadProgress.tga", NORMAL, 120,23, 0, 0 )
 
---定义说明
+--Загрузка
 labLoad= UI_CreateCompent( frmLoading, LABELEX_TYPE, "labLoad", 52, 13, 450, 523 )
-UI_SetCaption( labLoad, "Loading..." )
+UI_SetCaption( labLoad, "\199\224\227\240\243\231\234\224..." )
 UI_SetTextColor( labLoad, COLOR_WHITE )
 --UI_SetLabelExFont( labLoad, DEFAULT_FONT, TRUE, COLOR_WHITE)
 -----------------------------------------------------------------------
