@@ -133,20 +133,28 @@ void CHeadSay::SetName(const char* name) {
 	_nChaNameOffX = 0 - CGuiFont::s_Font.GetWidth(name) / 2;
 }
 
+// Рендер панели эффектов
 void CHeadSay::RenderStateIcons(CCharacter* cha, int x, int y, float scale, float spacing, int rowSize) {
+	// Создаем массив иконок
 	CGuiPic* stateIcon = new CGuiPic;
 	int stateCount = 0;
 
 	int nTotalState = CSkillStateRecordSet::I()->GetLastID() + 1;
+	// Массив эффектов
 	CSkillStateRecord* pState;
+	// Проходим по всем эффектам
 	for (int i = 0; i < nTotalState; i++) {
+		// Узнаем, есть ли на персонаже эффекты
 		if (cha->GetStateMgr()->HasSkillState(i)) {
 			pState = GetCSkillStateRecordInfo(i);
+			// Если эффекты есть и они с иконками (в skilleff.txt)
 			if (pState && pState->szIcon != "0") {
 				char buf[64];
+				// Берем иконку
 				sprintf(buf, "texture/icon/%s.png", pState->szIcon);
+				// Загружаем картинку
 				stateIcon->LoadImage(buf, 32, 32, 0, 0, 0, scale, scale);
-
+				// Создаем таблицу для вывода(x и y)
 				int xi = x + ((stateCount % rowSize) * spacing);
 				int yi = y + ((stateCount / rowSize) * spacing);
 				stateIcon->Render(xi, yi);
@@ -154,8 +162,8 @@ void CHeadSay::RenderStateIcons(CCharacter* cha, int x, int y, float scale, floa
 
 				int xm = g_pGameApp->GetMouseX();
 				int ym = g_pGameApp->GetMouseY();
-
-				//check if we need to render hint.
+				
+				//Проверяем, нужен ли рендер
 				if (xm >= xi && xm <= xi + (32 * scale)) {
 					if (ym >= yi && ym <= yi + (32 * scale)) {
 						char desc[300];
