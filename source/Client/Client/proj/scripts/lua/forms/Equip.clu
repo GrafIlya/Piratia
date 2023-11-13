@@ -378,8 +378,9 @@ UI_LoadImage( imgSkillDL, "texture/ui/PublicC.tga", NORMAL, 36, 36, 167, 59 )
 imgSkillP = UI_CreateCompent( frmSkill, IMAGE_TYPE, "imgSkillP", 39, 18, 132, 296 )
 UI_LoadImage( imgSkillP, "texture/ui/SysBotton4.tga", NORMAL, 39, 18, 106, 99 )
 
-labFront = UI_CreateCompent( frmSkill, LABELEX_TYPE, "labFront", 59, 11, 69, 299 )
-UI_SetCaption( labFront, "Skill Pts" )
+labFront = UI_CreateCompent( frmSkill, LABELEX_TYPE, "labFront", 59, 11, 50, 299 )
+--UI_SetCaption( labFront, "Skill Pts" )
+UI_SetCaption( labFront, "\206\247\234\232 \237\224\226\251\234\238\226" )
 UI_SetTextColor( labFront, COLOR_BLACK )
 UI_SetLabelExFont( labFront, DEFAULT_FONT, TRUE, COLOR_WHITE )
 
@@ -403,7 +404,8 @@ UI_SetButtonModalResult( btnClose, BUTTON_CLOSE )
 
 -- º”‘ÿΩÁ√Êtitle
 labTitle = UI_CreateCompent( frmSkill, LABELEX_TYPE, "labTitle", 400, 150, 10, 3 )
-UI_SetCaption( labTitle, "Skill")
+--UI_SetCaption( labTitle, "Skill")
+UI_SetCaption( labTitle, "\205\224\226\251\234\232")
 UI_SetTextColor( labTitle, COLOR_BLACK )
 UI_SetLabelExFont( labTitle, DEFAULT_FONT, TRUE, COLOR_WHITE )
 
