@@ -1,104 +1,78 @@
-------------------------------------------------------------
--- NPCScript02.lua Created by BT 2004.12.29.
---
--- L.38 -> Line 38
-------------------------------------------------------------
--- L.20   [ É±¹ÖÈÎÎñ£º°×ÒøÎä½«µÄÇëÍÐ ]
--- L.289  [ RandMapList ] L.245 [ °×Òø ] L.362 [ É³á° ] L.422 [ À×öª ] L.482 [ ±ùÀÇ ] L.542 [ µºÓì ] L.612 [ Í¨ÓÃ ]
--- L.682  [ Ð¡É½³µµÄÆÞ×Ó ]
---
---
---
---
---
---
---
---
---
---
-------------------------------------------------------------
--- É±¹ÖÈÎÎñ£º°×ÒøÎä½«µÄÇëÍÐ
-------------------------------------------------------------
-
 print( "Loading NPCScript02.lua" )
 
-
-------------------------------------------------------------
--- Í¨ÓÃ´«ËÍ½Å±¾
-------------------------------------------------------------
-
+-- Ïðèâðàòíèê Àðãåíòà - Äæîâèàë
 function GoToWhere()
 
-	--È¡Ïû´«ËÍ·µ»ØÑ¡Ôñ´«ËÍµØµãµÄ¶Ô»°ÄÚÈÝºÍÒ³Ãæ±àºÅ
+	--??????????????????????
 	local ReSelectTalk = "I need to reconsider..."
 	local ReSelectPage = 1
 
-	--È¡Ïû´«ËÍºÍÍË³ö´«ËÍµÄ¶Ô»°ºÍÒ³Ãæ±àºÅ
+	--?????????????????
 	local CancelSelectTalk = "Forget it...I will stay here"
 	local CancelSelectPage = 2
 
-	--µØÍ¼Ãû³ÆÐÅÏ¢
+	--??????
 	local CurMapName1 = "garner"
 	local CurMapName2 = "magicsea"
 	local CurMapName3 = "eastgoaf"
 	local CurMapName4 = "lonetower"
 	local CurMapName5 = "darkblue"
 
-	--°×ÒøÖ®³Ç×ø±ê
+	--??????
 	local GoTo01X = 2231
 	local GoTo01Y = 2788
 	local GoTo01M = CurMapName1
 
-	--É³á°Ö®³Ç×ø±ê
+	--??????
 	local GoTo02X = 890
 	local GoTo02Y = 3575
 	local GoTo02M = CurMapName2
 
-	--À×öª±¤×ø±ê
+	--?????
 	local GoTo03X = 735
 	local GoTo03Y = 1590
 	local GoTo03M = CurMapName1
 
-	--±ùÀÇ±¤×ø±ê
+	--?????
 	local GoTo04X = 1318
 	local GoTo04Y = 510
 	local GoTo04M = CurMapName5
 
-	--¿¨¶û¼ÓµÂ×ø±ê
+	--??????
 	local GoTo05X = 633
 	local GoTo05Y = 2100
 	local GoTo05M = CurMapName1
 
-	--Àµ°²É­ÁÖ×ø±ê
+	--??????
 	local GoTo06X = 1007
 	local GoTo06Y = 2966
 	local GoTo06M = CurMapName1
 
-	--µºÓì3ºÅ×ø±ê
+	--??3???
 	local GoTo07X = 1507
 	local GoTo07Y = 2039
 	local GoTo07M = CurMapName1
 
-	--µºÓì8ºÅ×ø±ê
+	--??8???
 	local GoTo08X = 1711
 	local GoTo08Y = 3448
 	local GoTo08M = CurMapName1
 
-	--µºÓì2ºÅ×ø±ê
+	--??2???
 	local GoTo09X = 2501
 	local GoTo09Y = 2997
 	local GoTo09M = CurMapName1
 
-	--µºÓì5ºÅ×ø±ê
+	--??5???
 	local GoTo10X = 3197
 	local GoTo10Y = 1254
 	local GoTo10M = CurMapName1
 
-	Talk( 1, "Jovial: Hi! I am the Teleporter! How may I help you?" )
-	Text( 1, "Go to Shaitan City!", JumpPage, 5 )
+	Talk( 1, "Äæîâèàë: Ïðèâåòñòâóþ òåáÿ, ïèðàò! ß ìåñòíûé ïðèâðàòíèê! Êóäà õî÷åøü îòïðàâèòüñÿ?" )
+	Text( 1, "Â Ïóñòûíþ Ðèõòàðà! ", JumpPage, 5 )
 	--Text( 1, "Go to Thundoria Castle!", JumpPage, 6 )
-	Text( 1, "Go to Icicle City!", JumpPage, 7 )
-	Text( 1, "Record Spawn point", JumpPage, 24 )
+	Text( 1, "Â Ëåäÿíîé Ãèðåíò! ", JumpPage, 7 )
+	Text( 1, "Ñîõðàíèòü òî÷êó âîçðàæäåíèÿ! ", JumpPage, 24 )
 	--Text( 1, "Go to Forsanken City!", JumpPage, 8 )
 	--Text( 1, "I want to roam the islands!", JumpPage, 3 )
 
@@ -327,139 +301,139 @@ end
 
 
 ------------------------------------------------------------
--- ²¹¸øÕ¾´«ËÍ½Å±¾
+-- ???????
 ------------------------------------------------------------
 
 function transmittal()
 
-	--È¡Ïû´«ËÍ·µ»ØÑ¡Ôñ´«ËÍµØµãµÄ¶Ô»°ÄÚÈÝºÍÒ³Ãæ±àºÅ
+	--??????????????????????
 	--local ReSelectTalk = "I need to reconsider..."
 	--local ReSelectPage = 1
 
-	--È¡Ïû´«ËÍºÍÍË³ö´«ËÍµÄ¶Ô»°ºÍÒ³Ãæ±àºÅ
+	--?????????????????
 	local CancelSelectTalk = "Forget it...I will stay here"
 	local CancelSelectPage = 27
 
-	--µØÍ¼Ãû³ÆÐÅÏ¢
+	--??????
 	local CurMapName1 = "garner"
 	local CurMapName2 = "magicsea"
 	local CurMapName3 = "eastgoaf"
 	local CurMapName4 = "lonetower"
 	local CurMapName5 = "darkblue"
 
-	--·Ï¿ó²¹¸øÕ¾
+	--?????
 	local GoTo01X = 1903
 	local GoTo01Y = 2807
 	local GoTo01M = CurMapName1
 
-	--¹ÅÀï¿©Àû²¹¸øÕ¾
+	--???????
 	local GoTo02X = 1517
 	local GoTo02Y = 3091
 	local GoTo02M = CurMapName1
 
-	--Íß¶ûÅµ²¹¸øÕ¾
+	--??????
 	local GoTo03X = 1120
 	local GoTo03Y = 2773
 	local GoTo03M = CurMapName1
 
-	--ÎÂÄÇ²¹¸øÕ¾
+	--?????
 	local GoTo04X = 535
 	local GoTo04Y = 2433
 	local GoTo04M = CurMapName1
 
-	--¿¨¶û¼ÓµÂ×ø±ê
+	--??????
 	local GoTo05X = 633
 	local GoTo05Y = 2100
 	local GoTo05M = CurMapName1
 
-	--Àµ°²É­ÁÖ×ø±ê
+	--??????
 	local GoTo06X = 1007
 	local GoTo06Y = 2966
 	local GoTo06M = CurMapName1
 
-	--É³Èª²¹¸øÕ¾
+	--?????
 	local GoTo07X = 787
 	local GoTo07Y = 3121
 	local GoTo07M = CurMapName2
 
-	--°Í²¼²¹¸øÕ¾
+	--?????
 	local GoTo08X = 1214
 	local GoTo08Y = 3203
 	local GoTo08M = CurMapName2
 
-	--±ù¶¼²¹¸øÕ¾
+	--?????
 	local GoTo09X = 807
 	local GoTo09Y = 360
 	local GoTo09M = CurMapName5
 
-	--°¢À¼±ÈË¹²¹¸øÕ¾
+	--???????
 	local GoTo10X = 1050
 	local GoTo10Y = 656
 	local GoTo10M = CurMapName5
 
-	--÷¼÷ÃÓªµØ²¹¸øÕ¾
+	--???????
 	local GoTo11X = 2146
 	local GoTo11Y = 542
 	local GoTo11M = CurMapName5
 
-	--±ù¼«²¹¸øÕ¾
+	--?????
 	local GoTo12X = 2681
 	local GoTo12Y = 647
 	local GoTo12M = CurMapName5
 
 	Talk( 1, "Meiya: Hi! I am the Teleporter. How can I help you?" )
 	Text( 1, "Go to Rockery Haven!", JumpPage, 14 )
-	Text( 1, "Record Spawn point", JumpPage, 25 )		--·Ï¿ó²¹¸øÕ¾
+	Text( 1, "Record Spawn point", JumpPage, 25 )		--?????
 	
 	Talk( 2, "Felicia: Hi! I am Teleporter Felicia! How can I help you?" )
 	Text( 2, "Go to Abandon Mine Haven!", JumpPage, 13 )
 	Text( 2, "Go to Andes Forest Haven!", JumpPage, 18 )
-	Text( 2, "Record Spawn point", JumpPage, 25 )		--¹ÅÀï¿©Àû²¹¸øÕ¾
+	Text( 2, "Record Spawn point", JumpPage, 25 )		--???????
 
 	Talk( 3, "Wendy: Hi! I am the teleporter! Can I help you?" )
 	Text( 3, "Go to Valhalla Haven!", JumpPage, 15 )
 	Text( 3, "Go to Rockery Haven!", JumpPage, 14 )
-	Text( 3, "Record Spawn point", JumpPage, 25 )		--Àµ°²É­ÁÖ²¹¸øÕ¾
+	Text( 3, "Record Spawn point", JumpPage, 25 )		--???????
 
 	Talk( 4, "Elizabeth: Hi! I am the Teleporter! How may I help you?" )
 	Text( 4, "Go to Solace Haven!", JumpPage, 16 )
 	Text( 4, "Go to Andes Forest Haven!", JumpPage, 18 )
-	Text( 4, "Record Spawn point", JumpPage, 25 )		--Íß¶ûÅµ²¹¸øÕ¾
+	Text( 4, "Record Spawn point", JumpPage, 25 )		--??????
 
 	Talk( 5, "Meila: Hi! I am the Teleporter. How can I help you?" )
 	Text( 5, "Go to Chaldea Haven!", JumpPage, 17 )
 	Text( 5, "Go to Valhalla Haven!", JumpPage, 15 )
-	Text( 5, "Record Spawn point", JumpPage, 25 )		--ÎÂÄÃ²¹¸øÕ¾
+	Text( 5, "Record Spawn point", JumpPage, 25 )		--?????
 
 	Talk( 6, "Mabel: Hi! I am Island Teleporter Mabel. Anything I can help you with?" )
 	Text( 6, "Go to Solace Haven!", JumpPage, 16 )
-	Text( 6, "Record Spawn point", JumpPage, 25 )		--¿¨¶û¼ÓµÂ²¹¸øÕ¾
+	Text( 6, "Record Spawn point", JumpPage, 25 )		--???????
 
 	Talk( 7, "Aina: Hi! I am the Teleporter! How may I help you?" )
 	Text( 7, "Go to Babul Haven!", JumpPage, 20 )
-	Text( 7, "Record Spawn point", JumpPage, 25 )		--É³Èª²¹¸øÕ¾
+	Text( 7, "Record Spawn point", JumpPage, 25 )		--?????
 
 	Talk( 8, "Berlin: Hi! I am Teleporter Berlin. How can I help you?" )
 	Text( 8, "Go to Oasis Haven!", JumpPage, 19 )
-	Text( 8, "Record Spawn point", JumpPage, 25 )		--°Í²¼²¹¸øÕ¾
+	Text( 8, "Record Spawn point", JumpPage, 25 )		--?????
 
 	Talk( 9, "Lily: Hi! I am Teleporter Lily. How can I help you?" )
 	Text( 9, "Go to Atlantis Haven!", JumpPage, 22 )
-	Text( 9, "Record Spawn point", JumpPage, 25 )		--±ù¶¼²¹¸øÕ¾
+	Text( 9, "Record Spawn point", JumpPage, 25 )		--?????
 
 	Talk( 10, "Sofia: Hi, I am the teleporter. Do you need any help?" )
 	Text( 10, "Go to Skeleton Haven!", JumpPage, 23 )
 	Text( 10, "Go to Icicle Haven!", JumpPage, 21 )
-	Text( 10, "Record Spawn point", JumpPage, 25 )		--°¢À¼±ÈË¹²¹¸øÕ¾
+	Text( 10, "Record Spawn point", JumpPage, 25 )		--???????
 
 	Talk( 11, "Mina: Hi, I am the teleporter. Do you need any help?" )
 	Text( 11, "Go to Icespire Haven!", JumpPage, 24 )
 	Text( 11, "Go to Atlantis Haven!", JumpPage, 22 )
-	Text( 11, "Record Spawn point", JumpPage, 25 )		--÷¼÷ÃÓªµØ²¹¸øÕ¾
+	Text( 11, "Record Spawn point", JumpPage, 25 )		--???????
 
 	Talk( 12, "Artemis: Hi! I am the Teleporter! How may I help you?" )
 	Text( 12, "Go to Skeleton Haven!", JumpPage, 23 )
-	Text( 12, "Record Spawn point", JumpPage, 25 )		--±ù¼«²¹¸øÕ¾
+	Text( 12, "Record Spawn point", JumpPage, 25 )		--?????
 	
 	InitTrigger()
 	TriggerCondition( 1, HasMoney, 200 )
@@ -637,62 +611,62 @@ end
 
 
 ------------------------------------------------------------
--- µºÓì´«ËÍ½Å±¾
+-- ??????
 ------------------------------------------------------------
 
 function island()
 
-	--È¡Ïû´«ËÍ·µ»ØÑ¡Ôñ´«ËÍµØµãµÄ¶Ô»°ÄÚÈÝºÍÒ³Ãæ±àºÅ
+	--??????????????????????
 	--local ReSelectTalk = "I need to reconsider..."
 	--local ReSelectPage = 1
 
-	--È¡Ïû´«ËÍºÍÍË³ö´«ËÍµÄ¶Ô»°ºÍÒ³Ãæ±àºÅ
+	--?????????????????
 	local CancelSelectTalk = "Forget it...I will stay here"
 	local CancelSelectPage = 27
 
-	--µØÍ¼Ãû³ÆÐÅÏ¢
+	--??????
 	local CurMapName1 = "garner"
 	local CurMapName2 = "magicsea"
 	local CurMapName3 = "eastgoaf"
 	local CurMapName4 = "lonetower"
 	local CurMapName5 = "darkblue"
 
-	--º£·çµº
+	--???
 	local GoTo01X = 3260
 	local GoTo01Y = 3280
 	local GoTo01M = CurMapName1
 
-	--Ëé±ùµº
+	--???
 	local GoTo02X = 2273
 	local GoTo02Y = 1122
 	local GoTo02M = CurMapName1
 
-	--Ñ©Ôôµº
+	--???
 	local GoTo03X = 3590
 	local GoTo03Y = 755
 	local GoTo03M = CurMapName1
 
-	--±ùÑ©µº
+	--???
 	local GoTo04X = 2376
 	local GoTo04Y = 725
 	local GoTo04M = CurMapName2
 
-	--ÃùÉ³µº
+	--???
 	local GoTo05X = 1730
 	local GoTo05Y = 3775
 	local GoTo05M = CurMapName2
 
-	--Õæ°®µº
+	--???
 	local GoTo06X = 2529
 	local GoTo06Y = 2406
 	local GoTo06M = CurMapName2
 
-	--ºÃÔËµº
+	--???
 	local GoTo07X = 1631
 	local GoTo07Y = 1974
 	local GoTo07M = CurMapName5
 
-	--°×Òø³Ç
+	--???
 	local GoTo08X = 2231
 	local GoTo08Y = 2788
 	local GoTo08M = CurMapName1
@@ -705,7 +679,7 @@ function island()
 	Text( 1, "Go to Canary Isle!", JumpPage, 18 )
 	Text( 1, "Go to Cupid Isle!", JumpPage, 19 )
 	Text( 1, "Go to Isle of Fortune!", JumpPage, 20 )
-	Text( 1, "Record Spawn point", JumpPage, 25 )		--°×Òø³Ç
+	Text( 1, "Record Spawn point", JumpPage, 25 )		--???
 	
 	Talk( 2, "Andrea: Hi! I am Island Teleporter Andrea. How can I help you?" )
 	Text( 2, "Go to Argent City!", JumpPage, 21 )
@@ -715,7 +689,7 @@ function island()
 	Text( 2, "Go to Canary Isle!", JumpPage, 18 )
 	Text( 2, "Go to Cupid Isle!", JumpPage, 19 )
 	Text( 2, "Go to Isle of Fortune!", JumpPage, 20 )
-	Text( 2, "Record Spawn point", JumpPage, 25 )		--º£·çµº
+	Text( 2, "Record Spawn point", JumpPage, 25 )		--???
 
 	Talk( 3, "Arsene: Hi! I am the Island Teleporter. How can I help you?" )
 	Text( 3, "Go to Argent City!", JumpPage, 21 )
@@ -725,7 +699,7 @@ function island()
 	Text( 3, "Go to Canary Isle!", JumpPage, 18 )
 	Text( 3, "Go to Cupid Isle!", JumpPage, 19 )
 	Text( 3, "Go to Isle of Fortune!", JumpPage, 20 )
-	Text( 3, "Record Spawn point", JumpPage, 25 )	--Ëé±ùµº
+	Text( 3, "Record Spawn point", JumpPage, 25 )	--???
 
 	Talk( 4, "Shayala: Hi! I am Island Teleporter Shayala. How can I help you?" )
 	Text( 4, "Go to Argent City!", JumpPage, 21 )
@@ -735,7 +709,7 @@ function island()
 	Text( 4, "Go to Canary Isle!", JumpPage, 18 )
 	Text( 4, "Go to Cupid Isle!", JumpPage, 19 )
 	Text( 4, "Go to Isle of Fortune!", JumpPage, 20 )
-	Text( 4, "Record Spawn point", JumpPage, 25 )          ---Ñ©Ôôµº
+	Text( 4, "Record Spawn point", JumpPage, 25 )          ---???
 
 	Talk( 5, "Julie: Hi, I am the island teleporter! How can I help you?" )
 	Text( 5, "Go to Argent City!", JumpPage, 21 )
@@ -745,7 +719,7 @@ function island()
 	Text( 5, "Go to Canary Isle!", JumpPage, 18 )
 	Text( 5, "Go to Cupid Isle!", JumpPage, 19 )
 	Text( 5, "Go to Isle of Fortune!", JumpPage, 20 )
-	Text( 5, "Record Spawn point", JumpPage, 25 )          ---±ùÑ©µº
+	Text( 5, "Record Spawn point", JumpPage, 25 )          ---???
 
 	Talk( 6, "Winnie: Hi! I am the Island Teleporter. How can I help you?" )
 	Text( 6, "Go to Argent City!", JumpPage, 21 )
@@ -755,7 +729,7 @@ function island()
 	Text( 6, "Go to Isle of Chill!", JumpPage, 17 )
 	Text( 6, "Go to Cupid Isle!", JumpPage, 19 )
 	Text( 6, "Go to Isle of Fortune!", JumpPage, 20 )
-	Text( 6, "Record Spawn point", JumpPage, 25 )          ---ÃùÉ³µº
+	Text( 6, "Record Spawn point", JumpPage, 25 )          ---???
 
 	Talk( 7, "Wanda: Hi! I am Island Teleporter Wanda. How can I help you?" )
 	Text( 7, "Go to Argent City!", JumpPage, 21 )
@@ -765,7 +739,7 @@ function island()
 	Text( 7, "Go to Isle of Chill!", JumpPage, 17 )
 	Text( 7, "Go to Canary Isle!", JumpPage, 18 )
 	Text( 7, "Go to Isle of Fortune!", JumpPage, 20 )
-	Text( 7, "Record Spawn point", JumpPage, 25 )          ---Õæ°®µº
+	Text( 7, "Record Spawn point", JumpPage, 25 )          ---???
 
 	Talk( 8, "Juliet: Hi, I am the island teleporter! How can I help you?" )
 	Text( 8, "Go to Argent City!", JumpPage, 21 )
@@ -775,7 +749,7 @@ function island()
 	Text( 8, "Go to Isle of Chill!", JumpPage, 17 )
 	Text( 8, "Go to Canary Isle!", JumpPage, 18 )
 	Text( 8, "Go to Cupid Isle!", JumpPage, 19 )
-	Text( 8, "Record Spawn point", JumpPage, 25 )          ---ºÃÔËµº
+	Text( 8, "Record Spawn point", JumpPage, 25 )          ---???
 
 	InitTrigger()
 	TriggerCondition( 1, HasMoney, 2000 )
