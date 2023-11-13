@@ -342,7 +342,7 @@ bool CMPFont::TextToTexture(char c1, char c2, float& tX, float& tY) {
 
 		FillRect(_hDc, &rect, (HBRUSH)GetStockObject(BLACK_BRUSH));
 
-		::TextOut(_hDc, 0, -2, sz, c1 & 0x100 ? 2 : 1);//Фиксация высоты написания текста by Jasper
+		::TextOut(_hDc, 10, -2, sz, c1 & 0x100 ? 2 : 1);//Фиксация высоты написания текста by Jasper
 
 		D3DLOCKED_RECT d3dlr;
 
