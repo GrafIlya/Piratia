@@ -295,18 +295,18 @@ SIZE* CMPFont::GetTextSize(char* szText, SIZE* pSize, float fScale) {
 			ch++;
 			continue;
 		}
-
-//	«акоментировано по причине некоректного отображени€ русского €зыка by Jasper
+		
+		//	«акоментировано по причине некоректного отображени€ русского €зыка by Jasper
 		/*if (*ch & 0x80) {
 			ch++;
 			offset = w * 2 + ASSIZE;
 		} else*/ 
 		
-		{
-			SIZE size;
-			::GetTextExtentPoint(_hDc, &ch[0], 1, &size);
-			offset = size.cx + HLSIZE;
-		}
+		// ќтступ справа
+		SIZE size;
+		::GetTextExtentPoint(_hDc, &ch[0], 1, &size);
+		offset = size.cx + HLSIZE;
+		
 		sx += offset;
 		ch++;
 	}
@@ -332,7 +332,7 @@ bool CMPFont::TextToTexture(char c1, char c2, float& tX, float& tY) {
 		}
 		int at = (int)(it - _vecBuf.begin());
 
-		tX = (float)(at % _RowNum) * _TextSize + 1.5f;
+		tX = (float)(at % _RowNum) * _TextSize;
 		tY = (float)(at / _RowNum) * _TextSize;
 
 		(*it) = w;
