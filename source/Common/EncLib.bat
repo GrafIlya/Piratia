@@ -1,1 +1,0 @@
-call devenv EncLib/Proj/Enclib.sln /build release

@@ -1,6 +1,0 @@
-﻿[12.11.2023 18:48:02]AccountServer has been started.
-[12.11.2023 18:48:04]AccountServer has been stopped.
-[12.11.2023 18:50:52]AccountServer has been started.
-[12.11.2023 18:50:56]AccountServer has been restarted.
-[12.11.2023 18:51:02]AccountServer has been started.
-[12.11.2023 18:51:02]AccountServer has been stopped.

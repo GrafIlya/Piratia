@@ -1,1 +1,0 @@
-call devenv Server/sdk/Proj/LIBDBC.sln /build release
