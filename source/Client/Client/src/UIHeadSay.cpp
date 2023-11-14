@@ -374,11 +374,12 @@ void CHeadSay::Render(D3DXVECTOR3& pos) {
 					nMonsterLevel = _pOwn->getGameAttr()->get(ATTR_LV);
 
 					static char szBuf[NAME_LENGTH] = {0};
-					if (nMonsterLevel - nMainLevel <= 10) { //显示等级
-						sprintf(szBuf, "Lv%d %s", nMonsterLevel, _pOwn->getName());
-					} else {
-						sprintf(szBuf, "??? %s", _pOwn->getName());
-					}
+					// Проверка, на "если разница уровней с монстром более 10"
+					//if (nMonsterLevel - nMainLevel <= 10) { //显示等级
+						sprintf(szBuf, "[%d] %s", nMonsterLevel, _pOwn->getName());
+					//} else {
+					//	sprintf(szBuf, "??? %s", _pOwn->getName());
+					//}
 					strncpy(s_sNamePart[NAME_INDEX], szBuf, NAME_LENGTH);
 				}
 			}
