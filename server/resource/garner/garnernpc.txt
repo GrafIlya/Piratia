@@ -1,0 +1,8 @@
+//Serial	NPC Name	NPC Type	Chrindex ID	Show Mini-map	Coordinates starting point	Coordination Goal	NPC placement	Region	Region ID	NPC Script	info manage	Test Status
+0	Привратник Аргента - Джовиал	1	11	7	218700,277600	218700,277600	180	Argent City	1	0	GoToWhere	0
+1	Argent Secretary - Salvier	1	14	0	221925,274925	221925,274925	180	Argent City	1	0	r_talk01	r_npcstate01
+2	Кузнец - Голди	1	20	1	218712,270682	218712,270682	114	Argent City	1	0	r_trade01	0
+3	Городской страж - Питер	1	5	0	219220,276700	219220,276700	90	Argent City	1	0	r_talk86	0
+4	Маленький Даниэль	1	425	0	219350,273050	219350,273050	90	Argent City	1	0	r_talk06	0
+5	Торговец - Дитто	1	17	11	224975,275925	224975,275925	210	Argent City	1	0	r_talk03	r_npcstate03
+6	Банкир - Моника	1	16	0	222050,270400	222050,270400	180	Argent City	1	0	r_talk13	0

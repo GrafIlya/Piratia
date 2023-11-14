@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="网络协议">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="数据表格的存取">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="游戏属性数据的定义">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="区域属性数据的存取">
+      <UniqueIdentifier>{13e47947-7518-453a-8aa4-85c2243ec646}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LogFile">
+      <UniqueIdentifier>{a8d138de-c020-4986-a0aa-702a316a8e7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="事件数据">
+      <UniqueIdentifier>{f6dc22fb-3f63-46eb-af8c-58dfc83bce15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="状态数据">
+      <UniqueIdentifier>{700f56c9-b4d8-47a0-801c-52a4019c6915}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="栏位结构">
+      <UniqueIdentifier>{bd0c808b-671f-491f-a0c1-c62fb0f072c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="工具类">
+      <UniqueIdentifier>{8dfd226b-b8ef-47fb-b42a-13bea9b5d2e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="多语言">
+      <UniqueIdentifier>{6f98b673-02e7-4030-90c1-b382c2191124}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\CommFunc.cpp">
+      <Filter>网络协议</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CharacterRecord.cpp">
+      <Filter>数据表格的存取</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ForgeRecord.cpp">
+      <Filter>数据表格的存取</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\HairRecord.cpp">
+      <Filter>数据表格的存取</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ItemRecord.cpp">
+      <Filter>数据表格的存取</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\JobInitEquip.cpp">
+      <Filter>数据表格的存取</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\LevelRecord.cpp">
+      <Filter>数据表格的存取</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\LifeLvRecord.cpp">
+      <Filter>数据表格的存取</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MonRefRecord.cpp">
+      <Filter>数据表格的存取</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\NpcRecord.cpp">
+      <Filter>数据表格的存取</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SailLvRecord.cpp">
+      <Filter>数据表格的存取</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ShipSet.cpp">
+      <Filter>数据表格的存取</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SkillRecord.cpp">
+      <Filter>数据表格的存取</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SkillStateRecord.cpp">
+      <Filter>数据表格的存取</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ChaAttr.cpp">
+      <Filter>游戏属性数据的定义</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ItemAttr.cpp">
+      <Filter>游戏属性数据的定义</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TerrainAttrib.cpp">
+      <Filter>区域属性数据的存取</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\LogFile.cpp">
+      <Filter>LogFile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\EventRecord.cpp">
+      <Filter>事件数据</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SwitchMapRecord.cpp">
+      <Filter>事件数据</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ChaMask.cpp">
+      <Filter>栏位结构</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ItemContent.cpp">
+      <Filter>栏位结构</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Kitbag.cpp">
+      <Filter>栏位结构</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\StringLib.cpp">
+      <Filter>工具类</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\i18n.cpp">
+      <Filter>多语言</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\CommFunc.h">
+      <Filter>网络协议</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CompCommand.h">
+      <Filter>网络协议</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\GameCommon.h">
+      <Filter>网络协议</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\NetCommand.h">
+      <Filter>网络协议</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\NetRetCode.h">
+      <Filter>网络协议</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RoleCommon.h">
+      <Filter>网络协议</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\AreaRecord.h">
+      <Filter>数据表格的存取</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\CharacterRecord.h">
+      <Filter>数据表格的存取</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ForgeRecord.h">
+      <Filter>数据表格的存取</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\HairRecord.h">
+      <Filter>数据表格的存取</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ItemRecord.h">
+      <Filter>数据表格的存取</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\JobInitEquip.h">
+      <Filter>数据表格的存取</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\LevelRecord.h">
+      <Filter>数据表格的存取</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\LifeLvRecord.h">
+      <Filter>数据表格的存取</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\MonRefRecord.h">
+      <Filter>数据表格的存取</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\NpcRecord.h">
+      <Filter>数据表格的存取</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SailLvRecord.h">
+      <Filter>数据表格的存取</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ShipSet.h">
+      <Filter>数据表格的存取</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SkillRecord.h">
+      <Filter>数据表格的存取</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SkillStateRecord.h">
+      <Filter>数据表格的存取</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\TableData.h">
+      <Filter>数据表格的存取</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ChaAction.h">
+      <Filter>游戏属性数据的定义</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ChaAttr.h">
+      <Filter>游戏属性数据的定义</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ChaAttrType.h">
+      <Filter>游戏属性数据的定义</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ItemAttr.h">
+      <Filter>游戏属性数据的定义</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ItemAttrType.h">
+      <Filter>游戏属性数据的定义</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\JobType.h">
+      <Filter>游戏属性数据的定义</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\TerrainAttrib.h">
+      <Filter>区域属性数据的存取</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\LogFile.h">
+      <Filter>LogFile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\EventRecord.h">
+      <Filter>事件数据</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SwitchMapRecord.h">
+      <Filter>事件数据</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SkillStateType.h">
+      <Filter>状态数据</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ChaMask.h">
+      <Filter>栏位结构</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ItemContent.h">
+      <Filter>栏位结构</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Kitbag.h">
+      <Filter>栏位结构</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SkillBag.h">
+      <Filter>栏位结构</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ToolClass.h">
+      <Filter>工具类</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\i18n.h">
+      <Filter>多语言</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\StringLib.h">
+      <Filter>数据表格的存取</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

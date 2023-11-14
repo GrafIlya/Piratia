@@ -1,0 +1,1031 @@
+// [Gemini.Datasets(v = 2.3, t = Gemini.Datasets.SceneEffectInfoD0, s = 208, n = 997)]
+1	wave1.par	Sea Wave	Sea Wave	0	0	0	-1	1	0	0	-1
+2	dian.par	Electric Ball	Sea Wave	0	0	0	-1	0	0	0	-1
+3	shuihua01.par	Big Spray	Big Spray	0	0	0	-1	0	0	0	-1
+4	shuihua02.par	Water Flower	Sea Wave	0	0	0	-1	0	0	0	-1
+5	guang.par	Light	Sea Wave	0	0	0	-1	0	0	0	-1
+6	blacksmoke.par	Black Smoke	Sea Wave	0	0	0	-1	0	0	0	-1
+7	xieguang.par	Tilted beam	Sea Wave	0	0	0	-1	0	0	0	-1
+8	add.par	Fog	Sea Wave	0	0	0	-1	0	0	0	-1
+9	firefly.par	Firefly	Sea Wave	0	0	0	-1	0	0	0	-1
+10	00000002.par	Flame	Sea Wave	0	0	0	-1	0	0	0	-1
+11	00000003.par	Flame 2	Sea Wave	0	0	0	-1	0	0	0	-1
+12	wave2.par	Wave 2	Sea Wave	0	0	0	-1	0	0	0	-1
+13	whitesmoke.par	White Smoke	Sea Wave	0	0	0	-1	0	0	0	-1
+14	snow.par	Sbiw	Sea Wave	0	0	0	-1	0	0	0	-1
+15	00000007.par	Shaitan Flame	Sea Wave	0	0	0	-1	0	0	0	-1
+16	sali.par	Sandstorm	Sea Wave	0	0	0	-1	0	0	0	-1
+17	ufo2.par	Holy Fire 2	Sea Wave	0	0	0	-1	0	0	0	-1
+18	ufo.par	Holy Fire	Sea Wave	0	0	0	-1	0	0	0	-1
+19	fjq.par	Substance Analyz	Sea Wave	0	0	0	-1	0	0	0	-1
+20	scq.par	Substance Genera	Sea Wave	0	0	0	-1	0	0	0	-1
+21	niurou1.par	Flame Demon	Sea Wave	0	0	1,2,3,4,7,11,13,14	-1	0	0	0	-1
+22	niurou2.par	Flame Demon	Sea Wave	0	0	5,6,8,9,10,12	-1	0	0	0	-1
+23	bigchibang.par	North Ville	Sea Wave	1	0	24	-1	0	0	0	-1
+95	00000001.par	30 Slanted Light	Sea Wave	0	0	0	-1	0	0	0	-1
+96	01030011.par	Item Effect	Sea Wave	0	0	0	-1	0	0	0	-1
+97	waterwave1.par	Water Wave	Sea Wave	1	0	0	-1	0	0	0	-1
+98	waterwave2.par	Water Wave 2	Sea Wave	1	0	0	-1	0	0	0	-1
+99	miss2.par	Word Burst	Sea Wave	0	0	0	1	0	0	0	-1
+100	wolf.par	Howl Unleashed	Sea Wave	0	0	0	-1	0	1	0	-1
+101	01030006.par	Howl Hit Rate	Sea Wave	0	0	0	1	0	1	0	-1
+102	foot02.par	Tiger Roar Disch	Sea Wave	0	0	0	-1	20	1	0	-1
+103	foot.par	Tiger Roar Hit R	Sea Wave	0	0	-2	1	0	1	0	-1
+104	runatktarget.par	Dual Shot Hit Ra	Sea Wave	0	0	0	-1	0	1	0	-1
+105	yfire.par	Dual Shot Discha	Sea Wave	0	0	0	1	0	1	0	-1
+106	fallstar02.par	Meteor Shower Su	Sea Wave	0	0	0	-1	0	1	0	-1
+107	fallstar01.par	Meteor Shower Di	Sea Wave	0	0	0	1	0	1	0	-1
+108	01000004.par	Dispersion Bulle	Sea Wave	0	0	0	-1	0	1	0	-1
+109	01020005.par	Dispersion Bulle	Sea Wave	0	0	0	1	0	1	0	-1
+110	01020006.par	Penetrating Bull	Sea Wave	0	0	0	-1	0	1	0	-1
+111	01010002.par	Magma Bullet Gro	Sea Wave	0	0	0	1	0	1	0	-1
+112	01030001.par	Magma Bullet Sur	Sea Wave	0	0	0	-1	0	1	0	-1
+113	heallight.pa	Greater Heal Dis	Sea Wave	0	0	0	1	0	1	0	-1
+114	01020007.par	Greater Heal Hit	Sea Wave	0	0	0	-1	0	1	0	-1
+115	01050013.par	Magma Bullet Per	Sea Wave	0	0	0	-1	0	1	0	-1
+116	01040024.par	Tiger Roar Persi	Sea Wave	0	0	0	-1	0	1	0	-1
+117	spire01.par	Berserk Discharg	Sea Wave	0	0	0	-1	0	1	0	-1
+118	ragefire.par	Berserk Persists	Sea Wave	0	0	0	-1	0	1	0	-1
+119	01000007.par	Totem Summon Dis	Sea Wave	0	0	0	-1	0	1	0	-1
+120	01020008.par	Totem Summon Hit	Sea Wave	0	0	0	-1	0	1	0	-1
+121	hide01.par	Hidden Stealth D	Sea Wave	0	0	0	-1	0	1	0	-1
+122	01000009.par	Ninja Phantom Sl	Sea Wave	0	0	0	-1	0	1	0	-1
+123	01040002.par	Ninja Shadow Sla	Sea Wave	0	0	0	-1	0	1	0	-1
+124	01000010.par	Ninja Backstab D	Sea Wave	0	0	0	-1	0	1	0	-1
+125	01020009.par	Ninja Backstab H	Sea Wave	0	0	0	1	0	1	0	-1
+126	01000011.par	Ninja Blind Disc	Sea Wave	0	0	0	-1	0	1	0	-1
+127	01040003.par	Ninja Blind Pers	Sea Wave	0	0	0	-1	0	1	0	-1
+128	01020010.par	Diligence Skill 	Sea Wave	0	0	0	-1	0	1	0	-1
+129	01020011.par	Frost Shield Hit	Sea Wave	0	0	0	-1	0	1	0	-1
+130	critical.par	Double Damage	Sea Wave	0	0	0	-1	0	1	0	-1
+131	01030006.par	Got damaged	Sea Wave	0	0	0	1	0	1	0	-1
+132	01030007.par	Levelup	Sea Wave	0	0	0	-1	0	1	0	-1
+133	01030008.par	HP Recover	Sea Wave	0	0	0	-1	0	1	0	-1
+134	01030009.par	SP recovery	Sea Wave	0	0	0	-1	0	1	0	-1
+135	01040004.par	Frost Shield Per	Sea Wave	0	0	0	-1	0	1	0	-1
+136	01000012.par	Parry Discharge	Sea Wave	0	0	0	-1	0	1	0	-1
+137	01000013.par	Traversing Disch	Sea Wave	0	0	0	-1	0	1	0	-1
+138	01040005.par	Traversing Persi	Sea Wave	0	0	0	-1	0	1	0	-1
+139	01000014.par	Astro Strike Dis	Sea Wave	0	0	0	-1	0	1	0	-1
+140	01020012.par	Astro Strike Hit	Sea Wave	0	0	0	-1	0	1	0	-1
+141	01000015.par	Pet Therapy Disc	Sea Wave	0	0	0	-1	0	1	0	-1
+142	04000010.par	Cripple Attack D	Sea Wave	0	0	-2	-1	0	1	0	-1
+143	01040006.par	Cripple Persists	Sea Wave	0	0	0	-1	0	1	0	-1
+144	01020013.par	Cripple Hit Rate	Sea Wave	0	0	0	-1	0	1	0	-1
+145	01000017.par	Inferno Blast Di	Sea Wave	0	0	0	-1	0	1	0	-1
+146	01040007.par	Inferno Blast Pe	Sea Wave	0	0	0	-1	0	1	0	-1
+147	01040008.par	Headshot Duratio	Sea Wave	0	0	0	-1	0	1	0	-1
+148	01020014.par	Recover Hit Rate	Sea Wave	0	0	0	-1	0	1	0	-1
+149	01010003.par	Greater Recover 	Sea Wave	0	0	0	1	0	1	0	-1
+150	01000018.par	Inferno Wings Di	Sea Wave	0	0	0	-1	0	1	0	-1
+151	01020015.par	Inferno Wings Hi	Sea Wave	0	0	0	-1	0	1	0	-1
+152	01040009.par	Inferno Wings Pe	Sea Wave	0	0	0	-1	0	1	0	-1
+153	01020016.par	Holy Beam Hit Ra	Sea Wave	0	0	0	-1	0	1	0	-1
+154	01040010.par	Holy Beam Persis	Sea Wave	0	0	0	-1	0	1	0	-1
+155	01020017.par	Spiritual Fire H	Sea Wave	0	0	0	-1	0	1	0	-1
+156	01040011.par	Spiritual Fire P	Sea Wave	0	0	0	-1	0	1	0	-1
+157	firelighting02.par	Cursed Fire Disc	Sea Wave	0	0	0	-1	0	1	0	-1
+158	fireghosth.par	Cursed Fire Pers	Sea Wave	0	0	0	-1	0	1	0	-1
+159	angel.par	Angelic Shield	Sea Wave	0	0	0	-1	0	1	0	-1
+160	01000019.par	Angelic Shield H	Sea Wave	0	0	0	-1	0	1	0	-1
+161	01040034.par	Angelic Shield P	Sea Wave	0	0	0	-1	0	1	0	-1
+162	01020020.par	Holy Heraldry Hi	Sea Wave	0	0	0	-1	0	1	0	-1
+163	01040014.par	Holy Heraldry Pe	Sea Wave	0	0	0	-1	0	1	0	-1
+164	01020021.par	Angel Blessing H	Sea Wave	0	0	0	-1	0	1	0	-1
+165	spahurt.par	Healing Spring S	Sea Wave	0	0	0	-1	0	1	0	-1
+166	01040033.par	Healing Spring P	Sea Wave	0	0	0	-1	0	1	0	-1
+167	01000020.par	Ray of Luck Disc	Sea Wave	0	0	0	-1	0	1	0	-1
+168	01020022.par	Ray of Luck Hit 	Sea Wave	0	0	0	-1	0	1	0	-1
+169	01040016.par	Ray of Luck Pers	Sea Wave	0	0	0	-1	0	1	0	-1
+170	01020040.par	Tempest Boost Hi	Sea Wave	0	0	0	1	0	1	0	-1
+171	01020024.par	Tornado Swirl Hi	Sea Wave	0	0	0	-1	0	1	0	-1
+172	01040017.par	Tornado Swirl Pe	Sea Wave	0	0	0	-1	0	1	0	-1
+173	01030003.par	Counterguard Sur	Sea Wave	0	0	0	-1	0	1	0	-1
+174	01040018.par	Counterguard Per	Sea Wave	0	0	0	-1	0	1	0	-1
+175	feye.par	True Sight Disch	Sea Wave	0	0	0	-1	0	1	0	-1
+176	01000021.par	True Sight Persi	Sea Wave	0	0	0	-1	0	1	0	-1
+177	01020025.par	Seal of Elder Hi	Sea Wave	0	0	0	-1	0	1	0	-1
+178	01040020.par	Seal of Elder Pe	Sea Wave	0	0	0	-1	0	1	0	-1
+179	shadow01.par	Shadow Insignia 	Sea Wave	0	0	0	-1	0	1	0	-1
+180	shadowh.par	Shadow Insignia 	Sea Wave	0	0	0	-1	0	1	0	-1
+181	01020027.par	Criss Binding Hi	Sea Wave	0	0	0	-1	0	1	0	-1
+182	01040022.par	Criss Binding Pe	Sea Wave	0	0	0	-1	0	1	0	-1
+183	01000022.par	Recovery Angel D	Sea Wave	0	0	0	-1	0	1	0	-1
+184	01010004.par	Recovery Angel S	Sea Wave	0	0	0	1	0	1	0	-1
+185	fireghostt.par	Cursed Fire Surf	Sea Wave	0	0	0	-1	0	1	0	-1
+186	01000014.par	Illusion Slash D	Sea Wave	0	0	0	-1	0	1	0	-1
+187	bang02.par	Mighty Strike Di	Sea Wave	0	0	0	-1	0	1	0	-1
+188	01000025.par	Primal Fist Unle	Sea Wave	0	0	0	-1	0	1	0	-1
+189	01000026.par	Frozen Arrow Dis	Sea Wave	0	0	0	-1	0	1	0	-1
+190	hpushf.par	Spiritual Bolt D	Sea Wave	0	0	0	-1	0	1	0	-1
+191	01000028.par	Spiritual Fire D	Sea Wave	0	0	0	-1	0	1	0	-1
+192	01000029.par	Tempest Boost Di	Sea Wave	0	0	0	-1	0	1	0	-1
+193	01000030.par	Tornado Swirl Di	Sea Wave	0	0	0	-1	0	1	0	-1
+194	angel1.par	Angelic Shield I	Sea Wave	0	0	0	-1	0	1	0	-1
+195	01020028.par	Illusion Slash H	Sea Wave	0	0	0	-1	0	1	0	-1
+196	bang.par	Mighty Strike Hi	Sea Wave	0	0	0	-1	0	1	0	-1
+197	01020030.par	Primal Fist Hit 	Sea Wave	0	0	0	-1	0	1	0	-1
+198	poisont.par	Poison Dart Hit 	Sea Wave	0	0	0	-1	0	1	0	-1
+199	01020032.par	Numb Hit Rate	Sea Wave	0	0	0	-1	0	1	0	-1
+200	01020033.par	Frozen Arrow Hit	Sea Wave	0	0	0	-1	0	1	0	-1
+201	01020034.par	Spiritual Bolt H	Sea Wave	0	0	0	1	0	1	0	-1
+202	01020035.par	Spiritual Fire H	Sea Wave	0	0	0	-1	0	1	0	-1
+203	01020036.par	Tornado Swirl Hi	Sea Wave	0	0	0	-1	0	1	0	-1
+204	seal.par	Angelic Shield H	Sea Wave	0	0	0	-1	0	1	0	-1
+205	01020038.par	Seal of Elder Hi	Sea Wave	0	0	0	-1	0	1	0	-1
+206	01040011.par	Spiritual Fire P	Sea Wave	0	0	0	-1	0	1	0	-1
+207	01040025.par	Tempest Boost Pe	Sea Wave	0	0	0	-1	0	1	0	-1
+208	01040035.par	Tornado Swirl Pe	Sea Wave	0	0	0	-1	0	1	0	-1
+209	01040027.par	Angelic Shield P	Sea Wave	0	0	0	-1	0	1	0	-1
+210	01040028.par	Skill Forbidden 	Sea Wave	0	0	0	-1	0	1	0	-1
+211	barrierh.par	Energy Shield Pe	Sea Wave	0	0	0	-1	0	1	0	-1
+212	01040030.par	Frozen Arrow Per	Sea Wave	0	0	0	-1	0	1	0	-1
+213	01000032.par	Eagle's Eye Disc	Sea Wave	0	0	0	-1	0	1	0	-1
+214	01040032.par	Eagle's Eye Pers	Sea Wave	0	0	0	-1	0	1	0	-1
+215	01020044.par	Eagle's Eye Hit 	Sea Wave	0	0	0	-1	0	1	0	-1
+216	01050021.par	Mining Effect	Sea Wave	0	0	0	-1	0	1	0	-1
+217	01030010.par	Normal Illusion 	Sea Wave	0	0	0	-1	0	1	0	-1
+218	swordlight02.par	Blade Beam 02	Sea Wave	0	0	0	-1	0	1	0	-1
+219	01000011.par	Small Recover Di	Sea Wave	0	0	0	-1	0	1	0	-1
+220	swordlightj.par	Blade Beam	Sea Wave	0	0	0	-1	0	1	0	-1
+221	fushe.par	Radiation	Sea Wave	0	0	0	-1	0	1	0	-1
+222	penhuo.par	Blow Flame	Sea Wave	0	0	0	-1	0	1	0	-1
+223	shanguang.par	Flash	Sea Wave	0	0	0	-1	0	1	0	-1
+224	shihuac.par	Petrify Persists	Sea Wave	0	0	0	-1	0	1	0	-1
+226	01010505.par	Octopus Skill Hi	Sea Wave	0	0	0	-1	0	1	0	-1
+227	01010506.par	Needle of Stramo	Sea Wave	0	0	-2	-1	0	1	0	-1
+229	01030006.par	Panda Hit Rate	Sea Wave	0	0	0	-1	0	1	0	-1
+230	01010511.par	Terra Elder Hit 	Sea Wave	0	0	0	-1	0	1	0	-1
+231	01010510.par	Naiad Hit Rate	Sea Wave	0	0	0	-1	0	1	0	-1
+232	01010513.par	Oyster Hit Rate	Sea Wave	0	0	0	-1	0	1	0	-1
+233	01010507.par	Baby Icy Dragon 	Sea Wave	0	0	0	-1	0	1	0	-1
+234	01010508.par	Big Icy Dragon H	Sea Wave	0	0	0	-1	0	1	0	-1
+235	01010514.par	Oyster Hit Rate	Sea Wave	0	0	0	-1	0	1	0	-1
+236	firegush.par	Berserk Hit Rate	Sea Wave	0	0	0	-1	0	1	0	-1
+237	abysm02.par	Abyss Mire Disch	Sea Wave	0	0	0	-1	0	1	0	-1
+238	abysm01.par	Abyss Mire Item 	Sea Wave	0	0	0	-1	0	1	0	-1
+239	abysm03.par	Abyss Mire Hit R	Sea Wave	0	0	0	-1	0	1	0	-1
+240	abysm04.par	Abyss Mire Persi	Sea Wave	0	0	0	-1	0	1	0	-1
+241	spa.par	Healing Spring D	Sea Wave	0	0	0	-1	0	1	0	-1
+242	spaf.par	Healing Spring I	Sea Wave	0	0	0	-1	0	1	0	-1
+243	firelighting01.par	Cursed Fire Item	Sea Wave	0	0	0	-1	0	1	0	-1
+244	shadowf01.par	Shadow Insignia 	Sea Wave	0	0	0	-1	0	1	0	-1
+245	shadowi.par	Shadow Insignia 	Sea Wave	0	0	0	-1	0	1	0	-1
+246	barrierf.par	Energy Shield Di	Sea Wave	0	0	0	-1	0	1	0	-1
+247	barrieri.par	Energy Shield It	Sea Wave	0	0	0	-1	0	1	0	-1
+248	barriert.par	Energy Shield Hi	Sea Wave	0	0	0	-1	0	1	0	-1
+249	poisonf.par	Poison Dart Disc	Sea Wave	0	0	0	-1	0	1	0	-1
+250	poisonh.par	Poison Dart Pers	Sea Wave	0	0	0	-1	0	1	0	-1
+251	dancet.par	Shadow Slash Hit	Sea Wave	0	0	0	-1	0	1	0	-1
+252	dancef.par	Shadow Slash Dis	Sea Wave	0	0	0	-1	0	1	0	-1
+253	danceh.par	Shadow Slash Per	Sea Wave	0	0	0	-1	0	1	0	-1
+254	01000033.par	Magma Bullet Dis	Sea Wave	0	0	0	-1	0	1	0	-1
+255	01000033(a).par	Magma Bullet Ite	Sea Wave	0	0	-2	-1	0	1	0	-1
+256	01000016.par	Fatality Item Di	Sea Wave	0	0	0	-1	0	1	0	-1
+257	04000008.par	Fatality Item Di	Sea Wave	0	0	-2	-1	0	1	0	-1
+258	01020013(a).par	Headshot Hit Rat	Sea Wave	0	0	0	-1	0	1	0	-1
+259	01040007.par	Enfeeble Item Pe	Sea Wave	0	0	0	-1	0	1	0	-1
+260	04000011.par	Enfeeble Item Di	Sea Wave	0	0	-2	-1	0	1	0	-1
+261	01020013(b).par	Enfeeble Hit Rat	Sea Wave	0	0	0	-1	0	1	0	-1
+262	spurtice.par	Snow of Snow Lad	Sea Wave	0	0	-2	-1	0	1	0	-1
+263	01060008.par	Wave of King Tor	Sea Wave	0	0	-2	-1	0	1	0	-1
+264	01060006.par	Relic Protector 	Sea Wave	0	0	-2	-1	0	1	0	-1
+265	cowfire.par	Conch Ray Wave	Sea Wave	0	0	-2	-1	0	1	0	-1
+266	cowdust.par	Conch Ray Dust	Sea Wave	0	0	-2	-1	0	1	0	-1
+267	cowtarget.par	Conch Ray Attack	Sea Wave	0	0	-2	-1	0	1	0	-1
+268	spagh.par	Healing Spring S	Sea Wave	0	0	0	-1	0	1	0	-1
+269	strik.par	Lightning Bolt D	Sea Wave	0	0	0	-1	0	1	0	-1
+270	strhurt.par	Lightning Bolt A	Sea Wave	0	0	-2	-1	0	1	0	-1
+271	strc.par	Lightning Bolt P	Sea Wave	0	0	0	-1	0	1	0	-1
+272	wind.par	Tornado Discharg	Sea Wave	0	0	0	-1	0	1	0	-1
+273	whurt.par	Tornado Hit Rate	Sea Wave	0	0	0	-1	0	1	0	-1
+274	windc.par	Tornado Persists	Sea Wave	0	0	0	-1	0	1	0	-1
+275	aglef.par	Algae Persists	Sea Wave	0	0	0	-1	0	1	0	-1
+276	agle.par	Alga Hit Rate	Sea Wave	0	0	-2	-1	0	1	0	-1
+277	aglec.par	Alga Persists	Sea Wave	0	0	0	-1	0	1	0	-1
+278	eddy.par	Whirlpool Discha	Sea Wave	0	0	-2	-1	0	1	0	-1
+279	eddyhurt.par	Whirlpool Hit Ra	Sea Wave	0	0	-2	-1	0	1	0	-1
+280	eddyc.par	Whirlpool Persis	Sea Wave	0	0	-2	-1	0	1	0	-1
+281	fog.par	Fog Discharge	Sea Wave	0	0	0	-1	0	1	0	-1
+282	foghurt.par	Fog Hit Rate	Sea Wave	0	0	-2	-1	0	1	0	-1
+283	fogc.par	Fog Persists	Sea Wave	0	0	0	-1	0	1	0	-1
+284	cannon01.par	Normal Cannon Di	Sea Wave	0	0	-2	-1	0	1	0	-1
+285	obey.par	Tail Wind Discha	Sea Wave	0	0	-2	-1	0	1	0	-1
+286	obeyhurt.par	Tail Wind Hit Ra	Sea Wave	0	0	0	-1	0	1	0	-1
+287	obeyc.par	Tail Wind Persis	Sea Wave	0	0	0	-1	0	1	0	-1
+288	levin.par	Lightning Curtai	Sea Wave	0	0	-2	-1	0	1	0	-1
+289	levinh.par	Lightning Curtai	Sea Wave	0	0	-2	-1	0	1	0	-1
+290	levinc.par	Lightning Curtai	Sea Wave	0	0	-2	-1	0	1	0	-1
+291	00000004.par	Wind Region	Sea Wave	0	0	-2	-1	0	1	0	-1
+292	00000006.par	Thunder Region	Sea Wave	0	0	-2	-1	0	1	0	-1
+293	00000005.par	Fog Region	Sea Wave	0	0	-2	-1	0	1	0	-1
+294	tiger.par	Tiger Roar Persi	Sea Wave	0	0	0	-1	0	1	0	-1
+295	tigerc.par	Tiger Roar Persi	Sea Wave	0	0	0	-1	0	1	0	-1
+296	icearrow.par	Frozen Arrow Dis	Sea Wave	0	0	0	-1	0	1	0	-1
+297	icearrowc.par	Frost Arrow Pers	Sea Wave	0	0	0	-1	0	1	0	-1
+298	parrow.par	Venom Arrow Disc	Sea Wave	0	0	0	-1	0	1	0	-1
+299	stoneshieldi.par	Stone Shield Dis	Sea Wave	0	0	0	-1	0	1	0	-1
+300	stoneshieldt.par	Stone Shield Hit	Sea Wave	0	0	0	-1	0	1	0	-1
+301	shijia.par	Stone Shield Per	Sea Wave	0	0	0	-1	0	1	0	-1
+302	rousec.par	Rousing Persists	Sea Wave	0	0	0	-1	0	1	0	-1
+303	rouse.par	Rousing Discharg	Sea Wave	0	0	0	-1	0	1	0	-1
+304	shield.par	Break Armor Disc	Sea Wave	0	0	0	-1	0	1	0	-1
+305	shieldh.par	Break Armor Hit 	Sea Wave	0	0	0	-1	0	1	0	-1
+306	pojia.par	Break Armor Pers	Sea Wave	0	0	0	-1	0	1	0	-1
+307	steel.par	Will of Steel Di	Sea Wave	0	0	0	-1	0	1	0	-1
+308	toil.par	Fishing Discharg	Sea Wave	0	0	0	-1	0	1	0	-1
+309	toilh.par	Salvage sunken s	Sea Wave	0	0	0	-1	0	1	0	-1
+310	iron.par	Unleash Salvage 	Sea Wave	0	0	0	-1	0	1	0	-1
+311	01050038.par	Guardian Angel D	Sea Wave	0	0	10	-1	0	1	0	-1
+312	01050041.par	Soul of Goddess 	Sea Wave	0	0	0	-1	0	1	0	-1
+313	01050042.par	Soul of Goddess 	Sea Wave	0	0	0	-1	0	1	0	-1
+314	01050045.par	Soul of Goddess 	Sea Wave	0	0	-2	-1	0	1	0	-1
+315	cannon04.par	Normal Cannon 2	Sea Wave	0	0	0	-1	0	1	0	-1
+316	cannon02.par	Normal Cannon 1	Sea Wave	0	0	0	-1	0	1	0	-1
+317	cxsw1.par	Death Shriek Dis	Sea Wave	0	0	0	-1	0	1	0	-1
+318	cxsw2.par	Death Shriek Hit	Sea Wave	0	0	0	-1	0	1	0	-1
+319	cxsw3.par	Death Shriek Per	Sea Wave	0	0	0	-1	0	1	0	-1
+320	xn.par	Blood FuryDischa	Sea Wave	0	0	0	-1	0	1	0	-1
+321	xncx.par	Blood Fury Persi	Sea Wave	0	0	0	-1	0	1	0	-1
+322	xnjz.par	Blood FuryHit Ra	Sea Wave	0	0	0	-1	0	1	0	-1
+323	nbjz.par	Mud Hit Rate	Sea Wave	0	0	0	-1	0	1	0	-1
+324	nbcx.par	Mud Persists	Sea Wave	0	0	0	-1	0	1	0	-1
+325	dzsf.par	Earthquake Disch	Sea Wave	0	0	0	-1	0	1	0	-1
+326	dzmz.par	Earthquake Hit R	Sea Wave	0	0	0	-1	0	1	0	-1
+327	bwsf.par	Kiss of Frost Di	Sea Wave	0	0	0	-1	0	1	0	-1
+328	bwsj.par	Frost Kiss Attac	Sea Wave	0	0	0	-1	0	1	0	-1
+329	bwcx.par	Frost Kiss Persi	Sea Wave	0	0	0	-1	0	1	0	-1
+330	frsf.par	Tempest Blade Di	Sea Wave	0	0	0	-1	0	1	0	-1
+331	frsfb.par	Tempest Blade Di	Sea Wave	0	0	0	-1	0	1	0	-1
+332	frsj.par	Wind Blade Attac	Sea Wave	0	0	0	-1	0	1	0	-1
+333	mosterlight.par	Giant Leader Bla	Sea Wave	0	0	0	-1	0	1	0	-1
+334	stars.par	Hairstyling succ	Sea Wave	0	0	0	-1	0	1	0	-1
+335	starsb.par	Hairstyling fail	Sea Wave	0	0	0	-1	0	1	0	-1
+336	cfsf.par	Taunt Discharge	Sea Wave	0	0	0	-1	0	1	0	-1
+337	cfsj.par	Taunt Attack	Sea Wave	0	0	0	-1	0	1	0	-1
+338	pxsf.par	Roar Discharge	Sea Wave	0	0	0	-1	0	1	0	-1
+339	sgfire.par	Ancient BOSS Eme	Sea Wave	0	0	0	-1	0	1	0	-1
+340	sgbjg.par	Ancient BOSS Las	Sea Wave	0	0	0	-1	0	1	0	-1
+341	sgfiremz.par	Ancient BOSS Eme	Sea Wave	0	0	0	-1	0	1	0	-1
+342	pkkp.par	PK Cannon Tower 	Sea Wave	0	0	0	-1	0	1	0	-1
+343	mfbda.par	Magic Outburst P	Sea Wave	0	0	0	-1	0	1	0	-1
+344	mfbdb.par	Magic Insurrecti	Sea Wave	0	0	0	-1	0	1	0	-1
+345	jlcg.par	Forging successf	Sea Wave	0	0	0	-1	0	1	0	-1
+346	jlsb.par	Forging failed	Sea Wave	0	0	0	-1	0	1	0	-1
+347	corpse.par	Corpse Attack	Sea Wave	0	0	-2	-1	0	1	0	-1
+348	corpse2jq.par	Zombie Attack Fu	Sea Wave	0	0	0	-1	0	1	0	-1
+349	corpse2.par	Corpse Attack Pe	Sea Wave	0	0	0	-1	0	1	0	-1
+350	hdrmf.par	Fox Sorcery Disc	Sea Wave	0	0	0	-1	0	1	0	-1
+351	hdrmffx.par	Fox Sorcery Path	Sea Wave	0	0	0	-1	0	1	0	-1
+352	hymf.par	Fox Sorcery Disc	Sea Wave	0	0	0	-1	0	1	0	-1
+353	hymffx.par	Fox Sorcery Path	Sea Wave	0	0	0	-1	0	1	0	-1
+354	ilui.par	i	Sea Wave	0	0	0	-1	0	1	0	-1
+355	ilul.par	love	Sea Wave	0	0	0	-1	0	1	0	-1
+356	iluu.par	u	Sea Wave	0	0	0	-1	0	1	0	-1
+357	iluwo.par	Me	Sea Wave	0	0	0	-1	0	1	0	-1
+358	iluai.par	Love	Sea Wave	0	0	0	-1	0	1	0	-1
+359	iluni.par	You	Sea Wave	0	0	0	-1	0	1	0	-1
+360	denglong.par	Lantern	Sea Wave	0	0	0	-1	0	1	0	-1
+361	yanhua.par	Firework a1	Sea Wave	0	0	0	-1	0	1	0	-1
+362	yanhuaa.par	Firework a2	Sea Wave	0	0	0	-1	0	1	0	-1
+363	yanhuae.par	Firework a3	Sea Wave	0	0	0	-1	0	1	0	-1
+364	yanhuared.par	Firework b1	Sea Wave	0	0	0	-1	0	1	0	-1
+365	yanhuaared.par	Firework b2	Sea Wave	0	0	0	-1	0	1	0	-1
+366	yanhuaered.par	Firework b3	Sea Wave	0	0	0	-1	0	1	0	-1
+367	yanhuablue.par	Firework c1	Sea Wave	0	0	0	-1	0	1	0	-1
+368	yanhuaablue.par	Firework c2	Sea Wave	0	0	0	-1	0	1	0	-1
+369	yanhuaeblue.par	Firework c3	Sea Wave	0	0	0	-1	0	1	0	-1
+370	ilu.par	Love you so	Sea Wave	0	0	0	-1	0	1	0	-1
+371	mh.par	Fascinate	Sea Wave	0	0	0	-1	0	1	0	-1
+372	hxsf.par	Fox Sorcery Disc	Sea Wave	0	0	0	-1	0	1	0	-1
+373	hxhl.par	Fox Sage Gourd D	Sea Wave	0	0	0	-1	0	1	0	-1
+374	tt.par	Totem Attack Dis	Sea Wave	0	0	0	-1	0	1	0	-1
+375	qzmf.par	Sachem's Witchcr	Sea Wave	0	0	0	-1	0	1	0	-1
+376	icedragonhit01.par	Icy Dragon 1 Att	Sea Wave	0	0	0	-1	0	1	0	-1
+377	icedragonhit02.par	Icy Dragon 2 Att	Sea Wave	0	0	0	-1	0	1	0	-1
+378	xr2.par	Crab Bind Persis	Sea Wave	0	0	0	-1	0	1	0	-1
+379	kj.par	Black Dragon Ter	Sea Wave	0	0	0	-1	0	1	0	-1
+380	bhsd.par	Icy River Era	Sea Wave	0	0	0	-1	0	1	0	-1
+381	hlsw.par	Fox Spirit is de	Sea Wave	0	0	6	-1	0	1	0	-1
+382	hfjd.par	Red Base is dead	Sea Wave	0	0	6	-1	0	1	0	-1
+383	lfjd.par	Blue Base Destro	Sea Wave	0	0	6	-1	0	1	0	-1
+384	pkpt.par	PK Red Cannon To	Sea Wave	0	0	6	-1	0	1	0	-1
+385	pkptb.par	PK Blue Cannon T	Sea Wave	0	0	6	-1	0	1	0	-1
+386	zp.par	Red Tent is dead	Sea Wave	0	0	6	-1	0	1	0	-1
+387	zpb.par	Blue Tent is dea	Sea Wave	0	0	6	-1	0	1	0	-1
+388	xmb.par	Red Canteen is d	Sea Wave	0	0	6	-1	0	1	0	-1
+389	xmbb.par	Blue Canteen is 	Sea Wave	0	0	6	-1	0	1	0	-1
+390	slbz.par	Water Mine Explo	Sea Wave	0	0	6	-1	0	1	0	-1
+391	ptbz.par	Cannon Tower is 	Sea Wave	0	0	6	-1	0	1	0	-1
+392	01050021.par	Blacksmith Mars	Sea Wave	0	0	6	-1	0	1	0	-1
+393	01060003.par	Baby Icy Dragon 	Sea Wave	0	0	0	-1	0	1	0	-1
+394	01060004.par	Guard is dead	Sea Wave	0	0	0	-1	0	1	0	-1
+395	01060002.par	Icy Dragon is de	Sea Wave	0	0	0	-1	0	1	0	-1
+396	01060005.par	Carnivore Flower	Sea Wave	0	0	0	-1	0	1	0	-1
+397	01060001.par	Fire Spirit	Sea Wave	0	0	0	-1	0	1	0	-1
+398	ghost.par	NPC is dead	Sea Wave	0	0	0	-1	0	1	0	-1
+399	born.par	npc birth	Sea Wave	0	0	0	-1	0	1	0	-1
+400	03000001.par	Thundorian Staff	Sea Wave	3	0	4	-1	0	0	0	-1
+401	03000002.par	Staff of Life	Sea Wave	3	0	4	-1	0	0	0	-1
+402	03000003.par	Magical Staff	Sea Wave	3	0	4	-1	0	0	0	-1
+403	redstone01.par	Red Gem 1	Sea Wave	3	0	4,5	-1	0	0	0	-1
+404	redstone02.par	Red Stone 2	Sea Wave	3	0	4	-1	0	0	0	-1
+405	redstone03.par	Red Stone 3	Sea Wave	3	0	4	-1	0	0	0	-1
+406	bluestone01.par	Blue Stone 1	Sea Wave	3	0	4,5	-1	0	0	0	-1
+407	bluestone02.par	Blue Stone 2	Sea Wave	3	0	4	-1	0	0	0	-1
+408	bluestone03.par	Sapphire 3	Sea Wave	3	0	4	-1	0	0	0	-1
+409	yellowstone01.par	Yellow Stone 1	Sea Wave	3	0	4,5	-1	0	0	0	-1
+410	yellowstone02.par	Yellow Stone 2	Sea Wave	3	0	4	-1	0	0	0	-1
+411	yellowstone03.par	Yellow Stone 3	Sea Wave	3	0	4	-1	0	0	0	-1
+412	refinestone.par	Refining Gem	Sea Wave	3	0	4	-1	0	0	0	-1
+413	jinbi.par	Gold Coin	Sea Wave	3	0	4	-1	0	0	0	-1
+414	zhaohuan2.par	Summon Pet	Sea Wave	0	0	2	-1	0	1	0	-1
+415	jst.par	Drag Tower	Sea Wave	0	0	10	-1	0	1	0	-1
+416	xmt.par	Devil Tower	Sea Wave	0	0	10	-1	0	1	0	-1
+417	szz.par	À´◊”Ãÿ–ß	Sea Wave	0	0	0	-1	0	1	0	-1
+418	szgj.par	À´◊”π•ª˜	Sea Wave	0	0	0	-1	0	1	0	-1
+419	jiaxue.par	À´◊”º”—™	Sea Wave	0	0	0	-1	0	1	0	-1
+450	01050009.par	Robot Black Smok	Sea Wave	1	0	16,17	-1	0	0	0	-1
+451	01050006.par	Manbeast smoke	Sea Wave	1	0	5	-1	0	0	0	-1
+452	01050001.par	Humpy Camel Dust	Sea Wave	1	0	4,5	-1	0	0	0	-1
+453	01050001.par	Sand Raider Dust	Sea Wave	1	0	5,6	-1	0	0	0	-1
+454	01050007.par	Naiad	Sea Wave	1	0	1	-1	0	0	0	-1
+455	01050010.par	Thousand Years F	Sea Wave	1	0	6,9	-1	0	0	0	-1
+456	01050005.par	Pumpkin Fire	Sea Wave	1	0	7,8	-1	0	0	0	-1
+457	01050005_1.par	Pumpkin Fire	Sea Wave	1	0	10	-1	0	0	0	-1
+458	01050003.par	Cursed Mummy	Sea Wave	1	0	6	0	0	0	0	-1
+459	01050001.par	Sand Bandit	Sea Wave	1	0	4,5	-1	0	0	0	-1
+460	01050011.par	Octopus	Sea Wave	1	0	2	-1	0	0	0	-1
+461	01050012.par	Kingfisher	Sea Wave	1	0	2	-1	0	0	0	-1
+462	01050013.par	Fire Spirit	Sea Wave	1	0	10	-1	0	0	0	-1
+463	01050014.par	Mystic Shrub	Sea Wave	1	0	0	-1	0	0	0	-1
+464	01050016.par	Pharoah Fireball	Sea Wave	1	0	4,5,17,9	-1	0	0	0	-1
+465	01050017.par	Icy Dragon	Sea Wave	1	0	1,2,3,4,6,7,9	-1	0	0	0	-1
+466	01050019.par	Mole Light	Sea Wave	1	0	10	-1	0	0	0	-1
+467	01050015.par	Mystic Flower	Sea Wave	1	0	0	-1	0	0	0	-1
+468	zone.par	zone	Sea Wave	0	0	0	-1	0	0	0	-1
+469	01050020.par	Silly Crab Soldi	Sea Wave	1	0	0	-1	0	0	0	-1
+470	01050018.par	Baby Icy Dragon	Sea Wave	1	0	1,2,3	-1	0	0	0	-1
+471	01050031.par	Anubis	Sea Wave	1	0	10	-1	0	0	0	-1
+472	01050029.par	Nightmare	Sea Wave	1	0	5,8,12,15,4,7,16,17	-1	0	0	0	-1
+473	01050022.par	Snowy Mystic Shr	Sea Wave	1	0	0	-1	0	0	0	-1
+474	01050023.par	Orange Mystic Sh	Sea Wave	1	0	0	-1	0	0	0	-1
+475	01050024.par	Red Mystic Shrub	Sea Wave	1	0	0	-1	0	0	0	-1
+476	01050025.par	Dry Mystic Shrub	Sea Wave	1	0	0	-1	0	0	0	-1
+477	01050026.par	Blue Mystic Shru	Sea Wave	1	0	0	-1	0	0	0	-1
+478	01050027.par	Purple Mystic Sh	Sea Wave	1	0	0	-1	0	0	0	-1
+479	01050028.par	Ancient Mystic S	Sea Wave	1	0	0	-1	0	0	0	-1
+480	shuimu01.par	Tempest Sea Jell	Sea Wave	1	0	1	-1	0	0	0	-1
+481	shuimu02.par	Electric Sea Jel	Sea Wave	1	0	1	-1	0	0	0	-1
+482	01050030.par	Shadow Hunter	Sea Wave	1	0	4,5	-1	0	0	0	-1
+483	01050032.par	Man-Eating Spide	Sea Wave	1	0	4	-1	0	0	0	-1
+484	01050035.par	Snow Lady	Sea Wave	1	0	3	-1	0	0	0	-1
+485	01050033.par	Snow Lady	Sea Wave	1	0	0	-1	0	0	0	-1
+486	01050034.par	Pumpkin General	Sea Wave	1	0	4	-1	0	0	0	-1
+487	01050034.par	Mud Monster	Sea Wave	1	0	7,8	-1	0	0	0	-1
+488	01050036.par	Guardian Angel	Sea Wave	1	0	0	-1	0	0	0	-1
+489	01050037.par	Lubi Terror	Sea Wave	1	0	13	-1	0	0	0	-1
+490	01050043.par	Soul of Goddess	Sea Wave	1	0	0	-1	0	0	0	-1
+491	shiphurt01.par	Ship HP less tha	Sea Wave	1	0	4	-1	0	0	0	-1
+492	shiphurt02.par	Ship HP less tha	Sea Wave	1	0	4	-1	0	0	0	-1
+493	shiphurt03.par	Ship HP less tha	Sea Wave	1	0	4	-1	0	0	0	-1
+494	seazone.par	Sea Portal	Sea Wave	0	0	4	-1	0	0	0	-1
+495	pkhp1.par	PK building HP i	Sea Wave	1	0	1	-1	0	0	0	-1
+496	pkhp2.par	PK building HP l	Sea Wave	1	0	1	-1	0	0	0	-1
+497	pkhp3.par	PK building HP l	Sea Wave	1	0	1	-1	0	0	0	-1
+498	vipwings01.par	Dark Wing	Sea Wave	1	0	24	-1	0	0	0	-1
+499	vipwings02.par	Dark Wing	Sea Wave	1	0	24	-1	0	0	0	-1
+500	vipwings03.par	Dark Wing	Sea Wave	1	0	24	-1	0	0	0	-1
+501	anwing1.par	Angel Wing	Sea Wave	1	0	24	-1	0	0	0	-1
+502	anwing2.par	Angel Wing	Sea Wave	1	0	24	-1	0	0	0	-1
+503	anwing3.par	Angel Wing	Sea Wave	1	0	24	-1	0	0	0	-1
+504	rozen.par	Rose	Sea Wave	1	0	25	-1	0	0	0	-1
+505	elf.par	Fairy of Light	Sea Wave	1	0	0	-1	0	0	0	-1
+506	ballelf.par	Garnet Ball Fair	Sea Wave	1	0	0	-1	0	0	0	-1
+507	ballelf2.par	Emerald Ball Fai	Sea Wave	1	0	0	-1	0	0	0	-1
+508	elfgreen.par	Emerald Fairy	Sea Wave	1	0	0	-1	0	0	0	-1
+509	elfgreen2.par	Ruby Fairy	Sea Wave	1	0	0	-1	0	0	0	-1
+510	xdelf.par	Briny Emerald Fa	Sea Wave	1	0	0	-1	0	0	0	-1
+511	xdelf2.par	Briny Orchid Fai	Sea Wave	1	0	0	-1	0	0	0	-1
+512	eggelf.par	Lettuce Emerald 	Sea Wave	1	0	0	-1	0	0	0	-1
+513	eggelf2.par	Lettuce Garnet F	Sea Wave	1	0	0	-1	0	0	0	-1
+514	gelf.par	Shadow Fairy	Sea Wave	1	0	0	-1	0	0	0	-1
+515	gelf2.par	Shadow Fairy 2	Sea Wave	1	0	0	-1	0	0	0	-1
+516	zzshjl1.par	Parrot Fairy 1	Sea Wave	1	0	0	-1	0	0	0	-1
+517	zzshjl2.par	Parrot Fairy 2	Sea Wave	1	0	0	-1	0	0	0	-1
+518	fjlxiao.par	Tiny Fairy	Sea Wave	1	0	0	-1	3	0	0	-1
+519	ejl1.par	Note 2	Sea Wave	1	0	0	-1	3	0	0	-1
+520	ejl2.par	Brute Strength	Sea Wave	1	0	0	-1	3	0	0	-1
+521	ejl3.par	Vampiric 	Sea Wave	1	0	0	-1	3	0	0	-1
+522	ejl4.par	Retaliate	Sea Wave	1	0	0	-1	3	0	0	-1
+523	ejl5.par	Thorns	Sea Wave	1	0	0	-1	3	0	0	-1
+524	ejl6.par	Break Armor	Sea Wave	1	0	0	-1	3	0	0	-1
+525	ejl7.par	ward off blows	Sea Wave	1	0	0	-1	3	0	0	-1
+526	fjlxiao1.par	Mini Fairy 2	Sea Wave	1	0	0	-1	3	0	0	-1
+527	futi1.par	New Fairy Effect	Sea Wave	1	0	0	-1	3	0	0	-1
+528	futi2.par	New Fairy Effect	Sea Wave	1	0	0	-1	3	0	0	-1
+529	futi3.par	New Fairy Effect	Sea Wave	1	0	0	-1	3	0	0	-1
+530	futi4.par	New Fairy Effect	Sea Wave	1	0	0	-1	3	0	0	-1
+531	futi5.par	New Fairy Effect	Sea Wave	1	0	0	-1	3	0	0	-1
+532	futi6.par	New Fairy Effect	Sea Wave	1	0	0	-1	3	0	0	-1
+533	futi7.par	New Fairy Effect	Sea Wave	1	0	0	-1	3	0	0	-1
+534	futi8.par	New Fairy Effect	Sea Wave	1	0	0	-1	3	0	0	-1
+535	ragetest.par	Shadow Hoop	Sea Wave	0	0	0	-1	0	1	0	-1
+536	zhizhen.par	Shadow Needle	Sea Wave	0	0	0	-1	0	1	0	-1
+537	chigirl1a.par	Rebirth Phyllis 	Sea Wave	1	0	24	-1	0	0	0	-1
+538	chigirl1b.par	◊™…˙∑∆2	Sea Wave	1	0	24	-1	0	0	0	-1
+539	chigirl1c.par	Rebirth Phyllis 	Sea Wave	1	0	24	-1	0	0	0	-1
+540	chigirl2a.par	Rebirth Ami 1	Sea Wave	1	0	24	-1	0	0	0	-1
+541	chigirl2b.par	Rebirth Ami 2	Sea Wave	1	0	24	-1	0	0	0	-1
+542	chigirl2c.par	Rebirth Ami 3	Sea Wave	1	0	24	-1	0	0	0	-1
+543	chiman1a.par	Reborn Lance 1	Sea Wave	1	0	24	-1	0	0	0	-1
+544	chiman1b.par	Rebirth Lance 2	Sea Wave	1	0	24	-1	0	0	0	-1
+545	chiman1c.par	Rebirth Lance 3	Sea Wave	1	0	24	-1	0	0	0	-1
+546	chiman2a.par	Rebirth Carsise 	Sea Wave	1	0	24	-1	0	0	0	-1
+547	chiman2b.par	Rebirth Carsise 	Sea Wave	1	0	24	-1	0	0	0	-1
+548	chiman2c.par	Rebirth Carsise 	Sea Wave	1	0	24	-1	0	0	0	-1
+549	hlcb.par	Black Dragon Wre	Sea Wave	1	0	24	-1	0	0	0	-1
+550	chcb.par	Rainbow End	Sea Wave	1	0	24	-1	0	0	0	-1
+551	hl_crab.par	æﬁ–∑¥µ≈›≈›	Sea Wave	1	0	24	-1	0	0	0	-1
+552	elfbm1.par	Brute Strength	Sea Wave	1	0	0	-1	0	0	0	-1
+553	elfbm2.par	Brute Strength	Sea Wave	1	0	0	-1	0	0	0	-1
+564	mct.par	 •µÆ—Ãª®	Sea Wave	0	0	0	-1	0	1	0	-1
+565	hny.par	–¬ƒÍ—Ãª®	Sea Wave	0	0	0	-1	0	1	0	-1
+566	sdlr.par	 •µÆ¿œ»À—Ãª®	Sea Wave	0	0	0	-1	0	1	0	-1
+567	lulu.par	—©«¡—Ãª®	Sea Wave	0	0	0	-1	0	1	0	-1
+568	wazi.par	Õ‡◊”—Ãª®	Sea Wave	0	0	0	-1	0	1	0	-1
+569	xrsw.par	—©»ÀÀ¿Õˆ	Sea Wave	0	0	0	-1	0	1	0	-1
+570	sds.par	 •µÆ ˜∑¢π‚	Sea Wave	0	0	0	-1	0	1	0	-1
+571	xsds.par	–° •µÆ ˜∑¢π‚	Sea Wave	0	0	0	-1	0	1	0	-1
+572	fyyf.par	85BB∑‚”°”°∑˚Ãÿ–ß	Sea Wave	0	0	0	-1	0	1	0	-1
+573	hhyf.par	85BB∫Ω∫£”°∑˚Ãÿ–ß	Sea Wave	0	0	0	-1	0	1	0	-1
+574	jjyf.par	85BBæﬁΩ£”°∑˚Ãÿ–ß	Sea Wave	0	0	0	-1	0	1	0	-1
+575	lryf.par	85BB¡‘»À”°∑˚Ãÿ–ß	Sea Wave	0	0	0	-1	0	1	0	-1
+576	sjyf.par	85BBÀ´Ω£”°∑˚Ãÿ–ß	Sea Wave	0	0	0	-1	0	1	0	-1
+577	szyf.par	85BB •÷∞”°∑˚Ãÿ–ß	Sea Wave	0	0	0	-1	0	1	0	-1
+578	xzdll.par	–ƒ÷–µƒ¡¶¡ø	Sea Wave	0	0	0	-1	0	1	0	-1
+579	huota.par	 •ªÃ®	Sea Wave	0	0	0	-1	0	1	0	-1
+580	huoju.par	ªæÊ	Sea Wave	0	0	0	-1	0	1	0	-1
+581	anwing4.par	±ØögÎx∫œ÷Æ“Ì(ÃÏÀ	Sea Wave	0	0	0	-1	0	1	0	-1
+582	anwing5.par	I Love HK÷Æ“Ì£®—	Sea Wave	0	0	0	-1	0	1	0	-1
+583	lianhua.par	95bbÃ◊¡¨ª®	Sea Wave	0	0	0	-1	0	1	0	-1
+584	zhaohuan.par	’ŸªΩ	Sea Wave	0	0	0	-1	0	1	0	-1
+585	fzr.par	∑Á÷Æ»–	Sea Wave	0	0	0	-1	0	1	0	-1
+586	huoqius2.par	ª«Ú√¸÷–	Sea Wave	0	0	0	-1	0	1	0	-1
+587	huoqiuf2.par	ª«Ú Õ∑≈	Sea Wave	0	0	0	-1	0	1	0	-1
+588	bingqius.par	±˘«Ú√¸÷–	Sea Wave	0	0	0	-1	0	1	0	-1
+589	bingqiuf.par	±˘«Ú Õ∑≈	Sea Wave	0	0	0	-1	0	1	0	-1
+590	fzrmz.par	∑Á÷Æ»–√¸÷–	Sea Wave	0	0	0	-1	0	1	0	-1
+591	ttdan.par	æ´¡Èµ∞	Sea Wave	1	0	0	-1	0	0	0	-1
+592	qingbao.par	Information Bank	Sea Wave	0	0	0	-1	0	1	0	-1
+593	baiyang.par	∞◊—Ú	Sea Wave	1	0	0	-1	3	0	0	-1
+594	jinniu.par	Ω≈£◊˘	Sea Wave	1	0	0	-1	3	0	0	-1
+595	shuangzi.par	À´◊”◊˘	Sea Wave	1	0	0	-1	3	0	0	-1
+596	juxie.par	æﬁ–∑◊˘	Sea Wave	1	0	0	-1	3	0	0	-1
+597	shizi.par	 ®◊”	Sea Wave	1	0	0	-1	3	0	0	-1
+598	chunv.par	¥¶≈Æ	Sea Wave	1	0	0	-1	3	0	0	-1
+599	tianping.par	ÃÏ∆Ω	Sea Wave	1	0	0	-1	3	0	0	-1
+600	tianxie.par	ÃÏ–´	Sea Wave	1	0	0	-1	3	0	0	-1
+601	sheshou.par	…‰ ÷	Sea Wave	1	0	0	-1	3	0	0	-1
+602	shanyang.par	ƒ¶Ù…	Sea Wave	1	0	0	-1	3	0	0	-1
+603	shuiping.par	ÀÆ∆ø	Sea Wave	1	0	0	-1	3	0	0	-1
+604	shuangyu.par	À´”„	Sea Wave	1	0	0	-1	3	0	0	-1
+605	nvshen.par	≈Æ…ÒÃÿ–ß	Sea Wave	0	0	0	-1	0	1	0	-1
+606	chibangjy.par	Õı’ﬂ÷Æ“Ì	Sea Wave	1	0	24	-1	0	0	0	-1
+607	flag.par	∫£µ¡∆Ï	Sea Wave	1	0	0	-1	0	0	0	-1
+800	icedragonready01.par	Frost Breath	Sea Wave	1	0	1	-1	0	1	0	-1
+801	icedragonready02.par	Icy Dragon Arc F	Sea Wave	1	0	1	-1	0	1	0	-1
+802	sd.par	Pharaoh Poison	Sea Wave	1	0	1	-1	0	1	0	-1
+803	lx.par	Black Dragon Bre	Sea Wave	1	0	1	-1	0	1	0	-1
+804	ly.par	Black Dragon Fli	Sea Wave	1	0	1	-1	0	1	0	-1
+805	xzsb1.par	Mechanic Soldier	Sea Wave	1	0	0	-1	0	1	0	-1
+806	xzsb2.par	Mechanic Soldier	Sea Wave	1	0	0	-1	0	1	0	-1
+807	mhcx.par	Fascination Pers	Sea Wave	0	0	0	-1	0	1	0	-1
+808	hld.par	Dragon Sight	Sea Wave	0	0	0	-1	0	1	0	-1
+809	sun.par	Sunny Emote	Sea Wave	0	0	0	-1	0	1	0	-1
+810	cloud.par	Misty Emote	Sea Wave	0	0	0	-1	0	1	0	-1
+811	snowface.par	Snowy Emote	Sea Wave	0	0	0	-1	0	1	0	-1
+812	starface.par	Starry Emote	Sea Wave	0	0	0	-1	0	1	0	-1
+813	rain.par	Rainy Emote	Sea Wave	0	0	0	-1	0	1	0	-1
+814	cnsun.par	Cloudy Emote	Sea Wave	0	0	0	-1	0	1	0	-1
+815	kulouface.par	Skeleton Emote	Sea Wave	0	0	0	-1	0	1	0	-1
+816	caihong.par	Rainbow Emote	Sea Wave	0	0	0	-1	0	1	0	-1
+817	angelface.par	Angel Emote	Sea Wave	0	0	0	-1	0	1	0	-1
+818	devilface.par	Demon Emote	Sea Wave	0	0	0	-1	0	1	0	-1
+820	fjl801.par	August Fairy 1	Sea Wave	0	0	0	-1	0	1	0	-1
+821	fjl802.par	August Fairy 2	Sea Wave	0	0	0	-1	0	1	0	-1
+822	fjl803.par	August Fairy 3	Sea Wave	0	0	0	-1	0	1	0	-1
+823	fjl804.par	August Fairy 4	Sea Wave	0	0	0	-1	0	1	0	-1
+824	fcb01.par	August Wing 1	Sea Wave	0	0	0	-1	0	1	0	-1
+825	fcb02.par	August Wings 2	Sea Wave	0	0	0	-1	0	1	0	-1
+826	fcb03.par	August Wings 3	Sea Wave	0	0	0	-1	0	1	0	-1
+827	fcb04.par	August Wings 4	Sea Wave	0	0	0	-1	0	1	0	-1
+828	ftiger1.par	Jackpot normal e	Sea Wave	0	0	0	-1	0	1	0	-1
+829	ftiger2.par	Jackpot Prize ef	Sea Wave	0	0	0	-1	0	1	0	-1
+830	fzdabian.par	Defecate effect	Sea Wave	0	0	0	-1	0	1	0	-1
+831	fzduanku.par	Shorts effects	Sea Wave	0	0	0	-1	0	1	0	-1
+832	fzxiongzhao.par	Garment effect	Sea Wave	0	0	0	-1	0	1	0	-1
+833	fzqian.par	Coin effect	Sea Wave	0	0	0	-1	0	1	0	-1
+834	fzzi1.par	I'm a fool	Sea Wave	0	0	0	-1	0	1	0	-1
+835	fzzi2.par	All look down on	Sea Wave	0	0	0	-1	0	1	0	-1
+836	fzzi3.par	I'm a liar	Sea Wave	0	0	0	-1	0	1	0	-1
+837	fzzi4.par	Have you seen su	Sea Wave	0	0	0	-1	0	1	0	-1
+838	yanhuoju.par	Chrysanthemum Fi	Sea Wave	0	0	0	-1	0	1	0	-1
+839	yanhuox.par	Firework x	Sea Wave	0	0	0	-1	0	1	0	-1
+840	xiaohua.par	Handheld Firewor	Sea Wave	0	0	0	-1	0	1	0	-1
+880	binghuan.par	Icy Loop	Sea Wave	0	0	0	-1	0	1	0	-1
+881	bdicess.par	Small Black Drag	Sea Wave	0	0	0	-1	0	1	0	-1
+882	bdiceaa.par	Small Black Drag	Sea Wave	0	0	0	-1	0	1	0	-1
+883	bdlightss.par	 Small Black Dra	Sea Wave	0	0	0	-1	0	1	0	-1
+885	bdlightaa.par	Small Black Drag	Sea Wave	0	0	0	-1	0	1	0	-1
+886	bdwindss.par	Small Black Drag	Sea Wave	0	0	0	-1	0	1	0	-1
+887	bdlightaft.par	Baby Black Drago	Sea Wave	0	0	0	-1	1	1	0	-1
+888	bdwindaa.par	Small Black Drag	Sea Wave	0	0	0	-1	0	1	0	-1
+889	zzfbfs.par	Black Dragon Fir	Sea Wave	0	0	0	-1	0	1	0	-1
+891	zzfbfa.par	Black Dragon Fir	Sea Wave	0	0	0	-1	0	1	0	-1
+892	zzfbfat.par	 Black Dragon Fi	Sea Wave	0	0	0	-1	0	1	0	-1
+893	bdsummon.par	Black Dragon Sum	Sea Wave	0	0	0	-1	1	1	0	-1
+894	bdiceaft.par	Small Black drag	Sea Wave	0	0	0	-1	1	1	0	-1
+895	aoyunhuoju.par	Flame	Sea Wave	0	0	0	-1	0	0	0	-1
+900	fcansmoke2.par	Magma Bullet Per	Sea Wave	0	0	0	-1	0	1	0	-1
+901	fshock1.par	Roquet Discharge	Sea Wave	0	0	0	-1	0	1	0	-1
+902	fshocka1.par	Roquet hit rate	Sea Wave	0	0	0	-1	0	1	0	-1
+903	flaserss.par	Laser Beam Disch	Sea Wave	0	0	0	-1	0	1	0	-1
+904	flaseraa.par	Laser Beam hit r	Sea Wave	0	0	0	-1	0	1	0	-1
+905	fguns1.par	Firegun Discharg	Sea Wave	0	0	0	-1	0	1	0	-1
+906	fsummon.par	Summon Discharge	Sea Wave	0	0	0	-1	0	1	0	-1
+907	fblowupaa.par	Ranged Blast Hit	Sea Wave	0	0	0	-1	0	1	0	-1
+908	fsmokeaa.par	Cloud Attack hit	Sea Wave	0	0	0	-1	0	1	0	-1
+909	fgunaa.par	Firegun Hit Rate	Sea Wave	0	0	0	-1	0	1	0	-1
+910	fboness.par	Encumbered Skele	Sea Wave	0	0	0	-1	0	1	0	-1
+911	fflashss.par	Soul Displacemen	Sea Wave	0	0	0	-1	0	1	0	-1
+912	fshieldss.par	Skeletar Shieldi	Sea Wave	0	0	0	-1	0	1	0	-1
+913	fslashss.par	Slice	Sea Wave	0	0	0	-1	0	1	0	-1
+914	fbellowss.par	Roar	Sea Wave	0	0	0	-1	0	1	0	-1
+915	fjestss.par	Shriek	Sea Wave	0	0	0	-1	0	1	0	-1
+916	fbloodaa.par	Cursed Blood hit	Sea Wave	0	0	0	-1	0	1	0	-1
+917	fmoonss.par	Moonlight Recove	Sea Wave	0	0	0	-1	0	1	0	-1
+918	fspireaa.par	Vortex	Sea Wave	0	0	0	-1	0	1	0	-1
+919	fboomerff.par	Bomb Throwing hi	Sea Wave	0	0	0	-1	0	1	0	-1
+920	fbloodhh.par	Cursed Blood Per	Sea Wave	0	0	0	-1	0	1	0	-1
+921	fbonehh.par	Skeletar Binding	Sea Wave	0	0	0	-1	0	1	0	-1
+922	fspeedhh.par	Acceleration Per	Sea Wave	0	0	0	-1	0	1	0	-1
+923	fdeathaa.par	Evil Attack Hit 	Sea Wave	0	0	0	-1	0	1	0	-1
+924	fwateraa.par	Water Arrow hit 	Sea Wave	0	0	0	-1	0	1	0	-1
+925	fbloodss.par	Cursed Blood Dis	Sea Wave	0	0	0	-1	0	1	0	-1
+926	fjesthh.par	Shriek Persists	Sea Wave	0	0	0	-1	0	1	0	-1
+927	bloods.par	Bloodied Shoes	Sea Wave	0	0	0	-1	0	1	0	-1
+928	snball.par	Little Snow Ball	Sea Wave	0	0	0	-1	0	1	0	-1
+929	ximota.par	Devil strike	Sea Wave	0	0	0	-1	0	1	0	-1
+930	shzhan.par	Navy Guardian st	Sea Wave	0	0	0	-1	0	1	0	-1
+931	hdzhan.par	Pirate Guardian 	Sea Wave	0	0	0	-1	0	1	0	-1
+932	shihua.par	Harden strike	Sea Wave	0	0	0	-1	0	1	0	-1
+933	shihuaf.par	Harden discharge	Sea Wave	0	0	0	-1	0	1	0	-1
+934	cangying.par	Insect Swarm	Sea Wave	0	0	0	-1	0	1	0	-1
+935	shensheng.par	Holy Judgement	Sea Wave	0	0	0	-1	0	1	0	-1
+936	youling.par	Rear Fairy	Sea Wave	0	0	0	-1	0	1	0	-1
+937	laji.par	Will Power	Sea Wave	0	0	0	-1	0	1	0	-1
+938	bsj.par	Beast Legion Sma	Sea Wave	0	0	0	-1	0	1	0	-1
+939	wyzhan.par	Ethereal Slash	Sea Wave	0	0	0	-1	0	1	0	-1
+940	hamhamha.par	HamiHamiHa	Sea Wave	0	0	0	-1	0	1	0	-1
+941	shzhanfs.par	Navy Slash	Sea Wave	0	0	0	-1	0	1	0	-1
+942	hdzhanfs.par	Pirate Slash	Sea Wave	0	0	0	-1	0	1	0	-1
+943	binghuans.par	Ice persists	Sea Wave	0	0	0	-1	0	1	0	-1
+3000	jf004.par	Staff Bonus Head	Sea Wave	1	0	1	-1	0	0	0	-1
+3001	jf003.par	Staff Bonus Head	Sea Wave	1	0	1	-1	0	0	0	-1
+3002	jf002.par	Staff Bonus Head	Sea Wave	1	0	1	-1	0	0	0	-1
+3003	jf001.par	Staff Bonus Head	Sea Wave	1	0	1	-1	0	0	0	-1
+3010	jf000.par	Staff Bonus Loop	Sea Wave	1	0	1	-1	0	0	0	-1
+3011	jf000.par	Staff Bonus Loop	Sea Wave	1	0	1	-1	0	0	0	-1
+3012	jf000.par	Staff Bonus Loop	Sea Wave	1	0	1	-1	0	0	0	-1
+3013	jf006.par	Staff Bonus Loop	Sea Wave	1	0	1	-1	0	0	0	-1
+3020	jf000.par	Staff Bonus Body	Sea Wave	1	0	1	-1	0	0	0	-1
+3021	jf005.par	Staff Bonus Body	Sea Wave	1	0	1	-1	0	0	0	-1
+3022	jf005.par	Staff Bonus Body	Sea Wave	1	0	1	-1	0	0	0	-1
+3023	jf005.par	Staff Bonus Body	Sea Wave	1	0	1	-1	0	0	0	-1
+3030	jb01.par	Greatsword Attac	Sea Wave	1	0	1	-1	0	0	0	-1
+3031	jb02.par	Greatsword Attac	Sea Wave	1	0	1	-1	0	0	0	-1
+3032	jb03.par	Greatsword Attac	Sea Wave	1	0	1	-1	0	0	0	-1
+3033	jb04.par	Greatsword Attac	Sea Wave	1	0	1	-1	0	0	0	-1
+3040	jj01.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3041	jj02.par	Single-handed Sw	Sea Wave	1	0	1	-1	0	0	0	-1
+3042	jj03.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3043	jj04.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3050	js01.par	Dagger Attack 1	Sea Wave	1	0	1	-1	0	0	0	-1
+3051	js02.par	Dagger Attack 2	Sea Wave	1	0	1	-1	0	0	0	-1
+3052	js03.par	Dagger Attack 3	Sea Wave	1	0	1	-1	0	0	0	-1
+3053	js04.par	Dagger Attack 4	Sea Wave	1	0	1	-1	0	0	0	-1
+3060	jg01.par	Gun Attack Body 	Sea Wave	1	0	1	-1	0	0	0	-1
+3061	jg01.par	Gun Attack Body 	Sea Wave	1	0	1	-1	0	0	0	-1
+3062	jg02.par	Gun Attack Body 	Sea Wave	1	0	1	-1	0	0	0	-1
+3063	jg03.par	Gun Attack Body 	Sea Wave	1	0	1	-1	0	0	0	-1
+3070	jg04.par	Gun Attack Head 	Sea Wave	1	0	1	-1	0	0	0	-1
+3071	jg05.par	Gun Attack Head 	Sea Wave	1	0	1	-1	0	0	0	-1
+3072	jg06.par	Gun Attack Head 	Sea Wave	1	0	1	-1	0	0	0	-1
+3073	jg06.par	Gun Attack Head 	Sea Wave	1	0	1	-1	0	0	0	-1
+3080	jfb004.par	Staff Defense He	Sea Wave	1	0	1	-1	0	0	0	-1
+3081	jfb003.par	Staff Defense He	Sea Wave	1	0	1	-1	0	0	0	-1
+3082	jfb002.par	Staff Defense He	Sea Wave	1	0	1	-1	0	0	0	-1
+3083	jfb001.par	Staff Defense He	Sea Wave	1	0	1	-1	0	0	0	-1
+3090	jf000.par	Staff Defense Lo	Sea Wave	1	0	1	-1	0	0	0	-1
+3091	jf000.par	Staff Defense Lo	Sea Wave	1	0	1	-1	0	0	0	-1
+3092	jf000.par	Staff Defense Lo	Sea Wave	1	0	1	-1	0	0	0	-1
+3093	jf006.par	Staff Defense Lo	Sea Wave	1	0	1	-1	0	0	0	-1
+3100	jf000.par	Staff Defense Bo	Sea Wave	1	0	1	-1	0	0	0	-1
+3101	jfb005.par	Staff Defense Bo	Sea Wave	1	0	1	-1	0	0	0	-1
+3102	jfb005.par	Staff Defense Bo	Sea Wave	1	0	1	-1	0	0	0	-1
+3103	jfb005.par	Staff Defense Bo	Sea Wave	1	0	1	-1	0	0	0	-1
+3110	jfr004.par	Staff Attack Hea	Sea Wave	1	0	1	-1	0	0	0	-1
+3111	jfr003.par	Staff Attack Hea	Sea Wave	1	0	1	-1	0	0	0	-1
+3112	jfr002.par	Staff Attack Hea	Sea Wave	1	0	1	-1	0	0	0	-1
+3113	jfr001.par	Staff Attack Hea	Sea Wave	1	0	1	-1	0	0	0	-1
+3120	jf000.par	Staff Attack Loo	Sea Wave	1	0	1	-1	0	0	0	-1
+3121	jf000.par	Staff Attack Loo	Sea Wave	1	0	1	-1	0	0	0	-1
+3122	jf000.par	Staff Attack Loo	Sea Wave	1	0	1	-1	0	0	0	-1
+3123	jf006.par	Staff Attack Loo	Sea Wave	1	0	1	-1	0	0	0	-1
+3130	jf000.par	Staff Attack Bod	Sea Wave	1	0	1	-1	0	0	0	-1
+3131	jfr005.par	Staff Attack Bod	Sea Wave	1	0	1	-1	0	0	0	-1
+3132	jfr005.par	Staff Attack Bod	Sea Wave	1	0	1	-1	0	0	0	-1
+3133	jfr005.par	Staff Attack Bod	Sea Wave	1	0	1	-1	0	0	0	-1
+3140	jby01.par	Greatsword Bonus	Sea Wave	1	0	1	-1	0	0	0	-1
+3141	jby02.par	Greatsword Body 	Sea Wave	1	0	1	-1	0	0	0	-1
+3142	jby03.par	Greatsword Bonus	Sea Wave	1	0	1	-1	0	0	0	-1
+3143	jby04.par	Greatsword Bonus	Sea Wave	1	0	1	-1	0	0	0	-1
+3150	jjy01.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3151	jjy02.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3152	jjy03.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3153	jjy04.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3160	jsy01.par	Dagger Bonus 1	Sea Wave	1	0	1	-1	0	0	0	-1
+3161	jsy02.par	Dagger Bonus 2	Sea Wave	1	0	1	-1	0	0	0	-1
+3162	jsy03.par	Dagger Bonus 3	Sea Wave	1	0	1	-1	0	0	0	-1
+3163	jsy04.par	Dagger Bonus 4	Sea Wave	1	0	1	-1	0	0	0	-1
+3170	jbb01.par	Greatsword Defen	Sea Wave	1	0	1	-1	0	0	0	-1
+3171	jbb02.par	Greatsword Defen	Sea Wave	1	0	1	-1	0	0	0	-1
+3172	jbb03.par	Greatsword Defen	Sea Wave	1	0	1	-1	0	0	0	-1
+3173	jbb04.par	Greatsword Defen	Sea Wave	1	0	1	-1	0	0	0	-1
+3180	jjb01.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3181	jjb02.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3182	jjb03.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3183	jjb04.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3190	jsb01.par	Dagger Defense 1	Sea Wave	1	0	1	-1	0	0	0	-1
+3191	jsb02.par	Dagger Defense 2	Sea Wave	1	0	1	-1	0	0	0	-1
+3192	jsb03.par	Dagger Defense 3	Sea Wave	1	0	1	-1	0	0	0	-1
+3193	jsb04.par	Dagger Defense 4	Sea Wave	1	0	1	-1	0	0	0	-1
+3200	jgb01.par	Gun Defense Body	Sea Wave	1	0	1	-1	0	0	0	-1
+3201	jgb01.par	Gun Defense Body	Sea Wave	1	0	1	-1	0	0	0	-1
+3202	jgb02.par	Gun Defense Body	Sea Wave	1	0	1	-1	0	0	0	-1
+3203	jgb03.par	Gun Defense Body	Sea Wave	1	0	1	-1	0	0	0	-1
+3210	jgb04.par	Gun Head Defense	Sea Wave	1	0	1	-1	0	0	0	-1
+3211	jgb05.par	Gun Defense Head	Sea Wave	1	0	1	-1	0	0	0	-1
+3212	jgb06.par	Gun Defense Head	Sea Wave	1	0	1	-1	0	0	0	-1
+3213	jgb06.par	Gun Defense Head	Sea Wave	1	0	1	-1	0	0	0	-1
+3220	jgy01.par	Gun Bonus Body 1	Sea Wave	1	0	1	-1	0	0	0	-1
+3221	jgy01.par	Gun Bonus Body 2	Sea Wave	1	0	1	-1	0	0	0	-1
+3222	jgy02.par	Gun Bonus Body 3	Sea Wave	1	0	1	-1	0	0	0	-1
+3223	jgy03.par	Gun Bonus Body 4	Sea Wave	1	0	1	-1	0	0	0	-1
+3230	jgy04.par	Gun Head Bonus 1	Sea Wave	1	0	1	-1	0	0	0	-1
+3231	jgy05.par	Gun Bonus Head 2	Sea Wave	1	0	1	-1	0	0	0	-1
+3232	jgy06.par	Gun Bonus Head 3	Sea Wave	1	0	1	-1	0	0	0	-1
+3233	jgy06.par	Gun Bonus Head 4	Sea Wave	1	0	1	-1	0	0	0	-1
+3240	jfq02.par	Staff Parry Bonu	Sea Wave	1	0	1	-1	0	0	0	-1
+3241	jfq03.par	Staff Parry Bonu	Sea Wave	1	0	1	-1	0	0	0	-1
+3242	jfq03.par	Staff Parry Bonu	Sea Wave	1	0	1	-1	0	0	0	-1
+3243	jfq03.par	Staff Parry Bonu	Sea Wave	1	0	1	-1	0	0	0	-1
+3250	jfr004.par	Staff Parry Bonu	Sea Wave	1	0	1	-1	0	0	0	-1
+3251	jfr003.par	Staff Parry Bonu	Sea Wave	1	0	1	-1	0	0	0	-1
+3252	jfr002.par	Staff Parry Bonu	Sea Wave	1	0	1	-1	0	0	0	-1
+3253	jfq01.par	Staff Parry Bonu	Sea Wave	1	0	1	-1	0	0	0	-1
+3260	jbyb01.par	Greatsword Bonus	Sea Wave	1	0	1	-1	0	0	0	-1
+3261	jbyb02.par	Greatsword Bonus	Sea Wave	1	0	1	-1	0	0	0	-1
+3262	jbyb03.par	Greatsword Bonus	Sea Wave	1	0	1	-1	0	0	0	-1
+3263	jbyb04.par	Greatsword Bonus	Sea Wave	1	0	1	-1	0	0	0	-1
+3270	jjyb01.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3271	jjyb02.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3272	jjyb03.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3273	jjyb04.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3280	jsyb01.par	Dagger Bonus Def	Sea Wave	1	0	1	-1	0	0	0	-1
+3281	jsyb02.par	Dagger Bonus Def	Sea Wave	1	0	1	-1	0	0	0	-1
+3282	jsyb03.par	Dagger Bonus Def	Sea Wave	1	0	1	-1	0	0	0	-1
+3283	jsyb04.par	Dagger Bonus Def	Sea Wave	1	0	1	-1	0	0	0	-1
+3290	jbry01.par	Greatsword Bonus	Sea Wave	1	0	1	-1	0	0	0	-1
+3291	jbry02.par	Greatsword Bonus	Sea Wave	1	0	1	-1	0	0	0	-1
+3292	jbry03.par	Greatsword Bonus	Sea Wave	1	0	1	-1	0	0	0	-1
+3293	jbry04.par	Greatsword Bonus	Sea Wave	1	0	1	-1	0	0	0	-1
+3300	jjry01.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3301	jjry02.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3302	jjry03.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3303	jjry04.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3310	jsry01.par	Dagger Bonus Att	Sea Wave	1	0	1	-1	0	0	0	-1
+3311	jsry02.par	Dagger Bonus Att	Sea Wave	1	0	1	-1	0	0	0	-1
+3312	jsry03.par	Dagger Bonus Att	Sea Wave	1	0	1	-1	0	0	0	-1
+3313	jsry04.par	Dagger Bonus Att	Sea Wave	1	0	1	-1	0	0	0	-1
+3320	jbrb01.par	Greatsword Parry	Sea Wave	1	0	1	-1	0	0	0	-1
+3321	jbrb02.par	Greatsword Parry	Sea Wave	1	0	1	-1	0	0	0	-1
+3322	jbrb03.par	Greatsword Parry	Sea Wave	1	0	1	-1	0	0	0	-1
+3323	jbrb04.par	Greatsword Parry	Sea Wave	1	0	1	-1	0	0	0	-1
+3330	jjrb01.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3331	jjrb02.par	Single-handed Sw	Sea Wave	1	0	1	-1	0	0	0	-1
+3332	jjrb03.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3333	jjrb04.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3340	jsrb01.par	Dagger Parry 1	Sea Wave	1	0	1	-1	0	0	0	-1
+3341	jsrb02.par	Dagger Parry 2	Sea Wave	1	0	1	-1	0	0	0	-1
+3342	jsrb03.par	Dagger Parry 3	Sea Wave	1	0	1	-1	0	0	0	-1
+3343	jsrb04.par	Dagger Parry 4	Sea Wave	1	0	1	-1	0	0	0	-1
+3350	jbryb01.par	Greatsword Parry	Sea Wave	1	0	1	-1	0	0	0	-1
+3351	jbryb02.par	Greatsword Parry	Sea Wave	1	0	1	-1	0	0	0	-1
+3352	jbryb03.par	Greatsword Parry	Sea Wave	1	0	1	-1	0	0	0	-1
+3353	jbryb04.par	Greatsword Parry	Sea Wave	1	0	1	-1	0	0	0	-1
+3360	jjryb01.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3361	jjryb02.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3362	jjryb03.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3363	jjryb04.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3370	jsryb01.par	Dagger Parry Bon	Sea Wave	1	0	1	-1	0	0	0	-1
+3371	jsryb02.par	Dagger Parry Bon	Sea Wave	1	0	1	-1	0	0	0	-1
+3372	jsryb03.par	Dagger Parry Bon	Sea Wave	1	0	1	-1	0	0	0	-1
+3373	jsryb04.par	Dagger Parry Bon	Sea Wave	1	0	1	-1	0	0	0	-1
+3380	jgy01.par	Gun Parry Bonus 	Sea Wave	1	0	1	-1	0	0	0	-1
+3381	jgy01.par	Gun Parry Bonus 	Sea Wave	1	0	1	-1	0	0	0	-1
+3382	jgq01.par	Gun Parry Bonus 	Sea Wave	1	0	1	-1	0	0	0	-1
+3383	jgq02.par	Gun Parry Bonus 	Sea Wave	1	0	1	-1	0	0	0	-1
+3390	jg04.par	Gun Parry Bonus 	Sea Wave	1	0	1	-1	0	0	0	-1
+3391	jg05.par	Gun Parry Bonus 	Sea Wave	1	0	1	-1	0	0	0	-1
+3392	jg06.par	Gun Parry Bonus 	Sea Wave	1	0	1	-1	0	0	0	-1
+3393	jg06.par	Gun Parry Bonus 	Sea Wave	1	0	1	-1	0	0	0	-1
+3400	jf000.par	Bow Attack Body 	Sea Wave	1	0	1	-1	0	0	0	-1
+3401	jar03.par	Bow Attack Body 	Sea Wave	1	0	1	-1	0	0	0	-1
+3402	jar01.par	Bow Attack Body 	Sea Wave	1	0	1	-1	0	0	0	-1
+3403	jar01.par	Bow Attack Body 	Sea Wave	1	0	1	-1	0	0	0	-1
+3410	jf000.par	Bow Attack Tail 	Sea Wave	1	0	1	-1	0	0	0	-1
+3411	jf000.par	Bow Attack Tail 	Sea Wave	1	0	1	-1	0	0	0	-1
+3412	jf000.par	Bow Attack Tail 	Sea Wave	1	0	1	-1	0	0	0	-1
+3413	jar02.par	Bow Attack Tail 	Sea Wave	1	0	1	-1	0	0	0	-1
+3420	jf000.par	Bow Bonus Body 1	Sea Wave	1	0	1	-1	0	0	0	-1
+3421	jay03.par	Bow Bonus Body 2	Sea Wave	1	0	1	-1	0	0	0	-1
+3422	jay01.par	Bow Bonus Body 3	Sea Wave	1	0	1	-1	0	0	0	-1
+3423	jay01.par	Bow Bonus Body 4	Sea Wave	1	0	1	-1	0	0	0	-1
+3430	jf000.par	Bow Bonus Tail 1	Sea Wave	1	0	1	-1	0	0	0	-1
+3431	jf000.par	Bow Bonus Tail 2	Sea Wave	1	0	1	-1	0	0	0	-1
+3432	jf000.par	Bow Bonus Tail 3	Sea Wave	1	0	1	-1	0	0	0	-1
+3433	jay02.par	Bow Bonus Tail 4	Sea Wave	1	0	1	-1	0	0	0	-1
+3440	jf000.par	Bow Defense Body	Sea Wave	1	0	1	-1	0	0	0	-1
+3441	jab03.par	Bow Defense Body	Sea Wave	1	0	1	-1	0	0	0	-1
+3442	jab01.par	Bow Defense Body	Sea Wave	1	0	1	-1	0	0	0	-1
+3443	jab01.par	Bow Defense Body	Sea Wave	1	0	1	-1	0	0	0	-1
+3450	jf000.par	Bow Defense Tail	Sea Wave	1	0	1	-1	0	0	0	-1
+3451	jf000.par	Bow Defense Tail	Sea Wave	1	0	1	-1	0	0	0	-1
+3452	jf000.par	Bow Defense Tail	Sea Wave	1	0	1	-1	0	0	0	-1
+3453	jab02.par	Bow Defense Tail	Sea Wave	1	0	1	-1	0	0	0	-1
+3460	jf000.par	Bow Defense Bonu	Sea Wave	1	0	1	-1	0	0	0	-1
+3461	jay03.par	Bow Defense Bonu	Sea Wave	1	0	1	-1	0	0	0	-1
+3462	jaby01.par	Bow Defense Bonu	Sea Wave	1	0	1	-1	0	0	0	-1
+3463	jaby01.par	Bow Defense Bonu	Sea Wave	1	0	1	-1	0	0	0	-1
+3470	jf000.par	Bow Defense Atta	Sea Wave	1	0	1	-1	0	0	0	-1
+3471	jab03.par	Bow Defense Atta	Sea Wave	1	0	1	-1	0	0	0	-1
+3472	jabr01.par	Bow Defense Atta	Sea Wave	1	0	1	-1	0	0	0	-1
+3473	jabr01.par	Bow Defense Atta	Sea Wave	1	0	1	-1	0	0	0	-1
+3480	jf000.par	BowAttack Bonus 	Sea Wave	1	0	1	-1	0	0	0	-1
+3481	jar03.par	Base Bonus of Bo	Sea Wave	1	0	1	-1	0	0	0	-1
+3482	jary01.par	Box Attack Bonus	Sea Wave	1	0	1	-1	0	0	0	-1
+3483	jary01.par	Bow Attack Bonus	Sea Wave	1	0	1	-1	0	0	0	-1
+3490	jf000.par	Bow Parry Bonus 	Sea Wave	1	0	1	-1	0	0	0	-1
+3491	jabry03.par	Bow Parry Bonus 	Sea Wave	1	0	1	-1	0	0	0	-1
+3492	jabry01.par	Bow Parry Bonus 	Sea Wave	1	0	1	-1	0	0	0	-1
+3493	jabry01.par	Bow Parry Bonus 	Sea Wave	1	0	1	-1	0	0	0	-1
+3500	jfg004.par	Staff Poison Hea	Sea Wave	1	0	1	-1	0	0	0	-1
+3501	jfg003.par	Staff Poison Hea	Sea Wave	1	0	1	-1	0	0	0	-1
+3502	jfg002.par	Staff Poison Hea	Sea Wave	1	0	1	-1	0	0	0	-1
+3503	jfg001.par	Staff Poison Hea	Sea Wave	1	0	1	-1	0	0	0	-1
+3510	jf000.par	Staff Poison Loo	Sea Wave	1	0	1	-1	0	0	0	-1
+3511	jf000.par	Staff Poison Loo	Sea Wave	1	0	1	-1	0	0	0	-1
+3512	jf000.par	Staff Poison Loo	Sea Wave	1	0	1	-1	0	0	0	-1
+3513	jf006.par	Staff Poison Loo	Sea Wave	1	0	1	-1	0	0	0	-1
+3520	jf000.par	Staff Poison Bod	Sea Wave	1	0	1	-1	0	0	0	-1
+3521	jfg005.par	Base Resist to S	Sea Wave	1	0	1	-1	0	0	0	-1
+3522	jfg005.par	Base Resist to S	Sea Wave	1	0	1	-1	0	0	0	-1
+3523	jfg005.par	Base Resist to S	Sea Wave	1	0	1	-1	0	0	0	-1
+3530	jgg01.par	Gun Poison Body 	Sea Wave	1	0	1	-1	0	0	0	-1
+3531	jgg01.par	Gun Poison Body 	Sea Wave	1	0	1	-1	0	0	0	-1
+3532	jgg02.par	Gun Poison Body 	Sea Wave	1	0	1	-1	0	0	0	-1
+3533	jgg03.par	Gun Poison Body 	Sea Wave	1	0	1	-1	0	0	0	-1
+3540	jgg04.par	Gun Poison Head 	Sea Wave	1	0	1	-1	0	0	0	-1
+3541	jgg05.par	Gun Poison Head 	Sea Wave	1	0	1	-1	0	0	0	-1
+3542	jgg06.par	Gun Poison Head 	Sea Wave	1	0	1	-1	0	0	0	-1
+3543	jgg06.par	Gun Poison Head 	Sea Wave	1	0	1	-1	0	0	0	-1
+3550	jbrg01.par	Greatsword Poiso	Sea Wave	1	0	1	-1	0	0	0	-1
+3551	jbrg02.par	Greatsword Poiso	Sea Wave	1	0	1	-1	0	0	0	-1
+3552	jbrg03.par	Greatsword Poiso	Sea Wave	1	0	1	-1	0	0	0	-1
+3553	jbrg04.par	GreatswordPoison	Sea Wave	1	0	1	-1	0	0	0	-1
+3560	jjrg01.par	Single-handed Sw	Sea Wave	1	0	1	-1	0	0	0	-1
+3561	jjrg02.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3562	jjrg03.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3563	jjrg04.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3570	jsrg01.par	Dagger Poison At	Sea Wave	1	0	1	-1	0	0	0	-1
+3571	jsrg02.par	Dagger Poison At	Sea Wave	1	0	1	-1	0	0	0	-1
+3572	jsrg03.par	Dagger Poison At	Sea Wave	1	0	1	-1	0	0	0	-1
+3573	jsrg04.par	Dagger Poison At	Sea Wave	1	0	1	-1	0	0	0	-1
+3580	jbyg01.par	Great Sword Pois	Sea Wave	1	0	1	-1	0	0	0	-1
+3581	jbyg02.par	Greatsword Poiso	Sea Wave	1	0	1	-1	0	0	0	-1
+3582	jbyg03.par	Greatsword Poiso	Sea Wave	1	0	1	-1	0	0	0	-1
+3583	jbyg04.par	Greatsword Poiso	Sea Wave	1	0	1	-1	0	0	0	-1
+3590	jjyg01.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3591	jjyg02.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3592	jjyg03.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3593	jjyg04.par	Single-handed Sw	Sea Wave	1	0	1	-1	0	0	0	-1
+3600	jsyg01.par	Dagger Poison Bo	Sea Wave	1	0	1	-1	0	0	0	-1
+3601	jsyg02.par	Dagger Poison Bo	Sea Wave	1	0	1	-1	0	0	0	-1
+3602	jsyg03.par	Dagger Poison Bo	Sea Wave	1	0	1	-1	0	0	0	-1
+3603	jsyg04.par	Dagger Poison Bo	Sea Wave	1	0	1	-1	0	0	0	-1
+3610	jbbg01.par	Greatsword Poiso	Sea Wave	1	0	1	-1	0	0	0	-1
+3611	jbbg02.par	Greatsword Poiso	Sea Wave	1	0	1	-1	0	0	0	-1
+3612	jbbg03.par	Greatsword Poiso	Sea Wave	1	0	1	-1	0	0	0	-1
+3613	jbbg04.par	Greatsword Poiso	Sea Wave	1	0	1	-1	0	0	0	-1
+3620	jjbg01.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3621	jjbg02.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3622	jjbg03.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3623	jjbg04.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3630	jsbg01.par	Dagger Poison Re	Sea Wave	1	0	1	-1	0	0	0	-1
+3631	jsbg02.par	Dagger Poison Re	Sea Wave	1	0	1	-1	0	0	0	-1
+3632	jsbg03.par	Dagger Poison Re	Sea Wave	1	0	1	-1	0	0	0	-1
+3633	jsbg04.par	Dagger Poison Re	Sea Wave	1	0	1	-1	0	0	0	-1
+3640	jbg01.par	Greatsword Poiso	Sea Wave	1	0	1	-1	0	0	0	-1
+3641	jbg02.par	Greatsword Poiso	Sea Wave	1	0	1	-1	0	0	0	-1
+3642	jbg03.par	Greatsword Poiso	Sea Wave	1	0	1	-1	0	0	0	-1
+3643	jbg04.par	Greatsword Poiso	Sea Wave	1	0	1	-1	0	0	0	-1
+3650	jjg01.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3651	jjg02.par	Single-handed Sw	Sea Wave	1	0	1	-1	0	0	0	-1
+3652	jjg03.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3653	jjg04.par	Single Hand Swor	Sea Wave	1	0	1	-1	0	0	0	-1
+3660	jsg01.par	Dagger Poison 1	Sea Wave	1	0	1	-1	0	0	0	-1
+3661	jsg02.par	Dagger Poison 2	Sea Wave	1	0	1	-1	0	0	0	-1
+3662	jsg03.par	Dagger Poison 3	Sea Wave	1	0	1	-1	0	0	0	-1
+3663	jsg04.par	Dagger Poison 4	Sea Wave	1	0	1	-1	0	0	0	-1
+3670	jjrgb01.par	Sword Attack Poi	Sea Wave	1	0	1	-1	0	0	0	-1
+3671	jjrgb02.par	Sword Attack Poi	Sea Wave	1	0	1	-1	0	0	0	-1
+3672	jjrgb03.par	Sword Attack Poi	Sea Wave	1	0	1	-1	0	0	0	-1
+3673	jjrgb04.par	Sword Attack Poi	Sea Wave	1	0	1	-1	0	0	0	-1
+3680	jjryg01.par	Sword Attack Bon	Sea Wave	1	0	1	-1	0	0	0	-1
+3681	jjryg02.par	Sword Attack Bon	Sea Wave	1	0	1	-1	0	0	0	-1
+3682	jjryg03.par	Sword Attack Bon	Sea Wave	1	0	1	-1	0	0	0	-1
+3683	jjryg04.par	Sword Attack Bon	Sea Wave	1	0	1	-1	0	0	0	-1
+3690	jjgyb01.par	Sword Poison Bon	Sea Wave	1	0	1	-1	0	0	0	-1
+3691	jjgyb02.par	Sword Poison Bon	Sea Wave	1	0	1	-1	0	0	0	-1
+3692	jjgyb03.par	Sword Poison Bon	Sea Wave	1	0	1	-1	0	0	0	-1
+3693	jjgyb04.par	Sword Poison Bon	Sea Wave	1	0	1	-1	0	0	0	-1
+3700	jbrgb01.par	Greatsword Attac	Sea Wave	1	0	1	-1	0	0	0	-1
+3701	jbrgb02.par	Greatsword Attac	Sea Wave	1	0	1	-1	0	0	0	-1
+3702	jbrgb03.par	Greatsword Attac	Sea Wave	1	0	1	-1	0	0	0	-1
+3703	jbrgb04.par	Greatsword Attac	Sea Wave	1	0	1	-1	0	0	0	-1
+3710	jbryg01.par	GreatswordAttack	Sea Wave	1	0	1	-1	0	0	0	-1
+3711	jbryg02.par	Greatsword Attac	Sea Wave	1	0	1	-1	0	0	0	-1
+3712	jbryg03.par	Greatsword Attac	Sea Wave	1	0	1	-1	0	0	0	-1
+3713	jbryg04.par	Greatsword Attac	Sea Wave	1	0	1	-1	0	0	0	-1
+3720	jbgyb01.par	Greatsword Poiso	Sea Wave	1	0	1	-1	0	0	0	-1
+3721	jbgyb02.par	Greatsword Poiso	Sea Wave	1	0	1	-1	0	0	0	-1
+3722	jbgyb03.par	Greatsword Poiso	Sea Wave	1	0	1	-1	0	0	0	-1
+3723	jbgyb04.par	Greatsword Poiso	Sea Wave	1	0	1	-1	0	0	0	-1
+3730	jsrgb01.par	Dagger Attack Po	Sea Wave	1	0	1	-1	0	0	0	-1
+3731	jsrgb02.par	Dagger Attack Po	Sea Wave	1	0	1	-1	0	0	0	-1
+3732	jsrgb03.par	Dagger Attack Po	Sea Wave	1	0	1	-1	0	0	0	-1
+3733	jsrgb04.par	Dagger Attack Po	Sea Wave	1	0	1	-1	0	0	0	-1
+3740	jsryg01.par	Dagger Attack Bo	Sea Wave	1	0	1	-1	0	0	0	-1
+3741	jsryg02.par	Dagger Attack Bo	Sea Wave	1	0	1	-1	0	0	0	-1
+3742	jsryg03.par	Dagger Attack Bo	Sea Wave	1	0	1	-1	0	0	0	-1
+3743	jsryg04.par	DaggerAttack Bon	Sea Wave	1	0	1	-1	0	0	0	-1
+3750	jsgyb01.par	Dagger Poison Bo	Sea Wave	1	0	1	-1	0	0	0	-1
+3751	jsgyb02.par	Dagger Poison Bo	Sea Wave	1	0	1	-1	0	0	0	-1
+3752	jsgyb03.par	Dagger Poison Bo	Sea Wave	1	0	1	-1	0	0	0	-1
+3753	jsgyb04.par	Dagger Poison Bo	Sea Wave	1	0	1	-1	0	0	0	-1
+3760	jgb01.par	Gun Poison Attac	Sea Wave	1	0	1	-1	0	0	0	-1
+3761	jgb01.par	Gun Poison Attac	Sea Wave	1	0	1	-1	0	0	0	-1
+3762	jgrb01.par	Gun Poison Attac	Sea Wave	1	0	1	-1	0	0	0	-1
+3763	jgrb02.par	Gun Poison Attac	Sea Wave	1	0	1	-1	0	0	0	-1
+3770	jgy01.par	Gun Poison Attac	Sea Wave	1	0	1	-1	0	0	0	-1
+3771	jgy01.par	Gun Poison Attac	Sea Wave	1	0	1	-1	0	0	0	-1
+3772	jgry01.par	Gun Poison Attac	Sea Wave	1	0	1	-1	0	0	0	-1
+3773	jgry02.par	Gun Poison Attac	Sea Wave	1	0	1	-1	0	0	0	-1
+3780	jfq02.par	Staff Poison Res	Sea Wave	1	0	1	-1	0	0	0	-1
+3781	jfrb01.par	Staff Poison Res	Sea Wave	1	0	1	-1	0	0	0	-1
+3782	jfrb01.par	Staff Poison Res	Sea Wave	1	0	1	-1	0	0	0	-1
+3783	jfrb01.par	Staff Poison Res	Sea Wave	1	0	1	-1	0	0	0	-1
+3790	jfg004.par	Staff Poison Res	Sea Wave	1	0	1	-1	0	0	0	-1
+3791	jfg003.par	Staff Poison Res	Sea Wave	1	0	1	-1	0	0	0	-1
+3792	jfg002.par	Staff Poison Res	Sea Wave	1	0	1	-1	0	0	0	-1
+3793	jfrgb01.par	Staff Poison Res	Sea Wave	1	0	1	-1	0	0	0	-1
+3800	jfrb02.par	Staff Attack Poi	Sea Wave	1	0	1	-1	0	0	0	-1
+3801	jfry01.par	Base Resist to S	Sea Wave	1	0	1	-1	0	0	0	-1
+3802	jfry01.par	Base Resist to S	Sea Wave	1	0	1	-1	0	0	0	-1
+3803	jfry01.par	Base Resist to S	Sea Wave	1	0	1	-1	0	0	0	-1
+3810	jfg004.par	Staff Attack Poi	Sea Wave	1	0	1	-1	0	0	0	-1
+3811	jfg003.par	Staff Attack Poi	Sea Wave	1	0	1	-1	0	0	0	-1
+3812	jfg002.par	Staff Attack Poi	Sea Wave	1	0	1	-1	0	0	0	-1
+3813	jfryg01.par	Staff Attack Pos	Sea Wave	1	0	1	-1	0	0	0	-1
+3820	jfry02.par	Staff Attack Bon	Sea Wave	1	0	1	-1	0	0	0	-1
+3821	jfq03.par	Staff Attack Bon	Sea Wave	1	0	1	-1	0	0	0	-1
+3822	jfq03.par	Staff Attack Bon	Sea Wave	1	0	1	-1	0	0	0	-1
+3823	jfq03.par	Staff Attack Bon	Sea Wave	1	0	1	-1	0	0	0	-1
+3830	jfg004.par	Staff Attack Bon	Sea Wave	1	0	1	-1	0	0	0	-1
+3831	jfg003.par	Staff Attack Bon	Sea Wave	1	0	1	-1	0	0	0	-1
+3832	jfg002.par	Staff Attack Bon	Sea Wave	1	0	1	-1	0	0	0	-1
+3833	jfgyb01.par	Staff Attack Bon	Sea Wave	1	0	1	-1	0	0	0	-1
+3840	jlg01.par	Axe Poison 1	Sea Wave	1	0	1	-1	0	0	0	-1
+3841	jlg02.par	Axe Poison 2	Sea Wave	1	0	1	-1	0	0	0	-1
+3842	jlg03.par	Axe Poison 3	Sea Wave	1	0	1	-1	0	0	0	-1
+3843	jlg04.par	Axe Poison 4	Sea Wave	1	0	1	-1	0	0	0	-1
+3850	jlr01.par	Axe Attack 1	Sea Wave	1	0	1	-1	0	0	0	-1
+3851	jlr02.par	Axe Attack 2	Sea Wave	1	0	1	-1	0	0	0	-1
+3852	jlr03.par	Axe Attack 3	Sea Wave	1	0	1	-1	0	0	0	-1
+3853	jlr04.par	Axe Attack 4	Sea Wave	1	0	1	-1	0	0	0	-1
+3860	jlb01.par	Axe Defense 1	Sea Wave	1	0	1	-1	0	0	0	-1
+3861	jlb02.par	Axe Defense 2	Sea Wave	1	0	1	-1	0	0	0	-1
+3862	jlb03.par	Axe Defense 3	Sea Wave	1	0	1	-1	0	0	0	-1
+3863	jlb04.par	Axe Defense 4	Sea Wave	1	0	1	-1	0	0	0	-1
+3870	jly01.par	Axe Bonus 1	Sea Wave	1	0	1	-1	0	0	0	-1
+3871	jly02.par	Axe Bonus 2	Sea Wave	1	0	1	-1	0	0	0	-1
+3872	jly03.par	Axe Bonus 3	Sea Wave	1	0	1	-1	0	0	0	-1
+3873	jly04.par	Axe Bonus 4	Sea Wave	1	0	1	-1	0	0	0	-1
+3880	jlrgy01.par	Axe Attack Bonus	Sea Wave	1	0	1	-1	0	0	0	-1
+3881	jlrgy02.par	Axe Attack Bonus	Sea Wave	1	0	1	-1	0	0	0	-1
+3882	jlrgy03.par	Axe Attack Bonus	Sea Wave	1	0	1	-1	0	0	0	-1
+3883	jlrgy04.par	Axe Attack Bonus	Sea Wave	1	0	1	-1	0	0	0	-1
+3890	jlrgb01.par	Axe Poison Resis	Sea Wave	1	0	1	-1	0	0	0	-1
+3891	jlrgb02.par	Axe Attack Poiso	Sea Wave	1	0	1	-1	0	0	0	-1
+3892	jlrgb03.par	Axe Attack Poiso	Sea Wave	1	0	1	-1	0	0	0	-1
+3893	jlrgb04.par	Axe Attack Poiso	Sea Wave	1	0	1	-1	0	0	0	-1
+3900	jlgyb01.par	Axe Poison Resis	Sea Wave	1	0	1	-1	0	0	0	-1
+3901	jlgyb02.par	Axe Poison Resis	Sea Wave	1	0	1	-1	0	0	0	-1
+3902	jlgyb03.par	Axe Poison Resis	Sea Wave	1	0	1	-1	0	0	0	-1
+3903	jlgyb04.par	Axe Poison Resis	Sea Wave	1	0	1	-1	0	0	0	-1
+3910	jlrby01.par	Axe Parry Bonus 	Sea Wave	1	0	1	-1	0	0	0	-1
+3911	jlrby02.par	Axe Parry Bonus2	Sea Wave	1	0	1	-1	0	0	0	-1
+3912	jlrby03.par	Axe Parry Bonus 	Sea Wave	1	0	1	-1	0	0	0	-1
+3913	jlrby04.par	Axe Parry Bonus 	Sea Wave	1	0	1	-1	0	0	0	-1
+3920	jf000.par	Axe Poison 1	Sea Wave	1	0	1	-1	0	0	0	-1
+3921	jf000.par	Axe Poison 2	Sea Wave	1	0	1	-1	0	0	0	-1
+3922	jlhg03.par	Axe Poison 3	Sea Wave	1	0	1	-1	0	0	0	-1
+3923	jlhg02.par	Axe Poison 4	Sea Wave	1	0	1	-1	0	0	0	-1
+3930	jf000.par	Axe Defense 1	Sea Wave	1	0	1	-1	0	0	0	-1
+3931	jf000.par	Axe Defense 2	Sea Wave	1	0	1	-1	0	0	0	-1
+3932	jlhb03.par	Axe Defense 3	Sea Wave	1	0	1	-1	0	0	0	-1
+3933	jlhb02.par	Axe Defense 4	Sea Wave	1	0	1	-1	0	0	0	-1
+3940	jf000.par	Axe Attack 1	Sea Wave	1	0	1	-1	0	0	0	-1
+3941	jf000.par	Axe Attack 2	Sea Wave	1	0	1	-1	0	0	0	-1
+3942	jlhr03.par	Axe Attack 3	Sea Wave	1	0	1	-1	0	0	0	-1
+3943	jlhr02.par	Axe Attack 4	Sea Wave	1	0	1	-1	0	0	0	-1
+3950	jswb01.par	Crescent Dagger 	Sea Wave	1	0	1	-1	0	0	0	-1
+3951	jswb01.par	Crescent Dagger 	Sea Wave	1	0	1	-1	0	0	0	-1
+3952	jswb01.par	Crescent Dagger 	Sea Wave	1	0	1	-1	0	0	0	-1
+3953	jswb01.par	Crescent Dagger 	Sea Wave	1	0	1	-1	0	0	0	-1
+3960	jswr01.par	Crescent Dagger 	Sea Wave	1	0	1	-1	0	0	0	-1
+3961	jswr01.par	Crescent Dagger 	Sea Wave	1	0	1	-1	0	0	0	-1
+3962	jswr01.par	Crescent Dagger 	Sea Wave	1	0	1	-1	0	0	0	-1
+3963	jswr01.par	Crescent Dagger 	Sea Wave	1	0	1	-1	0	0	0	-1
+3970	jswy01.par	Crescent Dagger 	Sea Wave	1	0	1	-1	0	0	0	-1
+3971	jswy01.par	Crescent Dagger 	Sea Wave	1	0	1	-1	0	0	0	-1
+3972	jswy01.par	Crescent Dagger 	Sea Wave	1	0	1	-1	0	0	0	-1
+3973	jswy01.par	Crescent Dagger 	Sea Wave	1	0	1	-1	0	0	0	-1
+3980	jswg01.par	Crescent Dagger 	Sea Wave	1	0	1	-1	0	0	0	-1
+3981	jswg01.par	Crescent Dagger 	Sea Wave	1	0	1	-1	0	0	0	-1
+3982	jswg01.par	Crescent Dagger 	Sea Wave	1	0	1	-1	0	0	0	-1
+3983	jswg01.par	Crescent Dagger 	Sea Wave	1	0	1	-1	0	0	0	-1
+3990	cangying.par	Insect Swarm 1	Sea Wave	1	0	1	-1	0	0	0	-1
+3991	cangying.par	Insect Swarm 2	Sea Wave	1	0	1	-1	0	0	0	-1
+3992	cangying.par	Insect Swarm 3	Sea Wave	1	0	1	-1	0	0	0	-1
+3993	cangying.par	Insect Swarm 4	Sea Wave	1	0	1	-1	0	0	0	-1
+4000	ssdao.par	Death Scythe Ray	Sea Wave	1	0	10	11	0	0	0	-1
+4010	ssjj.par	Death Scythe Lav	Sea Wave	1	0	4	-1	0	0	0	-1
+4011	ssjj.par	Death Scythe Lav	Sea Wave	1	0	4	-1	0	0	0	-1
+4012	ssjj.par	Death Scythe Lav	Sea Wave	1	0	4	-1	0	0	0	-1
+4013	ssjj.par	Death Scythe Lav	Sea Wave	1	0	4	-1	0	0	0	-1
+4015	cap1.par	cap model	Sea Wave	1	0	3	-1	0	0	0	-1
+4016	cap2.par	cap model	Sea Wave	1	0	24	-1	0	0	0	-1
+4017	cap3.par	cap model	Sea Wave	1	0	24	-1	0	0	0	-1
+4018	cap4.par	cap model	Sea Wave	1	0	24	-1	0	0	0	-1
+4060	01020029.par	–‹√®«Ô«ß(¿∂)	∫£¿À	1	0	3	-1	0	0	0	-1
+4061	01020029(2).par	–‹√®«Ô«ß(ø®)	∫£¿À	1	0	3	-1	0	0	0	-1
+4062	01020029(3).par	–‹√®«Ô«ß(∑∆)	∫£¿À	1	0	24	-1	0	0	0	-1
+4063	01020029(4).par	–‹√®«Ô«ß(∞¨)	∫£¿À	1	0	3	-1	0	0	0	-1
+4064	01020031.par	∞Æ–ƒ«Ô«ß(¿∂)	∫£¿À	1	0	3	-1	0	0	0	-1
+4065	01020031(2).par	∞Æ–ƒ«Ô«ß(ø®)	∫£¿À	1	0	3	-1	0	0	0	-1
+4066	01020031(3).par	∞Æ–ƒ«Ô«ß(∑∆)	∫£¿À	1	0	24	-1	0	0	0	-1
+4067	01020031(4).par	∞Æ–ƒ«Ô«ß(∞¨)	∫£¿À	1	0	3	-1	0	0	0	-1
+4068	01020037.par	HelloKitty«Ô«ß(	∫£¿À	1	0	3	-1	0	0	0	-1
+4069	01020037(2).par	HelloKitty«Ô«ß(	∫£¿À	1	0	3	-1	0	0	0	-1
+4070	01020037(3).par	HelloKitty«Ô«ß(	∫£¿À	1	0	24	-1	0	0	0	-1
+4071	01020037(4).par	HelloKitty«Ô«ß(	∫£¿À	1	0	3	-1	0	0	0	-1
+4072	01020039.par	«·À…–‹«Ô«ß(¿∂)	∫£¿À	1	0	3	-1	0	0	0	-1
+4073	01020039(2).par	«·À…–‹«Ô«ß(ø®)	∫£¿À	1	0	3	-1	0	0	0	-1
+4074	01020039(3).par	«·À…–‹«Ô«ß(∑∆)	∫£¿À	1	0	24	-1	0	0	0	-1
+4075	01020039(4).par	«·À…–‹«Ô«ß(∞¨)	∫£¿À	1	0	3	-1	0	0	0	-1
+4076	01020041.par	ø…∞Æ˜º˜√Õ∑«Ô«ß(	∫£¿À	1	0	3	-1	0	0	0	-1
+4077	01020041(2).par	ø…∞Æ˜º˜√Õ∑«Ô«ß(	∫£¿À	1	0	3	-1	0	0	0	-1
+4078	01020041(3).par	ø…∞Æ˜º˜√Õ∑«Ô«ß(	∫£¿À	1	0	24	-1	0	0	0	-1
+4079	01020041(4).par	ø…∞Æ˜º˜√Õ∑«Ô«ß(	∫£¿À	1	0	3	-1	0	0	0	-1
+4080	01020042.par	 Æ◊÷æ¸«Ô«ß(¿∂)	∫£¿À	1	0	3	-1	0	0	0	-1
+4081	01020042(2).par	 Æ◊÷æ¸«Ô«ß(ø®)	∫£¿À	1	0	3	-1	0	0	0	-1
+4082	01020042(3).par	 Æ◊÷æ¸«Ô«ß(∑∆)	∫£¿À	1	0	24	-1	0	0	0	-1
+4083	01020042(4).par	 Æ◊÷æ¸«Ô«ß(∞¨)	∫£¿À	1	0	3	-1	0	0	0	-1
+4084	01020043.par	Õı’ﬂ«Ô«ß(¿∂)	∫£¿À	1	0	3	-1	0	0	0	-1
+4085	01020043(2).par	Õı’ﬂ«Ô«ß(ø®)	∫£¿À	1	0	3	-1	0	0	0	-1
+4086	01020043(3).par	Õı’ﬂ«Ô«ß(∑∆)	∫£¿À	1	0	24	-1	0	0	0	-1
+4087	01020043(4).par	Õı’ﬂ«Ô«ß(∞¨)	∫£¿À	1	0	3	-1	0	0	0	-1
+// [Gemini Decompiler] End of data.

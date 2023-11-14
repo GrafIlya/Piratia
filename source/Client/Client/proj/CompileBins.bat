@@ -1,0 +1,1 @@
+start system\Game.exe startgame table_bin corsairs1

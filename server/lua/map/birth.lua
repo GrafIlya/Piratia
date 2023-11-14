@@ -1,0 +1,1 @@
+print('Loading birth.lua')

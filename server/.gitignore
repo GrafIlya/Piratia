@@ -1,0 +1,8 @@
+LOG/
+logfile/
+*.bin
+*.exe
+*.pdb
+*.log
+*.bat
+tmp.txt

@@ -1,0 +1,13 @@
+*/log
+*/logfile
+*/desktop.ini
+*/.vs
+*.obj
+*.exe
+*.log
+*.dll
+*.loc
+*.pdb
+*.cfg
+*.ilk
+*.sln

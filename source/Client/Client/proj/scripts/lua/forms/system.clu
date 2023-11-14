@@ -1,0 +1,523 @@
+
+function addSystemOption(frm,compName,cap,hint,cap1,cap2,y)
+	labGame = UI_CreateCompent( frm, LABELEX_TYPE, "labGame", 30, 10, 12, y )
+	UI_SetCaption( labGame, cap )
+	UI_SetTextColor( labGame, COLOR_BLACK )
+	UI_SetLabelExFont( labGame, DEFAULT_FONT, TRUE, COLOR_WHITE )
+	UI_SetHint(labGame,hint)
+	
+	labGame = UI_CreateCompent( frm, LABELEX_TYPE, "labGame", 30, 10, 70, y )
+	UI_SetCaption( labGame, cap1 )
+	UI_SetTextColor( labGame, COLOR_BLACK )
+	UI_SetLabelExFont( labGame, DEFAULT_FONT, TRUE, COLOR_WHITE )
+	
+	chkHelpmodel1 = UI_CreateCompent( frm, CHECK_TYPE, "chkHelpmodel1", 10, 10, 102, y )
+	UI_LoadImage( chkHelpmodel1, "texture/ui/QQ2.tga", UNCHECKED, 10, 10, 40, 231 )
+	UI_LoadImage( chkHelpmodel1, "texture/ui/QQ2.tga", CHECKED, 10, 10, 52, 231 )
+	
+	labGame = UI_CreateCompent( frm, LABELEX_TYPE, "labGame", 30, 10, 115, y )
+	UI_SetCaption( labGame, cap2 )
+	UI_SetTextColor( labGame, COLOR_BLACK )
+	UI_SetLabelExFont( labGame, DEFAULT_FONT, TRUE, COLOR_WHITE )
+	
+	
+	chkHelpmodel2 = UI_CreateCompent( frm, CHECK_TYPE, "chkHelpmodel2", 10, 10, 147, y )
+	UI_LoadImage( chkHelpmodel2, "texture/ui/QQ2.tga", UNCHECKED, 10, 10, 40, 231 )
+	UI_LoadImage( chkHelpmodel2, "texture/ui/QQ2.tga", CHECKED, 10, 10, 52, 231 )
+	
+	cbxEffmodel = UI_CreateCompent( frm, CHECK_GROUP_TYPE, compName, 0, 0, 0, 0 )
+	UI_AddGroupBox( cbxEffmodel, chkHelpmodel1 )
+	UI_AddGroupBox( cbxEffmodel, chkHelpmodel2 )
+end
+
+
+
+-----------------------------------------------------------------------
+-- 定义系统
+-----------------------------------------------------------------------
+
+-- 创建系统表单
+frmSystem = UI_CreateForm( "frmSystem", FALSE, 190, 274, 150, 200, TRUE, FALSE )
+UI_FormSetHotKey( frmSystem, ALT_KEY, HOTKEY_O ) --'O'
+UI_ShowForm( frmSystem, TRUE )
+UI_AddFormToTemplete( frmSystem, 1 )
+UI_SetIsDrag( frmSystem, TRUE )
+UI_SetFormStyle( frmSystem, 0 )
+--UI_SetAlpha( frmSystem, 200 )
+
+
+--创建系统背景
+imgSystemT = UI_CreateCompent( frmSystem, IMAGE_TYPE, "imgSystemT", 190, 128, 0, 0 )
+UI_LoadImage( imgSystemT, "texture/ui/system1.dds", NORMAL, 190, 128, 0, 0 )
+imgSystemT2 = UI_CreateCompent( frmSystem, IMAGE_TYPE, "imgSystemT2", 190, 163, 0, 128 )
+UI_LoadImage( imgSystemT2, "texture/ui/system1.dds", NORMAL, 190, 163, 0, 93 )
+imgSystemD = UI_CreateCompent( frmSystem, IMAGE_TYPE, "imgSystemD", 190, 18, 0, 291 )
+UI_LoadImage( imgSystemD, "texture/ui/sure.dds", NORMAL, 190, 18, 0, 101 )
+
+--创建关闭按钮
+btnClose = UI_CreateCompent( frmSystem, BUTTON_TYPE, "btnClose", 14, 14, 169, 3 )
+UI_LoadButtonImage( btnClose, "texture/ui/PublicC.tga", 14, 14, 116, 175, TRUE )
+UI_SetButtonModalResult( btnClose, BUTTON_CLOSE )
+
+--创建视频按钮
+btnVideo = UI_CreateCompent( frmSystem, BUTTON_TYPE, "btnVideo", 121, 26, 35, 66 )
+UI_LoadButtonImage( btnVideo, "texture/ui/SysBotton1.dds", 121, 26, 0, 0, FALSE )
+
+--创建音频按纽
+btnAudio = UI_CreateCompent( frmSystem, BUTTON_TYPE, "btnAudio", 121, 26, 35, 101 )
+UI_LoadButtonImage( btnAudio, "texture/ui/SysBotton1.dds", 121, 26, 121, 0, FALSE )
+
+--创建游戏设置按钮
+btnGame = UI_CreateCompent( frmSystem, BUTTON_TYPE, "btnGame", 121, 26, 35, 136 )
+UI_LoadButtonImage( btnGame, "texture/ui/forge3.tga", 121, 26, 0, 133, FALSE )
+
+
+--创建跟换按纽
+btnChange = UI_CreateCompent( frmSystem, BUTTON_TYPE, "btnChange", 121, 26, 35, 171 )
+UI_LoadButtonImage( btnChange, "texture/ui/SysBotton1.dds", 121, 26, 0, 105, FALSE )
+
+--创建重登按纽
+btnRelogin = UI_CreateCompent( frmSystem, BUTTON_TYPE, "btnRelogin", 121, 26, 35, 206 )
+UI_LoadButtonImage( btnRelogin, "texture/ui/SysBotton1.dds", 121, 26, 121, 105, FALSE )
+
+--创建退出按纽
+btnExit = UI_CreateCompent( frmSystem, BUTTON_TYPE, "btnExit", 121, 26, 35, 241 )
+UI_LoadButtonImage( btnExit, "texture/ui/SysBotton2.dds", 121, 26, 0, 0, FALSE )
+
+-----------------------------------------------------------------------
+-- Volume Settings
+-----------------------------------------------------------------------
+frmAudio = UI_CreateForm( "frmAudio",  FALSE, 185, 100, 397, 500, FALSE, FALSE )
+UI_LoadFormImage( frmAudio, "texture/ui/Sure.dds", 185, 100, 0, 0, "", 0, 0 )
+UI_ShowForm( frmAudio, FALSE )
+UI_AddFormToTemplete( frmAudio, FORM_MAIN )
+--UI_FormSetHotKey( frmAudio, ALT_KEY, HOTKEY_X ) --'O'
+UI_SetFormStyle( frmAudio, 0 )
+UI_SetIsDrag( frmAudio, TRUE )
+--UI_SetAlpha( frmAudio, 200 )
+
+
+--创建关闭按钮
+btnClose = UI_CreateCompent( frmAudio, BUTTON_TYPE, "btnClose", 14, 14, 165, 3 )
+UI_LoadButtonImage( btnClose, "texture/ui/PublicC.tga", 14, 14, 116, 175, TRUE )
+UI_SetButtonModalResult( btnClose, BUTTON_CLOSE )
+
+--创建Title
+-- imgAudioTitle = UI_CreateCompent( frmAudio, IMAGE_TYPE, "imgAudioTitle", 49, 13, 7, 3 )
+-- UI_LoadImage( imgAudioTitle, "texture/ui/word.dds", NORMAL, 49, 13, 150, 0 )
+
+-- Volume Settings Label
+labTitle = UI_CreateCompent( frmAudio, LABELEX_TYPE, "labTitle", 400, 150, 10, 4 )
+UI_SetCaption( labTitle, "Volume Settings")
+UI_SetTextColor( labTitle, COLOR_BLACK )
+UI_SetLabelExFont( labTitle, DEFAULT_FONT, TRUE, COLOR_WHITE )
+
+-- Music Label
+labMusic = UI_CreateCompent( frmAudio, LABELEX_TYPE, "labMusic", 23, 11, 33, 32 )
+UI_SetCaption( labMusic, "Music" )
+UI_SetTextColor( labMusic, COLOR_BLACK )
+UI_SetLabelExFont( labMusic, DEFAULT_FONT, TRUE, COLOR_WHITE )
+
+-- Sound Effect Label
+labMidi = UI_CreateCompent( frmAudio, LABELEX_TYPE, "labMidi", 23, 11, 33, 52 )
+UI_SetCaption( labMidi, "Sound Effect" )
+UI_SetTextColor( labMidi, COLOR_BLACK )
+UI_SetLabelExFont( labMidi, DEFAULT_FONT, TRUE, COLOR_WHITE )
+
+--创建音乐调整
+imgAudioMusic = UI_CreateCompent( frmAudio, IMAGE_TYPE, "imgAudioMusic", 109, 12, 64, 31 )
+UI_LoadImage( imgAudioMusic, "texture/ui/Sysbotton2.dds", NORMAL, 109, 12, 88, 244 )
+
+proAudioMusic = UI_CreateCompent( frmAudio, PROGRESS_TYPE, "proAudioMusic", 95, 9, 71, 32 )
+UI_LoadScaleImage( proAudioMusic, "texture/ui/Sysbotton2.dds", PROGRESS_PROGRESS, 95, 9, 88, 234, 1.0, 1.0 )
+UI_SetProgressActiveMouse( proAudioMusic, 1 )
+
+--创建音效调整
+imgAudioMidi = UI_CreateCompent( frmAudio, IMAGE_TYPE, "imgAudioMidi", 109, 12, 64, 52 )
+UI_LoadImage( imgAudioMidi, "texture/ui/Sysbotton2.dds", NORMAL, 109, 12, 88, 244)
+
+proAudioMidi = UI_CreateCompent( frmAudio, PROGRESS_TYPE, "proAudioMidi", 95, 9, 71, 53 )
+UI_LoadScaleImage( proAudioMidi, "texture/ui/Sysbotton2.dds", PROGRESS_PROGRESS, 95, 9, 88, 234, 1.0, 1.0 )
+UI_SetProgressActiveMouse( proAudioMidi, 1 )
+
+
+-- Confirm Button
+btnYes = UI_CreateCompent( frmAudio, BUTTON_TYPE, "btnYes", 41, 19, 74, 78 )
+UI_LoadButtonImage( btnYes, "texture/ui/PublicC.tga", 41, 19, 0, 0, TRUE )
+
+-- Cancel Button
+btnNo = UI_CreateCompent( frmAudio, BUTTON_TYPE, "btnNo", 41, 19, 122, 78 )
+UI_LoadButtonImage( btnNo, "texture/ui/PublicC.tga", 41, 19, 0, 20, TRUE )
+
+-----------------------------------------------------------------------
+-- Display Settings
+-----------------------------------------------------------------------
+-- 创建系统视频表单
+frmVideo = UI_CreateForm( "frmVideo", FALSE, 190, 251, 150, 150, FALSE, FALSE )
+--UI_FormSetHotKey( frmVideo, ALT_KEY, HOTKEY_O)
+UI_ShowForm( frmVideo, FALSE )
+UI_AddFormToTemplete( frmVideo, 1 )
+UI_SetIsDrag( frmVideo, TRUE )
+--UI_SetFormStyle( frmVideo, 0 )
+--UI_SetAlpha( frmVideo, 200 )
+
+--创建系统背景
+imgVideoT = UI_CreateCompent( frmVideo, IMAGE_TYPE, "imgVideoT", 190, 251, 0, 0 )
+UI_LoadImage( imgVideoT, "texture/ui/video.dds", NORMAL, 190, 251, 0, 0 )
+
+btnClose = UI_CreateCompent( frmVideo, BUTTON_TYPE, "btnClose", 14, 14, 165, 3 )
+UI_LoadButtonImage( btnClose, "texture/ui/PublicC.tga", 14, 14, 116, 175, TRUE )
+UI_SetButtonModalResult( btnClose, BUTTON_CLOSE )
+
+--创建Title
+-- imgVideoTitle = UI_CreateCompent( frmVideo, IMAGE_TYPE, "imgVideoTitle", 49, 13, 7, 3 )
+-- UI_LoadImage( imgVideoTitle, "texture/ui/Word.dds", NORMAL, 49, 13, 90, 29 )
+
+-- Display Settings
+labTitle = UI_CreateCompent( frmVideo, LABELEX_TYPE, "labTitle", 400, 150, 10, 4 )
+UI_SetCaption( labTitle, "Display Settings")
+UI_SetTextColor( labTitle, COLOR_BLACK )
+UI_SetLabelExFont( labTitle, DEFAULT_FONT, TRUE, COLOR_WHITE )
+
+--加载确定
+btnYes = UI_CreateCompent( frmVideo, BUTTON_TYPE, "btnYes", 41, 19, 74, 206 )
+UI_LoadButtonImage( btnYes, "texture/ui/PublicC.tga", 41, 19, 0, 0, TRUE )
+
+--加载取消按钮
+btnNo = UI_CreateCompent( frmVideo, BUTTON_TYPE, "btnNo", 41, 19, 122, 206 )
+UI_LoadButtonImage( btnNo, "texture/ui/PublicC.tga", 41, 19, 0, 20, TRUE )
+
+------------创建贴图精度  高   低
+
+--创建贴图精度高
+chkTextureHigh = UI_CreateCompent( frmVideo, CHECK_TYPE, "chkTextureHigh", 10, 10, 102, 46 )
+UI_LoadImage( chkTextureHigh, "texture/ui/QQ2.tga", UNCHECKED, 10, 10, 40, 231 )
+UI_LoadImage( chkTextureHigh, "texture/ui/QQ2.tga", CHECKED, 10, 10, 52, 231 )
+
+--创建贴图精度中
+chkTextureNormal = UI_CreateCompent( frmVideo, CHECK_TYPE, "chkTextureNormal", 10, 10, 134, 46 )
+UI_LoadImage( chkTextureNormal, "texture/ui/QQ2.tga", UNCHECKED, 10, 10, 40, 231 )
+UI_LoadImage( chkTextureNormal, "texture/ui/QQ2.tga", CHECKED, 10, 10, 52, 231 )
+
+--创建贴图精度低
+chkTextureLow = UI_CreateCompent( frmVideo, CHECK_TYPE, "chkTextureLow", 10, 10, 165, 46 )
+UI_LoadImage( chkTextureLow, "texture/ui/QQ2.tga", UNCHECKED, 10, 10, 40, 231 )
+UI_LoadImage( chkTextureLow, "texture/ui/QQ2.tga", CHECKED, 10, 10, 52, 231 )
+
+--创建CHKGROUP
+cbxTexture = UI_CreateCompent( frmVideo, CHECK_GROUP_TYPE, "cbxTexture", 0, 0, 0, 0 )
+UI_AddGroupBox( cbxTexture, chkTextureHigh )
+UI_AddGroupBox( cbxTexture, chkTextureNormal )
+UI_AddGroupBox( cbxTexture, chkTextureLow )
+
+
+----------创建动画      开   关
+--创建动画开
+chkMovieOn = UI_CreateCompent( frmVideo, CHECK_TYPE, "chkMovieOn", 10, 10, 102, 66 )
+UI_LoadImage( chkMovieOn, "texture/ui/QQ2.tga", UNCHECKED, 10, 10, 40, 231 )
+UI_LoadImage( chkMovieOn, "texture/ui/QQ2.tga", CHECKED, 10, 10, 52, 231 )
+
+--创建动画关
+chkMovieOff = UI_CreateCompent( frmVideo, CHECK_TYPE, "chkMovieOff", 10, 10, 134, 66 )
+UI_LoadImage( chkMovieOff, "texture/ui/QQ2.tga", UNCHECKED, 10, 10, 40, 231 )
+UI_LoadImage( chkMovieOff, "texture/ui/QQ2.tga", CHECKED, 10, 10, 52, 231 )
+
+--创建CHKGROUP
+cbxMovie = UI_CreateCompent( frmVideo, CHECK_GROUP_TYPE, "cbxMovie", 0, 0, 0, 0 )
+UI_AddGroupBox( cbxMovie, chkMovieOn )
+UI_AddGroupBox( cbxMovie, chkMovieOff )
+
+
+-----------镜头旋转  开   关
+--创建镜头旋转开
+chkCameraOn = UI_CreateCompent( frmVideo, CHECK_TYPE, "chkCameraOn", 10, 10, 102, 86)
+UI_LoadImage( chkCameraOn, "texture/ui/QQ2.tga", UNCHECKED, 10, 10, 40, 231 )
+UI_LoadImage( chkCameraOn, "texture/ui/QQ2.tga", CHECKED, 10, 10, 52, 231 )
+
+
+--创建镜头旋转关
+chkCameraOff = UI_CreateCompent( frmVideo, CHECK_TYPE, "chkCameraOff", 10, 10, 134, 86 )
+UI_LoadImage( chkCameraOff, "texture/ui/QQ2.tga", UNCHECKED, 10, 10, 40, 231 )
+UI_LoadImage( chkCameraOff, "texture/ui/QQ2.tga", CHECKED, 10, 10, 52, 231 )
+
+--创建CHKGROUP
+cbxCamera = UI_CreateCompent( frmVideo, CHECK_GROUP_TYPE, "cbxCamera", 0, 0, 0, 0 )
+UI_AddGroupBox( cbxCamera, chkCameraOn )
+UI_AddGroupBox( cbxCamera, chkCameraOff )
+
+--------------视野      远   近
+--创建视野远
+chkViewFar = UI_CreateCompent( frmVideo, CHECK_TYPE, "chkViewFar", 10, 10, 102, 106 )
+--UI_LoadImage( chkViewFar, "texture/ui/QQ2.tga", UNCHECKED, 10, 10, 40, 231 )
+--UI_LoadImage( chkViewFar, "texture/ui/QQ2.tga", CHECKED, 10, 10, 52, 231 )
+
+--创建视野近
+chkViewNear = UI_CreateCompent( frmVideo, CHECK_TYPE, "chkViewNear", 10, 10, 134, 106 )
+--UI_LoadImage( chkViewNear, "texture/ui/QQ2.tga", UNCHECKED, 10, 10, 40, 231 )
+--UI_LoadImage( chkViewNear, "texture/ui/QQ2.tga", CHECKED, 10, 10, 52, 231 )
+
+--创建CHKGROUP
+cbxView = UI_CreateCompent( frmVideo, CHECK_GROUP_TYPE, "cbxView", 0, 0, 0, 0 )
+UI_AddGroupBox( cbxView, chkViewFar )
+UI_AddGroupBox( cbxView, chkViewNear )
+
+---------------地表痕迹  开   关     (角色影子 范围选择 脚印等)
+--创建痕迹开
+chkTrailOn = UI_CreateCompent( frmVideo, CHECK_TYPE, "chkTrailOn", 10, 10, 102, 106 )
+UI_LoadImage( chkTrailOn, "texture/ui/QQ2.tga", UNCHECKED, 10, 10, 40, 231 )
+UI_LoadImage( chkTrailOn, "texture/ui/QQ2.tga", CHECKED, 10, 10, 52, 231 )
+
+--创建痕迹关
+chkTrailOff = UI_CreateCompent( frmVideo, CHECK_TYPE, "chkTrailOff", 10, 10, 134, 106 )
+UI_LoadImage( chkTrailOff, "texture/ui/QQ2.tga", UNCHECKED, 10, 10, 40, 231 )
+UI_LoadImage( chkTrailOff, "texture/ui/QQ2.tga", CHECKED, 10, 10, 52, 231 )
+
+--创建CHKGROUP
+cbxTrail = UI_CreateCompent( frmVideo, CHECK_GROUP_TYPE, "cbxTrail", 0, 0, 0, 0 )
+UI_AddGroupBox( cbxTrail, chkTrailOn )
+UI_AddGroupBox( cbxTrail, chkTrailOff )
+
+--------------色深      32   16
+--创建色深32
+chkColor32 = UI_CreateCompent( frmVideo, CHECK_TYPE, "chkColor32", 10, 10, 102, 126 )
+UI_LoadImage( chkColor32, "texture/ui/QQ2.tga", UNCHECKED, 10, 10, 40, 231 )
+UI_LoadImage( chkColor32, "texture/ui/QQ2.tga", CHECKED, 10, 10, 52, 231 )
+
+--创建色深16
+chkColor16 = UI_CreateCompent( frmVideo, CHECK_TYPE, "chkColor16", 10, 10, 134, 126 )
+UI_LoadImage( chkColor16, "texture/ui/QQ2.tga", UNCHECKED, 10, 10, 40, 231 )
+UI_LoadImage( chkColor16, "texture/ui/QQ2.tga", CHECKED, 10, 10, 52, 231 )
+
+--创建CHKGROUP
+cbxColor = UI_CreateCompent( frmVideo, CHECK_GROUP_TYPE, "cbxColor", 0, 0, 0, 0 )
+UI_AddGroupBox( cbxColor, chkColor32 )
+UI_AddGroupBox( cbxColor, chkColor16 )
+
+--------------创建分辨率
+--创建1024*768
+chk1024 = UI_CreateCompent( frmVideo, CHECK_TYPE, "chk1024", 10, 10, 102, 186 )
+UI_LoadImage( chk1024, "texture/ui/QQ2.tga", UNCHECKED, 10, 10, 40, 231 )
+UI_LoadImage( chk1024, "texture/ui/QQ2.tga", CHECKED, 10, 10, 52, 231 )
+
+
+--创建800*600
+chk800 = UI_CreateCompent( frmVideo, CHECK_TYPE, "chk800", 10, 10, 142, 186 )
+UI_LoadImage( chk800, "texture/ui/QQ2.tga", UNCHECKED, 10, 10, 40, 231 )
+UI_LoadImage( chk800, "texture/ui/QQ2.tga", CHECKED, 10, 10, 52, 231)
+
+--创建CHKGROUP
+cbxSize = UI_CreateCompent( frmVideo, CHECK_GROUP_TYPE, "cbxSize", 0, 0, 0, 0 )
+UI_AddGroupBox( cbxSize, chk800 )
+UI_AddGroupBox( cbxSize, chk1024 )
+
+-----------------创建全屏  是  否
+--创建全屏
+chkFull = UI_CreateCompent( frmVideo, CHECK_TYPE, "chkFull", 10, 10, 102, 166 )
+UI_LoadImage( chkFull, "texture/ui/QQ2.tga", UNCHECKED, 10, 10, 40, 231 )
+UI_LoadImage( chkFull, "texture/ui/QQ2.tga", CHECKED, 10, 10, 52, 231 )
+
+--创建窗口
+chkWindow = UI_CreateCompent( frmVideo, CHECK_TYPE, "chkWindow", 10, 10, 134, 166 )
+UI_LoadImage( chkWindow, "texture/ui/QQ2.tga", UNCHECKED, 10, 10, 40, 231 )
+UI_LoadImage( chkWindow, "texture/ui/QQ2.tga", CHECKED, 10, 10, 52, 231 )
+
+
+--创建CHKGROUP
+cbxModel = UI_CreateCompent( frmVideo, CHECK_GROUP_TYPE, "cbxModel", 0, 0, 0, 0 )
+UI_AddGroupBox( cbxModel, chkFull )
+UI_AddGroupBox( cbxModel, chkWindow )
+
+-------------------创建画质
+--创建高画质
+chkHigh = UI_CreateCompent( frmVideo, CHECK_TYPE, "chkHigh", 10, 10, 102, 146 )
+UI_LoadImage( chkHigh, "texture/ui/QQ2.tga", UNCHECKED, 10, 10, 40, 231 )
+UI_LoadImage( chkHigh, "texture/ui/QQ2.tga", CHECKED, 10, 10, 52, 231 )
+
+--创建中画质
+chkNormal = UI_CreateCompent( frmVideo, CHECK_TYPE, "chkNormal", 10, 10, 134, 146 )
+UI_LoadImage( chkNormal, "texture/ui/QQ2.tga", UNCHECKED, 10, 10, 40, 231 )
+UI_LoadImage( chkNormal, "texture/ui/QQ2.tga", CHECKED, 10, 10, 52, 231 )
+
+--创建低画质
+chkLow = UI_CreateCompent( frmVideo, CHECK_TYPE, "chkLow", 10, 10, 165, 146 )
+UI_LoadImage( chkLow, "texture/ui/QQ2.tga", UNCHECKED, 10, 10, 40, 231 )
+UI_LoadImage( chkLow, "texture/ui/QQ2.tga", CHECKED, 10, 10, 52, 231 )
+
+--创建CHKGROUP
+cbxQuality = UI_CreateCompent( frmVideo, CHECK_GROUP_TYPE, "cbxQuality", 0, 0, 0, 0 )
+UI_AddGroupBox( cbxQuality, chkHigh )
+UI_AddGroupBox( cbxQuality, chkNormal )
+UI_AddGroupBox( cbxQuality, chkLow )
+
+-----------------------------------------------------------------------
+-- 定义游戏调整
+-----------------------------------------------------------------------
+-- 创建游戏调整表单
+frmGame = UI_CreateForm( "frmGame", FALSE, 190, 251, 150, 150, FALSE, FALSE )
+--UI_FormSetHotKey( frmGame, ALT_KEY, HOTKEY_Z )
+UI_ShowForm( frmGame, FALSE )
+UI_AddFormToTemplete( frmGame, 1 )
+UI_SetIsDrag( frmGame, TRUE )
+--UI_SetFormStyle( frmGame, 0 )
+--UI_SetAlpha( frmGame, 200 )
+
+--创建背景
+imgVideoT = UI_CreateCompent( frmGame, IMAGE_TYPE, "imgVideoT", 190, 251, 0, 0 )
+UI_LoadImage( imgVideoT, "texture/ui/video.dds", NORMAL, 190, 251, 0, 0 )
+
+imgcorver1 = UI_CreateCompent( frmGame, IMAGE_TYPE, "imgcorver1", 168, 15, 10, 42 )
+UI_LoadImage( imgcorver1, "texture/ui/video.dds", NORMAL, 1, 1, 19, 43 )
+
+imgcorver2 = UI_CreateCompent( frmGame, IMAGE_TYPE, "imgcorver2", 168, 15, 10, 63 )
+UI_LoadImage( imgcorver2, "texture/ui/video.dds", NORMAL, 1, 1, 19, 43 )
+
+imgcorver3 = UI_CreateCompent( frmGame, IMAGE_TYPE, "imgcorver3", 168, 15, 10, 83 )
+UI_LoadImage( imgcorver3, "texture/ui/video.dds", NORMAL, 1, 1, 19, 43 )
+
+imgcorver4 = UI_CreateCompent( frmGame, IMAGE_TYPE, "imgcorver4", 168, 15, 10, 103 )
+UI_LoadImage( imgcorver4, "texture/ui/video.dds", NORMAL, 1, 1, 19, 43 )
+
+imgcorver5 = UI_CreateCompent( frmGame, IMAGE_TYPE, "imgcorver5", 168, 15, 10, 123 )
+UI_LoadImage( imgcorver5, "texture/ui/video.dds", NORMAL, 1, 1, 19, 43 )
+
+imgcorver6 = UI_CreateCompent( frmGame, IMAGE_TYPE, "imgcorver6", 168, 15, 10, 143 )
+UI_LoadImage( imgcorver6, "texture/ui/video.dds", NORMAL, 1, 1, 19, 43 )
+
+imgcorver7 = UI_CreateCompent( frmGame, IMAGE_TYPE, "imgcorver7", 168, 15, 10, 163 )
+UI_LoadImage( imgcorver7, "texture/ui/video.dds", NORMAL, 1, 1, 19, 43 )
+
+imgcorver8 = UI_CreateCompent( frmGame, IMAGE_TYPE, "imgcorver8", 168, 15, 10, 183 )
+UI_LoadImage( imgcorver8, "texture/ui/video.dds", NORMAL, 1, 1, 19, 43 )
+
+--创建关闭按钮
+btnClose = UI_CreateCompent( frmGame, BUTTON_TYPE, "btnClose", 14, 14, 165, 3 )
+UI_LoadButtonImage( btnClose, "texture/ui/PublicC.tga", 14, 14, 116, 175, TRUE )
+UI_SetButtonModalResult( btnClose, BUTTON_CLOSE )
+
+--创建Title
+labGame = UI_CreateCompent( frmGame, LABELEX_TYPE, "labGame", 47, 11, 7, 3 )
+UI_SetCaption( labGame, "Game Setting" )
+UI_SetTextColor( labGame, COLOR_BLACK )
+UI_SetLabelExFont( labGame, DEFAULT_FONT, TRUE, COLOR_WHITE )
+
+--加载确定
+btnYes = UI_CreateCompent( frmGame, BUTTON_TYPE, "btnYes", 41, 19, 74, 206 )
+UI_LoadButtonImage( btnYes, "texture/ui/PublicC.tga", 41, 19, 0, 0, TRUE )
+UI_SetButtonModalResult( btnYes, BUTTON_CLOSE )
+
+--加载取消按钮
+btnNo = UI_CreateCompent( frmGame, BUTTON_TYPE, "btnNo", 41, 19, 122, 206 )
+UI_LoadButtonImage( btnNo, "texture/ui/PublicC.tga", 41, 19, 0, 20, TRUE )
+UI_SetButtonModalResult( btnNo, BUTTON_CLOSE )
+
+
+
+
+-------------
+--simplified game options
+-------------
+addSystemOption(frmGame,"cbxRunmodel","Movement","Use Server Movement","Off","On",46)
+addSystemOption(frmGame,"cbxLockmodel","Auto-Lock","Lock Bag on Logout","Off","On",66)
+addSystemOption(frmGame,"cbxHelpmodel","Help","Show Help","Hide","Show",86)
+addSystemOption(frmGame,"cbxAppmodel","Apparels","Show Apparels","Hide","Show",106)
+addSystemOption(frmGame,"cbxEffmodel","Effects","Show Effects","Hide","Show",126)
+addSystemOption(frmGame,"cbxStatemodel","State Icons","Show State Icons","Hide","Show",146)
+ 
+ 
+ 
+ 
+
+-----------------------------------------------------------------------
+-- 定义更换角色询问
+-----------------------------------------------------------------------
+frmAskChange = UI_CreateForm( "frmAskChange", FALSE, 185, 100, 397, 500, FALSE, FALSE )
+UI_LoadFormImage( frmAskChange, "texture/ui/Sure.dds", 185, 100, 0, 0, "", 0, 0 )
+
+UI_ShowForm( frmAskChange, FALSE )
+UI_AddFormToTemplete( frmAskChange, FORM_MAIN )
+UI_SetFormStyle( frmAskChange, 0 )
+--UI_SetAlpha( frmAskChange, 200 )
+
+--创建登陆Title
+labchange = UI_CreateCompent( frmAskChange, LABELEX_TYPE, "labchange", 47, 11, 7, 3 )
+UI_SetCaption( labchange, "Switch Character" )
+UI_SetTextColor( labchange, COLOR_BLACK )
+UI_SetLabelExFont( labchange, DEFAULT_FONT, TRUE, COLOR_WHITE )
+
+--创建询问内容
+labLogin = UI_CreateCompent( frmAskChange, LABELEX_TYPE, "labLogin", 59, 11, 35, 40 )
+UI_SetCaption( labLogin, "Confirm to switch \ncharacter?" )
+UI_SetTextColor( labLogin, COLOR_BLACK )
+UI_SetLabelExFont( labLogin, DEFAULT_FONT, TRUE, COLOR_WHITE )
+
+--加载确定
+btnYes = UI_CreateCompent( frmAskChange, BUTTON_TYPE, "btnYes", 41, 19, 74, 78 )
+UI_LoadButtonImage( btnYes, "texture/ui/PublicC.tga", 41, 19, 0, 0, TRUE )
+
+--加载取消按钮
+btnNo = UI_CreateCompent( frmAskChange, BUTTON_TYPE, "btnNo", 41, 19, 122, 78 )
+UI_LoadButtonImage( btnNo, "texture/ui/PublicC.tga", 41, 19, 0, 20, TRUE )
+
+-----------------------------------------------------------------------
+-- 定义重新登陆询问
+-----------------------------------------------------------------------
+frmAskRelogin = UI_CreateForm( "frmAskRelogin", FALSE, 185, 100, 397, 500, FALSE, FALSE )
+UI_LoadFormImage( frmAskRelogin, "texture/ui/Sure.dds", 185, 100, 0, 0, "", 0, 0 )
+
+UI_ShowForm( frmAskRelogin, FALSE )
+UI_AddFormToTemplete( frmAskRelogin, FORM_MAIN )
+UI_SetFormStyle( frmAskRelogin, 0 )
+--UI_SetAlpha( frmAskRelogin, 200 )
+
+--创建登陆Title
+labchange = UI_CreateCompent( frmAskRelogin, LABELEX_TYPE, "labchange", 47, 11, 7, 3 )
+UI_SetCaption( labchange, "Logout" )
+UI_SetTextColor( labchange, COLOR_BLACK )
+UI_SetLabelExFont( labchange, DEFAULT_FONT, TRUE, COLOR_WHITE )
+
+--创建询问内容
+labLogin = UI_CreateCompent( frmAskRelogin, LABELEX_TYPE, "labLogin", 59, 11, 35, 40 )
+UI_SetCaption( labLogin, "Confirm to log out?" )
+UI_SetTextColor( labLogin, COLOR_BLACK )
+UI_SetLabelExFont( labLogin, DEFAULT_FONT, TRUE, COLOR_WHITE )
+
+--加载确定
+btnYes = UI_CreateCompent( frmAskRelogin, BUTTON_TYPE, "btnYes", 41, 19, 74, 78 )
+UI_LoadButtonImage( btnYes, "texture/ui/PublicC.tga", 41, 19, 0, 0, TRUE )
+
+--加载取消按钮
+btnNo = UI_CreateCompent( frmAskRelogin, BUTTON_TYPE, "btnNo", 41, 19, 122, 78 )
+UI_LoadButtonImage( btnNo, "texture/ui/PublicC.tga", 41, 19, 0, 20, TRUE )
+
+-----------------------------------------------------------------------
+-- 定义退出游戏询问
+-----------------------------------------------------------------------
+frmAskExit = UI_CreateForm( "frmAskExit",  FALSE, 185, 100, 397, 500, FALSE, FALSE )
+UI_LoadFormImage( frmAskExit, "texture/ui/Sure.dds", 185, 100, 0, 0, "", 0, 0 )
+
+UI_ShowForm( frmAskExit, FALSE )
+UI_AddFormToTemplete( frmAskExit, FORM_MAIN )
+--UI_FormSetHotKey( frmAskExit, ALT_KEY, HOTKEY_X ) --'O'
+UI_SetFormStyle( frmAskExit, 0 )
+--UI_SetAlpha( frmAskExit, 200 )
+
+--创建退出Title
+labchange = UI_CreateCompent( frmAskExit, LABELEX_TYPE, "labchange", 47, 11, 7, 3 )
+UI_SetCaption( labchange, "Exit Game" )
+UI_SetTextColor( labchange, COLOR_BLACK )
+UI_SetLabelExFont( labchange, DEFAULT_FONT, TRUE, COLOR_WHITE )
+
+--创建询问内容
+labLogin = UI_CreateCompent( frmAskExit, LABELEX_TYPE, "labLogin", 63, 5, 11, 45 )
+UI_SetCaption( labLogin, "Do you wish to exit the game?" )
+UI_SetTextColor( labLogin, COLOR_BLACK )
+UI_SetLabelExFont( labLogin, DEFAULT_FONT, TRUE, COLOR_WHITE )
+
+
+--加载确定
+btnYes = UI_CreateCompent( frmAskExit, BUTTON_TYPE, "btnYes", 41, 19, 74, 78 )
+UI_LoadButtonImage( btnYes, "texture/ui/PublicC.tga", 41, 19, 0, 0, TRUE )
+
+--加载取消按钮
+btnNo = UI_CreateCompent( frmAskExit, BUTTON_TYPE, "btnNo", 41, 19, 122, 78 )
+UI_LoadButtonImage( btnNo, "texture/ui/PublicC.tga", 41, 19, 0, 20, TRUE )
