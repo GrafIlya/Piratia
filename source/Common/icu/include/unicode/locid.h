@@ -180,6 +180,8 @@
 U_NAMESPACE_BEGIN
 class U_COMMON_API Locale : public UObject {
 public:
+	/** Useful constant for this country/region. @stable ICU 2.0 */
+	static const Locale& U_EXPORT2 getRU(void);
 	/** Useful constant for this language. @stable ICU 2.0 */
 	static const Locale& U_EXPORT2 getEnglish(void);
 	/** Useful constant for this language. @stable ICU 2.0 */
@@ -223,8 +225,6 @@ public:
 	static const Locale& U_EXPORT2 getCanada(void);
 	/** Useful constant for this country/region. @stable ICU 2.0 */
 	static const Locale& U_EXPORT2 getCanadaFrench(void);
-	/** Useful constant for this country/region. @stable ICU 2.0 */
-	static const Locale& U_EXPORT2 getRU(void);
 
 	/**
      * Construct a default locale object, a Locale for the default locale ID.

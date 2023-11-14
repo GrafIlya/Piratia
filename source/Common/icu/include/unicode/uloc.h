@@ -241,7 +241,7 @@
 /** Useful constant for this country/region. @stable ICU 2.0 */
 #define ULOC_US "en_US"
 /** Useful constant for this country/region. @stable ICU 2.0 */
-#define ULOC_US "ru_RU"
+#define ULOC_RU "ru_RU"
 
 
 /**
