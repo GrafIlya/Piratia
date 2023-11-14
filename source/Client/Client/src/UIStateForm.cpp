@@ -21,12 +21,12 @@ using namespace GUI;
 bool CStateMgr::Init() {
 	CFormMgr& mgr = CFormMgr::s_Mgr;
 
-	frmState = _FindForm("frmState"); //å±æ€§è¡¨å•
+	frmState = _FindForm("frmState"); //????
 	if (!frmState)
 		return false;
 	frmState->evtShow = _evtMainShow;
 
-	//frmState å†…çš„æ§ä»¶åˆ—è¡¨
+	//frmState ??????
 	labStateName = dynamic_cast<CLabelEx*>(frmState->Find("labStateName"));
 	if (!labStateName)
 		return Error(g_oLangRec.GetString(45), frmState->GetName(), "labStateName");
@@ -54,7 +54,7 @@ bool CStateMgr::Init() {
 	if (!labFameShow)
 		return Error(g_oLangRec.GetString(45), frmState->GetName(), "labFameShow");
 
-	//6ä¸ª
+	//6?
 	btnStr = dynamic_cast<CTextButton*>(frmState->Find("btnStr"));
 	if (!btnStr)
 		return Error(g_oLangRec.GetString(45), frmState->GetName(), "btnStr");
@@ -76,7 +76,7 @@ bool CStateMgr::Init() {
 	btnSta->evtMouseClick = MainMouseDown;
 
 	//btnLuk  = dynamic_cast<CTextButton *>(frmState->Find("btnLuk"));
-	//if( !btnLuk )			return Error( "msgui.cluç•Œé¢<%s>ä¸Šæ‰¾ä¸åˆ°æ§ä»¶<%s>", frmState->GetName(), "btnLuk" );
+	//if( !btnLuk )			return Error( "msgui.clu??<%s>??????<%s>", frmState->GetName(), "btnLuk" );
 	//btnLuk->evtMouseClick = MainMouseDown;
 
 	btnDex = dynamic_cast<CTextButton*>(frmState->Find("btnDex"));
@@ -84,23 +84,38 @@ bool CStateMgr::Init() {
 		return Error(g_oLangRec.GetString(45), frmState->GetName(), "btnDex");
 	btnDex->evtMouseClick = MainMouseDown;
 
-	//frmStateä¸‹çš„è¿›åº¦æ¡æ§ä»¶
+	//frmState???????
 	labStateEXP = dynamic_cast<CLabelEx*>(frmState->Find("labStateEXP"));
 	if (!labStateEXP)
 		return Error(g_oLangRec.GetString(45), frmState->GetName(), "labStateEXP");
 	labStateEXP->SetIsCenter(true);
 
+	// Æèçíè
 	labStateHP = dynamic_cast<CLabelEx*>(frmState->Find("labStateHP"));
 	if (!labStateHP)
 		return Error(g_oLangRec.GetString(45), frmState->GetName(), "labStateHP");
 	labStateHP->SetIsCenter(true);
-
+	
+	//Ìàíà
 	labStateSP = dynamic_cast<CLabelEx*>(frmState->Find("labStateSP"));
 	if (!labStateSP)
 		return Error(g_oLangRec.GetString(45), frmState->GetName(), "labStateSP");
 	labStateSP->SetIsCenter(true);
-
-	//6ä¸ªåŸºæœ¬å±æ€§
+	
+	// Âîññòàíîâëåíèå æèçíåé
+	labStateBonusHP = dynamic_cast<CLabelEx*>(frmState->Find("labStateBonusHP"));
+	if (!labStateBonusHP)
+		return Error(g_oLangRec.GetString(45), frmState->GetName(), "labStateBonusHP");
+	labStateBonusHP->SetIsCenter(true);
+	
+	// Âîññòàíîâëåíèå ìàíû
+	labStateBonusSP = dynamic_cast<CLabelEx*>(frmState->Find("labStateBonusSP"));
+	if (!labStateBonusSP)
+		return Error(g_oLangRec.GetString(45), frmState->GetName(), "labStateBonusSP");
+	labStateBonusSP->SetIsCenter(true);
+	
+	
+	//6?????
 	labStrshow = (CLabelEx*)frmState->Find("labStrshow");
 	labDexshow = (CLabelEx*)frmState->Find("labDexshow");
 	labAgishow = (CLabelEx*)frmState->Find("labAgishow");
@@ -110,7 +125,7 @@ bool CStateMgr::Init() {
 	labSailLevel = (CLabelEx*)frmState->Find("labSailLevel");
 	labSailEXP = (CLabelEx*)frmState->Find("labSailEXP");
 
-	//8ä¸ªé™„åŠ å±æ€§
+	//8?????
 	labMinAtackShow = (CLabelEx*)frmState->Find("labMinAtackShow");
 	labMaxAtackShow = (CLabelEx*)frmState->Find("labMaxAtackShow");
 	labFleeShow = (CLabelEx*)frmState->Find("labFleeShow");
@@ -154,13 +169,20 @@ void CStateMgr::RefreshStateFrm() {
 
 	char pszCha[256] = {0};
 
-	// è¡€æ¡
+	// Æèçíè
 	if (labStateHP) {
 		sprintf(pszCha, "%d/%d", pCChaAttr->get(ATTR_HP), pCChaAttr->get(ATTR_MXHP));
 		labStateHP->SetCaption(pszCha);
 	}
-
-	// ç©å®¶ç»éªŒ
+	
+	// Âîññòàíîâëåíèå æèçíåé
+	if (labStateBonusHP) {
+		sprintf(pszCha, "%d", pCChaAttr->get(ATTR_BHREC));
+		labStateBonusHP->SetCaption(pszCha);
+	}
+	
+	
+	// ????
 	int num = pCChaAttr->get(ATTR_CEXP);
 	int curlev = pCChaAttr->get(ATTR_CLEXP);
 	int nextlev = pCChaAttr->get(ATTR_NLEXP);
@@ -179,21 +201,26 @@ void CStateMgr::RefreshStateFrm() {
 		labStateEXP->SetCaption(pszCha);
 	}
 
-	// é­”æ³•
-	num = pCChaAttr->get(ATTR_SP);
-	max = pCChaAttr->get(ATTR_MXSP);
+	// ??
+	// Ìàíà
 	if (labStateSP) {
-		sprintf(pszCha, "%d/%d", num, max);
+		sprintf(pszCha, "%d/%d", pCChaAttr->get(ATTR_SP), pCChaAttr->get(ATTR_MXSP));
 		labStateSP->SetCaption(pszCha);
 	}
+	
+	// Âîññòàíîâëåíèå ìàíû
+	if (labStateBonusSP) {
+		sprintf(pszCha, "%d", pCChaAttr->get(ATTR_BSREC));
+		labStateBonusSP->SetCaption(pszCha);
+	}
 
-	//ç©å®¶åç§°
+	//????
 	if (labStateName) {
 		sprintf(pszCha, "%s", pCha->getName());
 		labStateName->SetCaption((const char*)pszCha);
 	}
 
-	//å…¬ä¼š
+	//??
 	if (labGuildName) {
 		if (CGuildData::GetGuildID()) {
 			labGuildName->SetCaption(CGuildData::GetGuildName().c_str());
@@ -202,30 +229,30 @@ void CStateMgr::RefreshStateFrm() {
 		}
 	}
 
-	//ç©å®¶èŒä¸š
+	//????
 	if (labStateJob) {
 		sprintf(pszCha, "%s", g_GetJobName((short)pCChaAttr->get(ATTR_JOB)));
 		labStateJob->SetCaption((const char*)pszCha);
 	}
 
-	//ç©å®¶ç­‰çº§
+	//????
 	if (labStateLevel) {
-		sprintf(pszCha, "%d", pCChaAttr->get(ATTR_LV)); //æ˜¾ç¤ºè§’è‰²ç­‰çº§
+		sprintf(pszCha, "%d", pCChaAttr->get(ATTR_LV)); //??????
 		labStateLevel->SetCaption((const char*)pszCha);
 	}
 
-	//ç©å®¶å±æ€§ç‚¹
+	//?????
 	if (labStatePoint) {
-		sprintf(pszCha, "%d", pCChaAttr->get(ATTR_AP)); //æ˜¾ç¤ºè§’è‰²çš„å±æ€§ç‚¹
+		sprintf(pszCha, "%d", pCChaAttr->get(ATTR_AP)); //????????
 		labStatePoint->SetCaption((const char*)pszCha);
 	}
 
 	if (labSkillPoint) {
-		sprintf(pszCha, "%d", pCChaAttr->get(ATTR_TP)); //æ˜¾ç¤ºè§’è‰²çš„æŠ€èƒ½ç‚¹
+		sprintf(pszCha, "%d", pCChaAttr->get(ATTR_TP)); //????????
 		labSkillPoint->SetCaption((const char*)pszCha);
 	}
 
-	//å±æ€§ç‚¹å¤§äº0ï¼Œåˆ™æ˜¾ç¤º6ä¸ªåŸºæœ¬å±æ€§æŒ‰é’®
+	//?????0,???6???????
 	if (pCChaAttr->get(ATTR_AP) > 0) {
 		btnStr->SetIsShow(true);
 		btnAgi->SetIsShow(true);
@@ -241,7 +268,7 @@ void CStateMgr::RefreshStateFrm() {
 		//btnLuk->SetIsShow(false);
 		btnDex->SetIsShow(false);
 	}
-	//6ä¸ªåŸºæœ¬å±æ€§
+	//6?????
 	if (labStrshow) {
 		sprintf(pszCha, "%d", pCChaAttr->get(ATTR_STR));
 		labStrshow->SetCaption((const char*)pszCha);
@@ -280,19 +307,19 @@ void CStateMgr::RefreshStateFrm() {
 	//sprintf( pszCha , "%d" , pCChaAttr->get(ATTR_LUK));
 	//if(labLukshow)		labLukshow->SetCaption( (const char* ) pszCha);
 
-	//8ä¸ªé™„åŠ å±æ€§
+	//8?????
 	if (labMinAtackShow) {
-		sprintf(pszCha, "%d", pCChaAttr->get(ATTR_MNATK)); // æœ€å°æ”»å‡»åŠ›
+		sprintf(pszCha, "%d", pCChaAttr->get(ATTR_MNATK)); // ?????
 		labMinAtackShow->SetCaption((const char*)pszCha);
 	}
 
 	if (labMaxAtackShow) {
-		sprintf(pszCha, "%d", pCChaAttr->get(ATTR_MXATK)); // æœ€å¤§æ”»å‡»åŠ›
+		sprintf(pszCha, "%d", pCChaAttr->get(ATTR_MXATK)); // ?????
 		labMaxAtackShow->SetCaption((const char*)pszCha);
 	}
 
 	if (labFleeShow) {
-		sprintf(pszCha, "%d", pCChaAttr->get(ATTR_FLEE)); // é—ªé¿ç‡
+		sprintf(pszCha, "%d", pCChaAttr->get(ATTR_FLEE)); // ???
 		labFleeShow->SetCaption((const char*)pszCha);
 	}
 
@@ -301,7 +328,7 @@ void CStateMgr::RefreshStateFrm() {
 		if (v == 0)
 			sprintf(pszCha, "-1");
 		else
-			sprintf(pszCha, "%d", 100000 / v); // æ”»å‡»é—´éš”
+			sprintf(pszCha, "%d", 100000 / v); // ????
 
 		labAspeedShow->SetCaption((const char*)pszCha);
 	}
@@ -312,34 +339,34 @@ void CStateMgr::RefreshStateFrm() {
 	}
 
 	if (labHitShow) {
-		sprintf(pszCha, "%d", pCChaAttr->get(ATTR_HIT)); // å‘½ä¸­ç‡
+		sprintf(pszCha, "%d", pCChaAttr->get(ATTR_HIT)); // ???
 		labHitShow->SetCaption((const char*)pszCha);
 	}
 
 	if (labDefenceShow) {
-		sprintf(pszCha, "%d", pCChaAttr->get(ATTR_DEF)); // é˜²å¾¡åŠ›
+		sprintf(pszCha, "%d", pCChaAttr->get(ATTR_DEF)); // ???
 		labDefenceShow->SetCaption((const char*)pszCha);
 	}
 
 	//if(labCriticalShow)
 	//{
-	//	sprintf( pszCha , "%d" , pCChaAttr->get(ATTR_CRT)); // çˆ†å‡»ç‡
+	//	sprintf( pszCha , "%d" , pCChaAttr->get(ATTR_CRT)); // ???
 	//	labCriticalShow->SetCaption( (const char* ) pszCha);
 	//}
 
 	//if(labMfShow)
 	//{
-	//	sprintf( pszCha , "%d" , pCChaAttr->get(ATTR_MF));	 // å¯»å®ç‡
+	//	sprintf( pszCha , "%d" , pCChaAttr->get(ATTR_MF));	 // ???
 	//	labMfShow->SetCaption( (const char* ) pszCha);
 	//}
 
 	if (labPhysDefineShow) {
-		sprintf(pszCha, "%d", pCChaAttr->get(ATTR_PDEF)); // ç‰©ç†æŠµæŠ—
+		sprintf(pszCha, "%d", pCChaAttr->get(ATTR_PDEF)); // ????
 		labPhysDefineShow->SetCaption((const char*)pszCha);
 	}
 
 	if (labFameShow) {
-		sprintf(pszCha, "%d", pCChaAttr->get(ATTR_FAME)); // å£°æœ›
+		sprintf(pszCha, "%d", pCChaAttr->get(ATTR_FAME)); // ??
 		labFameShow->SetCaption((const char*)pszCha);
 	}
 }

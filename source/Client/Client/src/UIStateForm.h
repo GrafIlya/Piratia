@@ -2,7 +2,7 @@
 #include "UIGlobalVar.h"
 
 namespace GUI {
-// зЋ©е®¶е±ћжЂ§
+// ????
 class CStateMgr : public CUIInterface {
 public:
 	void RefreshStateFrm();
@@ -17,17 +17,17 @@ private:
 	static void MainMouseDown(CGuiData* pSender, int x, int y, DWORD key);
 
 private:
-	//frmStateз•Њйќўзљ„жЋ§д»¶
+	//frmState?????
 	CForm* frmState;
-	CLabelEx* labName;		 //е€›е»єи§’и‰ІеђЌз§°
-	CLabelEx* labGuildName;	 //е€›е»єе…¬дјљеђЌз§°
-	CLabelEx* labStateLevel; //е€›е»єз­‰зє§
-	CLabelEx* labStatePoint; //е€›е»єе±ћжЂ§з‚№ж•°
-	CLabelEx* labSkillPoint; //е€›е»єжЉЂиѓЅз‚№ж•°
-	CLabelEx* labJobShow;	 //иЃЊдёљ
-	CLabelEx* labFameShow;	 //е€›е»єеђЌеЈ°
+	CLabelEx* labName;		 //??????
+	CLabelEx* labGuildName;	 //??????
+	CLabelEx* labStateLevel; //????
+	CLabelEx* labStatePoint; //??????
+	CLabelEx* labSkillPoint; //??????
+	CLabelEx* labJobShow;	 //??
+	CLabelEx* labFameShow;	 //????
 
-	//6дёЄеџєжњ¬е±ћжЂ§
+	//6?????
 	CLabelEx* labStrshow;
 	CLabelEx* labDexshow;
 	CLabelEx* labAgishow;
@@ -37,7 +37,7 @@ private:
 	CLabelEx* labSailLevel;
 	CLabelEx* labSailEXP;
 
-	//8дёЄй™„еЉ е±ћжЂ§
+	//8?????
 	CLabelEx* labMinAtackShow;
 	CLabelEx* labMaxAtackShow;
 	CLabelEx* labFleeShow;
@@ -49,19 +49,26 @@ private:
 	//CLabelEx*		labMfShow;
 	CLabelEx* labPhysDefineShow;
 
-	//6 дёЄеџєжњ¬е±ћжЂ§жЊ‰й’®
-	CTextButton* btnStr; //е€›е»єеЉ›й‡Џж Џ
-	CTextButton* btnAgi; //е€›е»єж•ЏжЌ·ж Џ
-	CTextButton* btnCon; //е€›е»єдЅ“иґЁж Џ
-	CTextButton* btnSta; //е€›е»єзІѕзҐћж Џ
-	//CTextButton*   btnLuk;						//е€›е»єе№ёиїђж Џ
-	CTextButton* btnDex; //е€›е»єдё“жіЁж Џ
+	//6 ???????
+	CTextButton* btnStr; //?????
+	CTextButton* btnAgi; //?????
+	CTextButton* btnCon; //?????
+	CTextButton* btnSta; //?????
+	//CTextButton*   btnLuk;						//?????
+	CTextButton* btnDex; //?????
 
+	// Опыт
 	CLabelEx* labStateEXP;
+	// Жизни
 	CLabelEx* labStateHP;
+	// Восстановление жизней
+	CLabelEx* labStateBonusHP;
+	// Мана
 	CLabelEx* labStateSP;
+	// Восстановление маны
+	CLabelEx* labStateBonusSP;
 
-	CLabelEx* labFameSho; //е€›е»єеђЌеЈ°
+	CLabelEx* labFameSho; //????
 	CLabelEx* labStateName;
 	CLabelEx* labStateJob;
 };

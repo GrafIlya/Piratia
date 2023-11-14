@@ -65,17 +65,25 @@ UI_SetTextColor(labStateGuid, COLOR_WHITE)
 
 
 
--- ЖЗ
+-- Жизни
 labStateHP  = UI_CreateCompent(frmState, LABELEX_TYPE, "labStateHP", 130, 11, 74, 87)
 UI_SetCaption(labStateHP, "9999/9999")
 UI_SetTextColor(labStateHP, COLOR_WHITE)
 
--- МН
+-- Восстановление жизней
+labStateBonusHP  = UI_CreateCompent(frmState, LABELEX_TYPE, "labStateBonusHP", 130, 11, 74, 315)
+--UI_SetCaption(labStateBonusHP, "9999/9999")
+UI_SetTextColor(labStateBonusHP, COLOR_WHITE)
+
+-- Мана
 labStateSP  = UI_CreateCompent(frmState, LABELEX_TYPE, "labStateSP", 130, 11, 74, 104)
 UI_SetCaption(labStateSP, "9999/9999")
 UI_SetTextColor(labStateSP, COLOR_WHITE)
 
-
+-- Восстановление жизней
+labStateBonusSP  = UI_CreateCompent(frmState, LABELEX_TYPE, "labStateBonusSP", 130, 11, 74, 345)
+--UI_SetCaption(labStateBonusSP, "9999/9999")
+UI_SetTextColor(labStateBonusSP, COLOR_WHITE)
 
 
 -- Сила
