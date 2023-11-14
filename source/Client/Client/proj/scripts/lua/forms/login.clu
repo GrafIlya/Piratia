@@ -1,14 +1,14 @@
 -----------------------------------------------------------------------
--- ¶¨ÒåÇøÓòÁĞ±í
+-- å®šä¹‰åŒºåŸŸåˆ—è¡¨
 -----------------------------------------------------------------------	
--- ´´½¨ÇøÓòÁĞ±í±íµ¥
+-- åˆ›å»ºåŒºåŸŸåˆ—è¡¨è¡¨å•
 frmArea = UI_CreateForm( "frmArea", FALSE, 403, 290, 396, 225, FALSE, FALSE )
 UI_SetFormStyle( frmArea , 2 )
 UI_AddFormToTemplete( frmArea, FORM_LOGIN )
 --UI_SetAlpha( frmArea, 1 )
 UI_FormSetIsEscClose( frmArea, FALSE )
 
--- ¼ÓÔØ±³¾°Í¼Æ¬
+-- åŠ è½½èƒŒæ™¯å›¾ç‰‡
 imgBakTop = UI_CreateCompent( frmArea, IMAGE_TYPE, "imgBakTop", 256, 256, 0, 0 )
 UI_LoadImage( imgBakTop, "texture/ui/list1.tga", NORMAL, 256, 256, 0, 0 )
 UI_SetImageAlpha(imgBakTop,180)
@@ -29,7 +29,7 @@ imgPapa = UI_CreateCompent( frmArea, IMAGE_TYPE, "imgPapa", 43, 32, 7, 22 )
 UI_LoadImage( imgPapa, "texture/ui/PublicC.tga", NORMAL, 43, 32, 213, 15 )
 UI_SetImageAlpha(imgPapa,180)
 
--- ¼ÓÔØ½çÃætitle
+-- åŠ è½½ç•Œé¢title
 --imgServerTitle1 = UI_CreateCompent( frmArea, IMAGE_TYPE, "imgServerTitle1", 61, 13, 175, 27 )
 --UI_LoadImage( imgServerTitle1, "texture/ui/Word.dds", NORMAL, 61, 13, 158, 183 )
 labTitle = UI_CreateCompent( frmArea, LABELEX_TYPE, "labTitle", 400, 150, 175, 27 )
@@ -37,7 +37,7 @@ UI_SetCaption( labTitle, "Region")
 UI_SetTextColor( labTitle, COLOR_BLACK )
 UI_SetLabelExFont( labTitle, DEFAULT_FONT, TRUE, COLOR_WHITE )
 
---»ñµÃÇøÓòÁĞ±í
+--è·å¾—åŒºåŸŸåˆ—è¡¨
 lstRegion0 = UI_CreateCompent( frmArea, LIST_TYPE, "lstRegion0", 184, 150, 16, 35 )
 UI_SetMargin( lstRegion0, 19, 20, 15, 0 )
 UI_ListSetItemMargin( lstRegion0, 10, 9 )
@@ -56,42 +56,42 @@ UI_ListLoadSelectImage( lstRegion1, "texture/ui/SystemBotton3.tga", 79, 13, 25, 
 UI_SetImageAlpha( lstRegion1, 134 )
 UI_SetListFontColor( lstRegion1, COLOR_BLACK, COLOR_RED )
 
---»ñµÃ¹ö¶¯Ìõ
+--è·å¾—æ»šåŠ¨æ¡
 scrollid = UI_GetScroll( lstServer1 )
 --UI_SetIsEnabled( scrollid, FALSE )
 UI_SetSize( scrollid, 11, 1 )
 UI_LoadImage( scrollid, "texture/ui/PublicC.tga", COMPENT_BACK, 11, 1, 194, 13 )
 
---¼ÓÔØÏòÉÏ°´Å¥
+--åŠ è½½å‘ä¸ŠæŒ‰é’®
 id = UI_GetScrollObj( scrollid, SCROLL_UP )
 UI_LoadButtonImage( id, "texture/ui/PublicC.tga", 11, 9, 166, 0, TRUE )
 UI_SetSize( id, 11, 9 )
 
---¼ÓÔØ¹ö¶¯Ìõ
+--åŠ è½½æ»šåŠ¨æ¡
 id = UI_GetScrollObj( scrollid, SCROLL_SCROLL )
 UI_LoadImage( id, "texture/ui/PublicC.tga", COMPENT_BACK, 11, 43, 166, 10 )
 UI_SetSize( id, 11, 43 )
 
---¼ÓÔØÏòÏÂ°´Å¥
+--åŠ è½½å‘ä¸‹æŒ‰é’®
 id = UI_GetScrollObj( scrollid, SCROLL_DOWN )
 UI_LoadButtonImage( id, "texture/ui/PublicC.tga", 11, 9, 166, 0, TRUE )
 UI_SetSize( id, 11, 9 )
 
 
---È¡Ïû°´Å¥
+--å–æ¶ˆæŒ‰é’®
 btnNo = UI_CreateCompent( frmArea, BUTTON_TYPE, "btnNo", 41, 19, 185, 263 )
 UI_LoadButtonImage( btnNo, "texture/ui/SystemBotton3.tga", 41, 19, 0, 152, TRUE )
 UI_SetAlpha(btnNo,210)
 -----------------------------------------------------------------------
--- ¶¨Òå·şÎñÆ÷ÁĞ±í
+-- å®šä¹‰æœåŠ¡å™¨åˆ—è¡¨
 -----------------------------------------------------------------------	
--- ´´½¨·şÎñÆ÷ÁĞ±í±íµ¥
+-- åˆ›å»ºæœåŠ¡å™¨åˆ—è¡¨è¡¨å•
 frmServer = UI_CreateForm( "frmServer", FALSE, 403, 290, 396, 225, FALSE, FALSE )
 UI_SetFormStyle( frmServer , 2 )
 UI_AddFormToTemplete( frmServer, FORM_LOGIN )
 UI_FormSetIsEscClose( frmServer, FALSE )
 
--- ¼ÓÔØ±³¾°Í¼Æ¬
+-- åŠ è½½èƒŒæ™¯å›¾ç‰‡
 imgBakTop = UI_CreateCompent( frmServer, IMAGE_TYPE, "imgBakTop", 256, 256, 0, 0 )
 UI_LoadImage( imgBakTop, "texture/ui/list1.tga", NORMAL, 256, 256, 0, 0 )
 UI_SetImageAlpha(imgBakTop,220)
@@ -112,7 +112,7 @@ imgPapa = UI_CreateCompent( frmServer, IMAGE_TYPE, "imgPapa", 43, 32, 7, 22 )
 UI_LoadImage( imgPapa, "texture/ui/PublicC.tga", NORMAL, 43, 32, 213, 15 )
 UI_SetImageAlpha(imgPapa,220)
 
--- ¼ÓÔØ½çÃætitle
+-- åŠ è½½ç•Œé¢title
 --imgServerTitle = UI_CreateCompent( frmServer, IMAGE_TYPE, "imgServerTitle", 61, 13, 175, 27 )
 --UI_LoadImage( imgServerTitle, "texture/ui/Word.dds", NORMAL, 61, 13, 0, 86 )
 
@@ -120,7 +120,7 @@ labTitle = UI_CreateCompent( frmServer, LABELEX_TYPE, "labTitle", 400, 150, 175,
 UI_SetCaption( labTitle, "Server List")
 UI_SetTextColor( labTitle, COLOR_BLACK )
 UI_SetLabelExFont( labTitle, DEFAULT_FONT, TRUE, COLOR_WHITE )
---¼ÓÔØ·şÎñÆ÷×´Ì¬Í¼Æ¬
+--åŠ è½½æœåŠ¡å™¨çŠ¶æ€å›¾ç‰‡
 imgServerIcon0 = UI_CreateCompent( frmServer, IMAGE_TYPE, "imgServerIcon0", 12, 12, 175, 27 )
 --UI_LoadImage( imgServerIcon0, "texture/ui/list1.tga", NORMAL, 12, 12, 0, 0 )
 UI_SetMaxImage( imgServerIcon0, 4 )
@@ -143,7 +143,7 @@ UI_LoadImage( imgServerIcon0, "texture/ui/forge3.tga", 3, 11, 11, 186, 76 )
 --UI_SetMaxImage( imgServerIcon3, 4 )
 
 
---»ñµÃ·şÎñÆ÷ÁĞ±í
+--è·å¾—æœåŠ¡å™¨åˆ—è¡¨
 lvServer0 = UI_CreateListView( frmServer, "lvServer0", 184, 150, 16, 35, 2, 2 )
 UI_SetMargin( lvServer0, 19, 20, 15, 0 )
 UI_ListViewSetTitle( lvServer0, 0, 15, "", 0, 0, 0, 0 )
@@ -167,29 +167,29 @@ UI_SetImageAlpha( lvServer1, 134 )
 UI_SetListFontColor( lvServer1, COLOR_BLACK, COLOR_RED )
 
 
---»ñµÃ¹ö¶¯Ìõ
+--è·å¾—æ»šåŠ¨æ¡
 scrollid = UI_GetScroll( lstServer )
 --UI_SetIsEnabled( scrollid, FALSE )
 UI_SetSize( scrollid, 11, 1 )
 UI_LoadImage( scrollid, "texture/ui/PublicC.tga", COMPENT_BACK, 11, 1, 194, 13 )
 
---¼ÓÔØÏòÉÏ°´Å¥
+--åŠ è½½å‘ä¸ŠæŒ‰é’®
 id = UI_GetScrollObj( scrollid, SCROLL_UP )
 UI_LoadButtonImage( id, "texture/ui/PublicC.tga", 11, 9, 166, 0, TRUE )
 UI_SetSize( id, 11, 9 )
 
---¼ÓÔØ¹ö¶¯Ìõ
+--åŠ è½½æ»šåŠ¨æ¡
 id = UI_GetScrollObj( scrollid, SCROLL_SCROLL )
 UI_LoadImage( id, "texture/ui/PublicC.tga", COMPENT_BACK, 11, 43, 166, 10 )
 UI_SetSize( id, 11, 43 )
 
---¼ÓÔØÏòÏÂ°´Å¥
+--åŠ è½½å‘ä¸‹æŒ‰é’®
 id = UI_GetScrollObj( scrollid, SCROLL_DOWN )
 UI_LoadButtonImage( id, "texture/ui/PublicC.tga", 11, 9, 166, 0, TRUE )
 UI_SetSize( id, 11, 9 )
 
 
---È¡Ïû°´Å¥
+--å–æ¶ˆæŒ‰é’®
 btnNo = UI_CreateCompent( frmServer, BUTTON_TYPE, "btnNo", 41, 19, 185, 263 )
 UI_LoadButtonImage( btnNo, "texture/ui/SystemBotton3.tga", 41, 19, 0, 152, TRUE )
 UI_SetAlpha(btnNo,210)
@@ -253,7 +253,7 @@ UI_SetTextColor( labNo, COLOR_WHITE )
 UI_SetLabelExFont( labNo, DEFAULT_FONT, TRUE, COLOR_BLACK )
 
 
---¼ÓÔØÕÊºÅºÍÃÜÂëÊäÈë¿ò
+--åŠ è½½å¸å·å’Œå¯†ç è¾“å…¥æ¡†
 edtID = UI_CreateCompent( frmAccount, EDIT_TYPE, "edtID", 80, 12, 76, 32 )
 UI_SetTextColor( edtID, COLOR_BLACK )
 UI_SetEditMaxNum( edtID, 20 )
@@ -275,9 +275,9 @@ UI_LoadButtonImage( btnKeyboard, "texture/ui/corsairs/coButtons.png", 41, 19, 0,
 --UI_LoadButtonImage( btnRegister, "texture/ui/Keyboard4.tga", 57, 17, 197, 85, FALSE )
 
 -----------------------------------------------------------------------
--- ¶¨Òå½¡¿µÍ¨¸æ
+-- å®šä¹‰å¥åº·é€šå‘Š
 -----------------------------------------------------------------------	
--- ´´½¨½¡¿µÍ¨¸æ±íµ¥
+-- åˆ›å»ºå¥åº·é€šå‘Šè¡¨å•
 frmAnnounce = UI_CreateForm( "frmAnnounce", FALSE, 198, 207, 396, 190, FALSE, FALSE )
 UI_LoadFormImage( frmAnnounce, "texture/ui/Game.bmp", 198, 207, 0, 0, "", 0, 0 )
 UI_AddFormToTemplete( frmAnnounce, FORM_LOGIN )
@@ -286,12 +286,12 @@ UI_SetFormStyle( frmAnnounce, 2 )
 UI_FormSetIsEscClose( frmAnnounce, FALSE )
 
 
--- ¼ÓÔØ½çÃætitle
+-- åŠ è½½ç•Œé¢title
 imgAnnTitle = UI_CreateCompent( frmAnnounce, IMAGE_TYPE, "imgAnnTitle", 73, 13, 10, 4 )
 UI_LoadImage( imgAnnTitle, "texture/ui/Word.dds", NORMAL, 73, 13, 0, 58 )
 
 
---¼ÓÔØÈ·¶¨°´Å¥
+--åŠ è½½ç¡®å®šæŒ‰é’®
 btnYes = UI_CreateCompent( frmAnnounce, BUTTON_TYPE, "btnYes", 41, 19, 100, 180 )
 UI_LoadButtonImage( btnYes, "texture/ui/PublicC.tga", 41, 19, 0, 0, TRUE )
 UI_SetAlign( btnYes, caWidthCenter )
@@ -392,9 +392,9 @@ UI_SetEditMaxNumVisible( edtRegEmail, 12 )
 
 
 -----------------------------------------------------------------------
--- ¶¨ÒåÈí¼şÅÌ
+-- å®šä¹‰è½¯ä»¶ç›˜
 -----------------------------------------------------------------------	
--- ´´½¨Èí¼şÅÌ±íµ¥
+-- åˆ›å»ºè½¯ä»¶ç›˜è¡¨å•
 frmKeyboard = UI_CreateForm( "frmKeyboard", FALSE, 447, 122, 396, 178, FALSE, FALSE )
 --UI_LoadFormImage( frmKeyboard, "texture/ui/Game.bmp", 198, 207, 0, 0, "", 0, 0 )
 UI_AddFormToTemplete( frmKeyboard, FORM_LOGIN )
@@ -404,7 +404,7 @@ UI_FormSetIsEscClose( frmKeyboard, FALSE )
 --UI_FormSetHotKey( frmKeyboard, ALT_KEY, 75 ) --'K'
 
 
--- ¼ÓÔØ±³¾°Í¼Æ¬
+-- åŠ è½½èƒŒæ™¯å›¾ç‰‡
 imgKeyboard1 = UI_CreateCompent( frmKeyboard, IMAGE_TYPE, "imgKeyboard1", 256, 122, -4, 0 )
 UI_LoadImage( imgKeyboard1, "texture/ui/Keyboard1.tga", NORMAL, 256, 122, 0, 0 )
 UI_SetImageAlpha( imgKeyboard1, 210 )
@@ -413,7 +413,7 @@ imgKeyboard2 = UI_CreateCompent( frmKeyboard, IMAGE_TYPE, "imgKeyboard2", 191, 1
 UI_LoadImage( imgKeyboard2, "texture/ui/Keyboard1.tga", NORMAL, 191, 122, 0, 123 )
 UI_SetImageAlpha( imgKeyboard2, 210 )
 
--- ¼ÓÔØ½çÃætitle
+-- åŠ è½½ç•Œé¢title
 labTitle1 = UI_CreateCompent( frmKeyboard, LABELEX_TYPE, "labTitle1", 24, 10, 112, 4 )
 UI_SetCaption( labTitle1, "For the safety of your account" )
 UI_SetTextColor( labTitle1, COLOR_BLACK )
@@ -424,7 +424,7 @@ UI_SetCaption( labTitle2, "please use the soft keyboard to input your password" 
 UI_SetTextColor( labTitle2, COLOR_BLACK )
 UI_SetLabelExFont( labTitle2, DEFAULT_FONT, TRUE, COLOR_WHITE )
 
---¼ÓÔØÊıÖµ°´Å¥
+--åŠ è½½æ•°å€¼æŒ‰é’®
 btnNum1 = UI_CreateCompent( frmKeyboard, BUTTON_TYPE, "btnNum1", 27, 17, 28, 50 )
 UI_LoadButtonImage( btnNum1, "texture/ui/Keyboard2.tga", 27, 17, 108, 17, TRUE )
 btnNum2 = UI_CreateCompent( frmKeyboard, BUTTON_TYPE, "btnNum2", 27, 17, 55, 50 )
@@ -446,7 +446,7 @@ UI_LoadButtonImage( btnNum9, "texture/ui/Keyboard3.tga", 27, 17, 108, 102, TRUE 
 btnNum0 = UI_CreateCompent( frmKeyboard, BUTTON_TYPE, "btnNum0", 27, 17, 271, 50 )
 UI_LoadButtonImage( btnNum0, "texture/ui/Keyboard3.tga", 27, 17, 0, 187, TRUE )
 
---¼ÓÔØ×ÖÄ¸°´Å¥
+--åŠ è½½å­—æ¯æŒ‰é’®
 btnLetterA = UI_CreateCompent( frmKeyboard, BUTTON_TYPE, "btnLetterA", 27, 17, 1, 84 )
 UI_LoadButtonImage( btnLetterA, "texture/ui/Keyboard2.tga", 27, 17, 0, 51, TRUE )
 btnLetterB = UI_CreateCompent( frmKeyboard, BUTTON_TYPE, "btnLetterB", 27, 17, 109, 101 )
@@ -500,33 +500,33 @@ UI_LoadButtonImage( btnLetterY, "texture/ui/Keyboard2.tga", 27, 17, 108, 204, TR
 btnLetterZ = UI_CreateCompent( frmKeyboard, BUTTON_TYPE, "btnLetterZ", 27, 17, 1, 101 )
 UI_LoadButtonImage( btnLetterZ, "texture/ui/Keyboard2.tga", 27, 17, 0, 68, TRUE )
 
----------------¼ÓÔØ¹¦ÄÜ°´Å¥
---¼ÓÔØÈ·¶¨°´Å¥
+---------------åŠ è½½åŠŸèƒ½æŒ‰é’®
+--åŠ è½½ç¡®å®šæŒ‰é’®
 btnYes = UI_CreateCompent( frmKeyboard, BUTTON_TYPE, "btnYes", 83, 34, 352, 84 )
 UI_LoadButtonImage( btnYes, "texture/ui/Keyboard4.tga", 83, 34, 57, 85, FALSE )
 --UI_SetAlign( btnYes, caWidthCenter )
 UI_SetCaption( btnYes, "" )
 
---¼ÓÔØ¹Ø±Õ°´Å¥
+--åŠ è½½å…³é—­æŒ‰é’®
 btnClose = UI_CreateCompent( frmKeyboard, BUTTON_TYPE, "btnClose", 57, 17, 379, 8 )
 UI_LoadButtonImage( btnClose, "texture/ui/Keyboard4.tga", 57, 17, 140, 153, FALSE )
 
 
 
---¼ÓÔØ´óĞ¡Ğ´ÇĞ»»¿ª¹Ø
+--åŠ è½½å¤§å°å†™åˆ‡æ¢å¼€å…³
 chkShift = UI_CreateCompent( frmKeyboard, CHECK_TYPE, "chkShift", 57, 17, 379, 67 )
 UI_LoadImage( chkShift, "texture/ui/Keyboard4.tga", UNCHECKED, 57, 17, 140, 85 )
 UI_LoadImage( chkShift, "texture/ui/Keyboard4.tga", CHECKED, 57, 17, 140, 119 )
 
 
 
---¼ÓÔØÍË¸ñ°´Å¥
+--åŠ è½½é€€æ ¼æŒ‰é’®
 btnDel = UI_CreateCompent( frmKeyboard, BUTTON_TYPE, "btnDel", 57, 34, 379, 33 )
 UI_LoadButtonImage( btnDel, "texture/ui/Keyboard4.tga", 57, 34, 0, 85, FALSE )
 --UI_SetAlign( btnDel, caWidthCenter )
 UI_SetCaption( btnDel, "" )
 
---¼ÓÔØÆäËû°´Å¥
+--åŠ è½½å…¶ä»–æŒ‰é’®
 btnOther101 = UI_CreateCompent( frmKeyboard, BUTTON_TYPE, "btnOther101", 27, 17, 1, 33 )
 UI_LoadButtonImage( btnOther101, "texture/ui/Keyboard2.tga", 27, 17, 0, 0, TRUE )
 btnOther102 = UI_CreateCompent( frmKeyboard, BUTTON_TYPE, "btnOther102", 27, 17, 28, 33 )
@@ -598,7 +598,7 @@ UI_LoadButtonImage( btnOther506, "texture/ui/Keyboard4.tga", 27, 17, 0, 68, TRUE
 
 
 -----------------------------------------------------------------------
--- ²âÊÔFORM1 -added by Arcol
+-- æµ‹è¯•FORM1 -added by Arcol
 -----------------------------------------------------------------------	
 frmTest1 = UI_CreateForm( "frmTest1_Arcol", FALSE, 160, 120, 600, 200, FALSE, FALSE )
 UI_LoadFormImage( frmTest1, "texture/ui/Test1.bmp", 160, 120, 0, 0, "", 0, 0 )
@@ -606,7 +606,7 @@ UI_AddFormToTemplete( frmTest1, FORM_LOGIN )
 UI_SetIsDrag( frmTest1, TRUE )
 
 -----------------------------------------------------------------------
--- ²âÊÔFORM2 -added by Arcol
+-- æµ‹è¯•FORM2 -added by Arcol
 -----------------------------------------------------------------------	
 frmTest2 = UI_CreateForm( "frmTest2_Arcol", FALSE, 160, 120, 600, 400, FALSE, FALSE )
 UI_LoadFormImage( frmTest2, "texture/ui/Test2.bmp", 160, 120, 0, 0, "", 0, 0 )
@@ -623,9 +623,9 @@ UI_SetLabelExFont( labTest, DEFAULT_FONT, TRUE, COLOR_BLACK )
 
 
 -----------------------------------------------------------------------
--- ¶¨Òå¶ş´ÎÃÜÂë´´½¨´°Ìå  2006.07.13
+-- å®šä¹‰äºŒæ¬¡å¯†ç åˆ›å»ºçª—ä½“  2006.07.13
 -----------------------------------------------------------------------	
--- ´´½¨ ¶ş´ÎÃÜÂë´´½¨´°Ìå
+-- åˆ›å»º äºŒæ¬¡å¯†ç åˆ›å»ºçª—ä½“
 frmDoublePwdCreate = UI_CreateForm("frmDoublePwdCreate", FALSE, 247, 129, 200, 200, FALSE, FALSE)
 UI_AddFormToTemplete( frmDoublePwdCreate, FORM_SELECT )
 --UI_SetFormStyle( frmDoublePwdCreate, 2 )
@@ -637,19 +637,19 @@ UI_FormSetEnterButton(frmDoublePwdCreate,btnYes)
 
 --UI_FormSetHotKey( frmDoublePwdCreate, ALT_KEY, HOTKEY_V ) 
 
--- ¼ÓÔØ±³¾°Í¼Æ¬
+-- åŠ è½½èƒŒæ™¯å›¾ç‰‡
 imgDoublePwdCreate = UI_CreateCompent( frmDoublePwdCreate, IMAGE_TYPE,"imgDoublePwdCreate" ,247, 129, 0, 0)
 UI_LoadImage(imgDoublePwdCreate, "texture/ui/a001.tga", NORMAL , 247, 129, 0, 0)
 
---¼ÓÔØÈ·¶¨°´Å¥
+--åŠ è½½ç¡®å®šæŒ‰é’®
 btnYes = UI_CreateCompent( frmDoublePwdCreate, BUTTON_TYPE, "btnYes", 41, 19, 130, 107 )
 UI_LoadButtonImage( btnYes, "texture/ui/PublicC.tga", 41, 19, 0, 0, TRUE )
 
---¼ÓÔØÈ¡Ïû°´Å¥
+--åŠ è½½å–æ¶ˆæŒ‰é’®
 btnClear = UI_CreateCompent( frmDoublePwdCreate, BUTTON_TYPE, "btnClear", 41, 19, 175, 107 )
 UI_LoadButtonImage( btnClear, "texture/ui/PublicC.tga", 41, 19, 0, 20, TRUE )
 
--- ¼ÓÔØÃÜÂëÏÔÊ¾¿ò
+-- åŠ è½½å¯†ç æ˜¾ç¤ºæ¡†
 lab1 = UI_CreateCompent( frmDoublePwdCreate, LABELEX_TYPE, "lab1", 210, 11, 17, 35)
 UI_SetCaption( lab1, "Enter security code" )
 UI_SetTextColor( lab1,COLOR_BLACK )
@@ -666,7 +666,7 @@ edtDoublePwdCreateRetry = UI_CreateCompent(frmDoublePwdCreate, EDIT_TYPE,"edtDou
 UI_SetEditMaxNum( edtDoublePwdCreateRetry, 12 )
 UI_SetEditMaxNumVisible(edtDoublePwdCreateRetry,12)
 
---´´½¨TITLE
+--åˆ›å»ºTITLE
 --labID = UI_CreateCompent( frmDoublePwdCreate, LABELEX_TYPE, "labID", 210, 11, 16, 84)
 --UI_SetCaption( labID, "For the safety of your account, please make a security code" )
 --UI_SetTextColor( labID,COLOR_RED )
@@ -674,9 +674,9 @@ UI_SetEditMaxNumVisible(edtDoublePwdCreateRetry,12)
 
 
 -----------------------------------------------------------------------
--- ¶¨Òå¶ş´ÎÃÜÂëĞŞ¸Ä´°Ìå
+-- å®šä¹‰äºŒæ¬¡å¯†ç ä¿®æ”¹çª—ä½“
 -----------------------------------------------------------------------	
--- ´´½¨ ¶ş´ÎÃÜÂëĞŞ¸Ä´°Ìå
+-- åˆ›å»º äºŒæ¬¡å¯†ç ä¿®æ”¹çª—ä½“
 frmDoublePwdAlter = UI_CreateForm("frmDoublePwdAlter", TRUE, 247, 129, 200, 200, TRUE, TRUE)
 UI_ShowForm(frmDoublePwdAlter, FALSE)
 --UI_SetFormStyle( frmDoublePwdAlter, 2 )
@@ -687,15 +687,15 @@ UI_FormSetIsEscClose(frmDoublePwdAlter, TRUE)
 UI_FormSetEnterButton(frmDoublePwdAlter,btnYes)
 --UI_FormSetHotKey( frmDoublePwdAlter, ALT_KEY, HOTKEY_C )
 
--- ¼ÓÔØ±³¾°Í¼Æ¬
+-- åŠ è½½èƒŒæ™¯å›¾ç‰‡
 imgDoublePwdAlter = UI_CreateCompent(frmDoublePwdAlter, IMAGE_TYPE,"imgDoublePwdAlter", 247, 129, 0, 0)
 UI_LoadImage( imgDoublePwdAlter, "texture/ui/a002.tga", NORMAL, 247, 129, 0, 0)
 
--- ¼ÓÔØÈ·¶¨°´Å¥
+-- åŠ è½½ç¡®å®šæŒ‰é’®
 btnYes = UI_CreateCompent( frmDoublePwdAlter, BUTTON_TYPE, "btnYes", 41, 19, 130, 107 )
 UI_LoadButtonImage( btnYes, "texture/ui/PublicC.tga", 41, 19, 0, 0, TRUE )
 
---¼ÓÔØÈ¡Ïû°´Å¥
+--åŠ è½½å–æ¶ˆæŒ‰é’®
 btnClear = UI_CreateCompent( frmDoublePwdAlter, BUTTON_TYPE, "btnClear", 41, 19, 175, 107 )
 UI_LoadButtonImage( btnClear, "texture/ui/PublicC.tga", 41, 19, 0, 20, TRUE )
 
@@ -704,7 +704,7 @@ labTitle = UI_CreateCompent( frmDoublePwdAlter, LABELEX_TYPE, "labTitle", 400, 1
 UI_SetCaption( labTitle, "Edit security code")
 UI_SetTextColor( labTitle, COLOR_BLACK )
 UI_SetLabelExFont( labTitle, DEFAULT_FONT, TRUE, COLOR_WHITE )
--- ¼ÓÔØÃÜÂëÏÔÊ¾¿ò
+-- åŠ è½½å¯†ç æ˜¾ç¤ºæ¡†
 lab1 = UI_CreateCompent( frmDoublePwdAlter, LABELEX_TYPE, "lab1", 210, 11, 16, 32)
 UI_SetCaption( lab1, "Enter old code" )
 UI_SetTextColor( lab1,COLOR_BLACK )
@@ -730,9 +730,9 @@ UI_SetEditMaxNum( edtDoublePwdAlterNewRetry, 12 )
 UI_SetEditMaxNumVisible(edtDoublePwdAlterNewRetry,12)
 
 -----------------------------------------------------------------------
--- ¶¨Òå¶ş´ÎÃÜÂëÏÔÊ¾´°Ìå
+-- å®šä¹‰äºŒæ¬¡å¯†ç æ˜¾ç¤ºçª—ä½“
 -----------------------------------------------------------------------	
--- ´´½¨ ¶ş´ÎÃÜÂëÏÔÊ¾´°Ìå
+-- åˆ›å»º äºŒæ¬¡å¯†ç æ˜¾ç¤ºçª—ä½“
 frmDoublePwd = UI_CreateForm("frmDoublePwd", TRUE, 247, 129, 200, 200, TRUE, TRUE)
 UI_ShowForm( frmDoublePwd, FALSE )
 --UI_SetFormStyle( frmDoublePwd, 2 )
@@ -743,7 +743,7 @@ UI_FormSetIsEscClose( frmDoublePwd, TRUE)
 UI_FormSetEnterButton(frmDoublePwd,btnYes)
 --UI_FormSetHotKey( frmDoublePwd, ALT_KEY, HOTKEY_Z )
 
--- ¼ÓÔØ±³¾°Í¼Æ¬
+-- åŠ è½½èƒŒæ™¯å›¾ç‰‡
 imgDoublePwd = UI_CreateCompent(frmDoublePwd, IMAGE_TYPE,"imgDoublePwd", 247, 129, 0, 0)
 UI_LoadImage( imgDoublePwd, "texture/ui/a003.tga", NORMAL, 247, 129, 0, 0)
 --title
@@ -751,31 +751,31 @@ labTitle = UI_CreateCompent( frmDoublePwd, LABELEX_TYPE, "labTitle", 400, 150, 1
 UI_SetCaption( labTitle, "Enter security code")
 UI_SetTextColor( labTitle, COLOR_BLACK )
 UI_SetLabelExFont( labTitle, DEFAULT_FONT, TRUE, COLOR_WHITE )
---¼ÓÔØlabel
+--åŠ è½½label
 lab1 = UI_CreateCompent( frmDoublePwd, LABELEX_TYPE, "lab1", 210, 11, 16, 46)
 UI_SetCaption( lab1, "Enter security code" )
 UI_SetTextColor( lab1,COLOR_BLACK )
 UI_SetLabelExFont( lab1, DEFAULT_FONT, TRUE, COLOR_WHITE )
 
--- ¼ÓÔØÃÜÂëÏÔÊ¾¿ò
+-- åŠ è½½å¯†ç æ˜¾ç¤ºæ¡†
 edtDoublePwd = UI_CreateCompent(frmDoublePwd, EDIT_TYPE,"edtDoublePwd", 66, 14, 137, 44)
 UI_SetIsKeyFocus(edtDoublePwd,FALSE)
 UI_SetEditMaxNum(edtDoublePwd, 12 )
 UI_SetEditMaxNumVisible(edtDoublePwd,12)
 
--- ¼ÓÔØÈ·¶¨°´Å¥
+-- åŠ è½½ç¡®å®šæŒ‰é’®
 btnYes = UI_CreateCompent( frmDoublePwd, BUTTON_TYPE, "btnYes", 41, 19, 130, 107 )
 UI_LoadButtonImage( btnYes, "texture/ui/PublicC.tga", 41, 19, 0, 0, TRUE )
 
---¼ÓÔØÈ¡Ïû°´Å¥
+--åŠ è½½å–æ¶ˆæŒ‰é’®
 btnClear = UI_CreateCompent( frmDoublePwd, BUTTON_TYPE, "btnClear", 41, 19, 175, 107 )
 UI_LoadButtonImage( btnClear, "texture/ui/PublicC.tga", 41, 19, 0, 20, TRUE )
 
 
 -----------------------------------------------------------------------
--- ¶¨Òå¶ş´ÎÃÜÂëÊäÈëÈí¼üÅÌ´°Ìå
+-- å®šä¹‰äºŒæ¬¡å¯†ç è¾“å…¥è½¯é”®ç›˜çª—ä½“
 -----------------------------------------------------------------------	
--- ´´½¨ ¶ş´ÎÃÜÂëÊäÈëÈí¼üÅÌ½çÃæ
+-- åˆ›å»º äºŒæ¬¡å¯†ç è¾“å…¥è½¯é”®ç›˜ç•Œé¢
 frmDoublePwdInput = UI_CreateForm("frmDoublePwdInput", TRUE, 131, 129, 392, 300, TRUE,TRUE)
 UI_ShowForm(frmDoublePwdInput, FALSE )
 UI_AddAllFormTemplete( frmDoublePwdInput)
@@ -784,11 +784,11 @@ UI_FormSetIsEscClose(frmDoublePwdInput, TRUE)
 
 --UI_FormSetHotKey( frmDoublePwdInput, ALT_KEY, HOTKEY_X ) 
 
--- ¼ÓÔØ±³¾°Í¼Æ¬
+-- åŠ è½½èƒŒæ™¯å›¾ç‰‡
 imgDoublePwdInput = UI_CreateCompent(frmDoublePwdInput, IMAGE_TYPE,"imgDoublePwdInput", 131, 129, 0, 0)
 UI_LoadImage( imgDoublePwdInput, "texture/ui/a004.tga", NORMAL, 131,129, 0, 0)
 
--- ¼ÓÔØÊı×Ö°´Å¥Í¼Æ¬
+-- åŠ è½½æ•°å­—æŒ‰é’®å›¾ç‰‡
 btnNum1 = UI_CreateCompent( frmDoublePwdInput, BUTTON_TYPE, "btnNum1", 27, 17, 17, 26 )
 UI_LoadButtonImage( btnNum1, "texture/ui/Keyboard2.tga", 27, 17, 108, 17, TRUE )
 btnNum2 = UI_CreateCompent( frmDoublePwdInput, BUTTON_TYPE, "btnNum2", 27, 17, 51, 26 )
@@ -810,12 +810,12 @@ UI_LoadButtonImage( btnNum9, "texture/ui/Keyboard3.tga", 27, 17, 108, 102, TRUE 
 btnNum0 = UI_CreateCompent( frmDoublePwdInput, BUTTON_TYPE, "btnNum0", 27, 17, 17, 98 )
 UI_LoadButtonImage( btnNum0, "texture/ui/Keyboard3.tga", 27, 17, 0, 187, TRUE )
 
---¼ÓÔØÇå³ı°´Å¥
+--åŠ è½½æ¸…é™¤æŒ‰é’®
 btnClear = UI_CreateCompent( frmDoublePwdInput, BUTTON_TYPE, "btnClear", 61, 17, 51, 98 )
 UI_LoadButtonImage( btnClear, "texture/ui/a002.tga", 54, 17, 0, 129, TRUE )
 
 -----------------------------------------------------------------------
--- ¶¨Òå¶ş´ÎÃÜÂë½éÉÜ´°Ìå
+-- å®šä¹‰äºŒæ¬¡å¯†ç ä»‹ç»çª—ä½“
 -----------------------------------------------------------------------	
 frmDoublePwdInfo =  UI_CreateForm("frmDoublePwdInfo", TRUE, 378, 129, 200, 329, TRUE,TRUE)
 UI_ShowForm(frmDoublePwdInfo, TRUE )
@@ -859,9 +859,9 @@ UI_SetLabelExFont( labText5, DEFAULT_FONT, TRUE, COLOR_WHITE )
 
 
 -----------------------------------------------------------------------
--- ¶¨Òå°æ±¾Logo½çÃæ
+-- å®šä¹‰ç‰ˆæœ¬Logoç•Œé¢
 -----------------------------------------------------------------------	
--- ´´½¨°æ±¾Logo½çÃæ
+-- åˆ›å»ºç‰ˆæœ¬Logoç•Œé¢
 frmPathLogo = UI_CreateForm("frmPathLogo", TRUE, 256, 129, 50 , 450, TRUE,TRUE)
 UI_ShowForm(frmPathLogo, FALSE )
 UI_AddAllFormTemplete( frmPathLogo)
@@ -870,18 +870,18 @@ UI_FormSetIsEscClose(frmPathLogo, FALSE)
 
 --UI_FormSetHotKey( frmPathLogo, ALT_KEY, HOTKEY_Z ) 
 
--- ¼ÓÔØ±³¾°Í¼Æ¬
+-- åŠ è½½èƒŒæ™¯å›¾ç‰‡
 imgPathLogo = UI_CreateCompent(frmPathLogo, IMAGE_TYPE,"imgPathLogo", 256, 129, 0, 0)
 --UI_LoadImage( imgPathLogo, "texture/ui/PathLogo.tga", NORMAL, 256,129, 0, 0)
 
 -----------------------------------------------------------------------
 --								     --
---		´´½¨½ÇÉ«Á÷³ÌĞŞ¸Ä 2006.08.08 by Leo	             --
+--		åˆ›å»ºè§’è‰²æµç¨‹ä¿®æ”¹ 2006.08.08 by Leo	             --
 --								     --
 -----------------------------------------------------------------------	
 
 -----------------------------------------------------------------------
--- ¶¨Òå»¶Ó­½çÃæ   ¸Ã½çÃæ½öÔÚµ±Ç°ÕÊºÅÄÚÎŞ½ÇÉ«Ê±³öÏÖ
+-- å®šä¹‰æ¬¢è¿ç•Œé¢   è¯¥ç•Œé¢ä»…åœ¨å½“å‰å¸å·å†…æ— è§’è‰²æ—¶å‡ºç°
 -----------------------------------------------------------------------	
 frmWelcomeNotice = UI_CreateForm("frmWelcomeNotice", TRUE, 500, 170, 0 , 0, TRUE,TRUE)
 UI_ShowForm(frmWelcomeNotice, FALSE )
@@ -934,7 +934,7 @@ btnYes = UI_CreateCompent( frmWelcomeNotice, BUTTON_TYPE, "btnYes", 41, 19, 230,
 UI_LoadButtonImage( btnYes, "texture/ui/PublicC.tga", 41, 19, 0, 0, TRUE )
 
 -----------------------------------------------------------------------
--- ¶¨ÒåÊ×´Î´´½¨½ÇÉ«³É¹¦ÌáÊ¾½çÃæ   ¸Ã½çÃæ½öÔÚ¸ÃÕÊºÅ×ßÍêµÚÒ»¸ö½ÇÉ«µÄ´´½¨Á÷³ÌºóÏÔÊ¾
+-- å®šä¹‰é¦–æ¬¡åˆ›å»ºè§’è‰²æˆåŠŸæç¤ºç•Œé¢   è¯¥ç•Œé¢ä»…åœ¨è¯¥å¸å·èµ°å®Œç¬¬ä¸€ä¸ªè§’è‰²çš„åˆ›å»ºæµç¨‹åæ˜¾ç¤º
 -----------------------------------------------------------------------	
 frmCreateOKNotice = UI_CreateForm("frmCreateOKNotice", TRUE, 500, 170, 0 , 0, TRUE,TRUE)
 UI_ShowForm(frmCreateOKNotice, FALSE )
@@ -980,7 +980,7 @@ UI_LoadButtonImage( btnYes, "texture/ui/PublicC.tga", 41, 19, 0, 0, TRUE )
 
 
 -----------------------------------------------------------------------
--- ¶¨Òå¸ÄÃû½çÃæ£¬¸Ã½çÃæ½ö¶ÔÌ¨Íå°æ±¾ÓĞĞ§£¬Çë×öºÃ±¸·İ¹¤×÷
+-- å®šä¹‰æ”¹åç•Œé¢ï¼Œè¯¥ç•Œé¢ä»…å¯¹å°æ¹¾ç‰ˆæœ¬æœ‰æ•ˆï¼Œè¯·åšå¥½å¤‡ä»½å·¥ä½œ
 -----------------------------------------------------------------------	
 frmChaNameAlter = UI_CreateForm("frmChaNameAlter", TRUE, 500, 170, 0 , 0, TRUE,TRUE)
 UI_ShowForm(frmChaNameAlter, FALSE )
@@ -989,37 +989,37 @@ UI_FormSetIsEscClose(frmChaNameAlter, FALSE)
 UI_SetFormStyle(frmChaNameAlter,1)
 UI_AddFormToTemplete( frmChaNameAlter, FORM_SELECT )
 
---¼ÓÔØ±³¾°
+--åŠ è½½èƒŒæ™¯
 imgCreateOKNotice1 = UI_CreateCompent(frmChaNameAlter, IMAGE_TYPE,"imgCreateOKNotice1", 256, 150, 0, 0)
 UI_LoadImage( imgCreateOKNotice1, "texture/ui/newshelp/login_out_01.tga", NORMAL, 256,150, 0, 0)
 UI_SetImageAlpha(imgCreateOKNotice1,220)
 
---¼ÓÔØ±êÌâ
+--åŠ è½½æ ‡é¢˜
 labTitle = UI_CreateCompent( frmChaNameAlter, LABELEX_TYPE, "labTitle", 400, 150, 10, 3 )
 UI_SetCaption( labTitle, "Edit character name")
 UI_SetTextColor( labTitle, COLOR_BLACK )
 UI_SetLabelExFont( labTitle, DEFAULT_FONT, TRUE, COLOR_WHITE )
 
---ĞŞ¸ÄÃæ°å
+--ä¿®æ”¹é¢æ¿
 labText1 = UI_CreateCompent( frmChaNameAlter, LABELEX_TYPE, "labText1", 400, 150, 10, 20)
 UI_SetCaption( labText1, "Please change character name")
 UI_SetTextColor( labText1, COLOR_BLACK )
 UI_SetLabelExFont( labText1, DEFAULT_FONT, TRUE, COLOR_WHITE )
 
 
---ĞÂ½ÇÉ«Ãû
+--æ–°è§’è‰²å
 labTitle = UI_CreateCompent( frmChaNameAlter, LABELEX_TYPE, "labTitle", 400, 150, 40, 30 )
 UI_SetCaption( labTitle, "New character name")
 UI_SetTextColor( labTitle, COLOR_BLACK )
 UI_SetLabelExFont( labTitle, DEFAULT_FONT, TRUE, COLOR_WHITE )
 
---ÖØĞÂÊäÈë
+--é‡æ–°è¾“å…¥
 labTitle = UI_CreateCompent( frmChaNameAlter, LABELEX_TYPE, "labTitle", 400, 150, 40, 50 )
 UI_SetCaption( labTitle, "Edit character name")
 UI_SetTextColor( labTitle, COLOR_BLACK )
 UI_SetLabelExFont( labTitle, DEFAULT_FONT, TRUE, COLOR_WHITE )
 
---ĞŞ¸Ä¿ò
+--ä¿®æ”¹æ¡†
 edtChaNameNew = UI_CreateCompent(frmChaNameAlter, EDIT_TYPE,"edtChaNameNew", 66, 14, 140, 30)
 UI_SetEditMaxNum( edtDoublePwdAlterNew, 12 )
 UI_SetEditMaxNumVisible(edtDoublePwdAlterNew,12)
@@ -1028,7 +1028,7 @@ edtChaNameNewRetry = UI_CreateCompent(frmChaNameAlter, EDIT_TYPE,"edtChaNameNewR
 UI_SetEditMaxNum( edtDoublePwdAlterNewRetry, 12 )
 UI_SetEditMaxNumVisible(edtDoublePwdAlterNewRetry,12)
 
---È·¶¨£¬È¡Ïû°´Å¥
+--ç¡®å®šï¼Œå–æ¶ˆæŒ‰é’®
 btnYes = UI_CreateCompent( frmChaNameAlter, BUTTON_TYPE, "btnYes", 41, 19, 50, 120 )
 UI_LoadButtonImage( btnYes, "texture/ui/PublicC.tga", 41, 19, 0, 0, TRUE )
 
