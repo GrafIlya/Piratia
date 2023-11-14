@@ -1,5 +1,5 @@
 -----------------------------------------------------------------------
--- §·§С§в§С§Ь§д§Ц§в§Ъ§г§д§Ъ§Ь§Ъ §б§Ц§в§г§а§Я§С§Ш§С
+-- Характеристики персонажа
 -----------------------------------------------------------------------
 frmState = UI_CreateForm("frmState", FALSE, 208, 394, 0, 160, TRUE, FALSE)
 UI_FormSetHotKey(frmState, ALT_KEY, HOTKEY_A)
@@ -9,42 +9,45 @@ UI_SetIsDrag(frmState, TRUE)
 --UI_SetFormStyle(frmState, 0)
 --UI_SetAlpha(frmState, 200)
 
--- §¶§а§Я §ж§а§в§Ю§н 
+-- Фон формы 
 imgBakTop = UI_CreateCompent(frmState, IMAGE_TYPE, "imgBakTop", 208, 353, 0, 0)
-UI_LoadImage(imgBakTop, "texture/ui/preperty.tga", NORMAL, 208, 353, 470, 0)
+-- 208 - ширина текстуры, которую берем, 353 - высота, 470 - откуда начинаем брать текстуру
+--UI_LoadImage(imgBakTop, "texture/ui/preperty.tga", NORMAL, 208, 353, 470, 0)
+UI_LoadImage(imgBakTop, "texture/ui/preperty.tga", NORMAL, 208, 394, 230, 0)
 
--- §©§С§Ь§в§н§д§о
+-- Закрыть
 UI_DrawClose(frmState, 208)
 
--- §©§С§Ф§а§Э§а§У§а§Ь
+-- Заголовок
 UI_DrawTitle(frmState, "\207\229\240\241\238\237\224\230")
 
--- §Є§Ю§с §б§Ц§в§г§а§Я§С§Ш§С
+-- Имя персонажа
 labStateName = UI_CreateCompent(frmState, LABELEX_TYPE, "labStateName", 1, 1, 1, 1)
 UI_SetIsShow(labStateName, FALSE)
 
--- §°§б§н§д §б§Ц§в§Ц§в§а§Ш§Х§Ц§Я§Ъ§с
-labSailEXP = UI_CreateCompent(frmState, LABELEX_TYPE, "labSailEXP", 1, 1, 1, 1)
+-- Опыт перерождения
+labSailEXP = UI_CreateCompent(frmState, LABELEX_TYPE, "labSailEXP", 31, 11, 130, 308)
+UI_SetCaption(labSailEXP, "0")
 UI_SetIsShow(labSailEXP, FALSE)
 
 
--- §І§Ц§Ф. §Я§а§Ю§Ц§в
-labFameShow  = UI_CreateCompent(frmState, LABELEX_TYPE, "labFameShow", 31, 11, 20, 50)
+-- Рег. номер
+labFameShow  = UI_CreateCompent(frmState, LABELEX_TYPE, "labFameShow", 31, 11, 75, 330)
 UI_SetCaption(labFameShow, "0")
 UI_SetTextColor(labFameShow, COLOR_WHITE)
 
--- §µ§в§а§У§Ц§Я§о
-labStateLevel  = UI_CreateCompent(frmState, LABELEX_TYPE, "labStateLevel", 31, 11, 72, 50)
+-- Уровень
+labStateLevel  = UI_CreateCompent(frmState, LABELEX_TYPE, "labStateLevel", 31, 11, 72, 70)
 UI_SetCaption(labStateLevel, "0")
 UI_SetTextColor(labStateLevel, COLOR_WHITE)
 
--- §µ§в§а§У§Ц§Я§о §б§Ц§в§Ц§в§а§Ш§Х§Ц§Я§Ъ§с
-labSailLevel  = UI_CreateCompent(frmState, LABELEX_TYPE, "labSailLevel", 31, 11, 119, 50)
+-- Уровень перерождения
+labSailLevel  = UI_CreateCompent(frmState, LABELEX_TYPE, "labSailLevel", 31, 11, 70, 308)
 UI_SetCaption(labSailLevel, "0")
 UI_SetTextColor(labSailLevel, COLOR_WHITE)
 
--- §°§б§н§д
-labStateEXP = UI_CreateCompent(frmState, LABELEX_TYPE, "labStateEXP", 31, 11, 164, 50)
+-- Опыт
+labStateEXP = UI_CreateCompent(frmState, LABELEX_TYPE, "labStateEXP", 31, 11, 161, 70)
 UI_SetCaption(labStateEXP, "0")
 UI_SetTextColor(labStateEXP, COLOR_WHITE)
 
@@ -52,116 +55,116 @@ UI_SetTextColor(labStateEXP, COLOR_WHITE)
 
 
 
--- §±§в§а§ж§Ц§г§г§Ъ§с
-labStateJob = UI_CreateCompent(frmState, LABELEX_TYPE, "labStateJob", 118, 15, 69, 75)
+-- Профессия
+labStateJob = UI_CreateCompent(frmState, LABELEX_TYPE, "labStateJob", 118, 15, 69, 36)
 UI_SetTextColor(labStateJob, COLOR_WHITE)
 
--- §¤§Ъ§Э§о§Х§Ъ§с
-labStateGuid = UI_CreateCompent(frmState, LABELEX_TYPE, "labStateGuid", 118, 15, 69, 94)
+-- Гильдия
+labStateGuid = UI_CreateCompent(frmState, LABELEX_TYPE, "labStateGuid", 118, 15, 69, 53)
 UI_SetTextColor(labStateGuid, COLOR_WHITE)
 
 
 
--- §Ё§©
-labStateHP  = UI_CreateCompent(frmState, LABELEX_TYPE, "labStateHP", 130, 11, 74, 113)
+-- ЖЗ
+labStateHP  = UI_CreateCompent(frmState, LABELEX_TYPE, "labStateHP", 130, 11, 74, 87)
 UI_SetCaption(labStateHP, "9999/9999")
 UI_SetTextColor(labStateHP, COLOR_WHITE)
 
--- §®§Ї
-labStateSP  = UI_CreateCompent(frmState, LABELEX_TYPE, "labStateSP", 130, 11, 74, 132)
+-- МН
+labStateSP  = UI_CreateCompent(frmState, LABELEX_TYPE, "labStateSP", 130, 11, 74, 104)
 UI_SetCaption(labStateSP, "9999/9999")
 UI_SetTextColor(labStateSP, COLOR_WHITE)
 
 
 
 
--- §і§Ъ§Э§С
-btnStr = UI_CreateCompent(frmState, BUTTON_TYPE, "btnStr", 15, 15, 48, 173)
+-- Сила
+btnStr = UI_CreateCompent(frmState, BUTTON_TYPE, "btnStr", 15, 15, 48, 139)
 UI_LoadButtonImage(btnStr, "texture/ui/buttons.tga", 15, 15, 270, 89, TRUE)
 UI_SetHint(btnStr, "\209\232\235\224 \243\226\229\235\232\247\232\226\224\229\242 \236\238\249\237\238\241\242\252 \240\243\234\238\239\224\248\237\238\233 \224\242\224\234\232")
-labStrshow = UI_CreateCompent(frmState, LABELEX_TYPE, "labStrshow", 31, 11, 67, 175)
+labStrshow = UI_CreateCompent(frmState, LABELEX_TYPE, "labStrshow", 31, 11, 67, 141)
 UI_SetCaption(labStrshow, "9527")
 UI_SetTextColor(labStrshow, COLOR_WHITE)
 
--- §­§а§У§Ь§а§г§д§о
-btnAgi = UI_CreateCompent(frmState, BUTTON_TYPE, "btnAgi", 15, 15, 138, 173)
+-- Ловкость
+btnAgi = UI_CreateCompent(frmState, BUTTON_TYPE, "btnAgi", 15, 15, 138, 139)
 UI_LoadButtonImage(btnAgi, "texture/ui/buttons.tga", 15, 15, 270, 89, TRUE)
 UI_SetHint(btnAgi, "\203\238\226\234\238\241\242\252 \243\226\229\235\232\247\232\226\224\229\242 \241\234\238\240\238\241\242\252 \224\242\224\234\232 \232 \247\224\241\242\238\242\243 \243\234\235\238\237\229\237\232\255")
-labAgishow = UI_CreateCompent(frmState, LABELEX_TYPE, "labAgishow", 31, 11, 157, 175)
+labAgishow = UI_CreateCompent(frmState, LABELEX_TYPE, "labAgishow", 31, 11, 157, 141)
 UI_SetCaption(labAgishow, "9527")
 UI_SetTextColor(labAgishow, COLOR_WHITE)
 
--- §ґ§Ц§Э§а§г§Э§а§Ш§Ц§Я§Ъ§Ц
-btnCon = UI_CreateCompent(frmState, BUTTON_TYPE, "btnCon", 15, 15, 48, 192)
+-- Телосложение
+btnCon = UI_CreateCompent(frmState, BUTTON_TYPE, "btnCon", 15, 15, 48, 156)
 UI_LoadButtonImage(btnCon, "texture/ui/buttons.tga", 15, 15, 270, 89, TRUE)
 UI_SetHint(btnCon, "\210\229\235\238\241\235\238\230\229\237\232\229 \243\241\232\235\232\226\224\229\242 \199\224\249\232\242\243, \236\224\234\241. \226\229\235\232\247\232\237\243 \232 \241\234\238\240\238\241\242\252 \226\238\241\241\242\224\237\238\226\235\229\237\232\255 \198\199")
-labConshow = UI_CreateCompent(frmState, LABELEX_TYPE, "labConshow", 31, 11, 67, 194)
+labConshow = UI_CreateCompent(frmState, LABELEX_TYPE, "labConshow", 31, 11, 67, 158)
 UI_SetCaption(labConshow, "9527")
 UI_SetTextColor(labConshow, COLOR_WHITE)
 
--- §Ґ§е§з
-btnSta = UI_CreateCompent(frmState, BUTTON_TYPE, "btnSta", 15, 15, 138, 192)
+-- Дух
+btnSta = UI_CreateCompent(frmState, BUTTON_TYPE, "btnSta", 15, 15, 138, 156)
 UI_LoadButtonImage(btnSta, "texture/ui/buttons.tga", 15, 15, 270, 89, TRUE)
 UI_SetHint(btnSta, "\196\243\245 \243\226\229\235\232\247\232\226\224\229\242 \204\224\234\241 \204\205 \232 \241\234\238\240\238\241\242\252 \226\238\241\241\242\224\237\238\226\235\229\237\232\255 \204\205")
-labStashow = UI_CreateCompent(frmState, LABELEX_TYPE, "labStashow", 31, 11, 157, 194)
+labStashow = UI_CreateCompent(frmState, LABELEX_TYPE, "labStashow", 31, 11, 157, 158)
 UI_SetCaption(labStashow, "9527")
 UI_SetTextColor(labStashow, COLOR_WHITE)
 
--- §ґ§а§й§Я§а§г§д§о
-btnDex = UI_CreateCompent(frmState, BUTTON_TYPE, "btnDex", 15, 15, 48, 211)
+-- Точность
+btnDex = UI_CreateCompent(frmState, BUTTON_TYPE, "btnDex", 15, 15, 48, 173)
 UI_LoadButtonImage(btnDex, "texture/ui/buttons.tga", 15, 15, 270, 89, TRUE)
 UI_SetHint(btnDex, "\210\238\247\237\238\241\242\252 \239\238\226\251\248\224\229\242 \241\232\235\243 \228\232\241\242\224\237\246\232\238\237\237\238\233 \224\242\224\234\232 \232 \248\224\237\241 \237\224\237\229\241\229\237\232\255 \243\240\238\237\224")
-labDexshow = UI_CreateCompent(frmState, LABELEX_TYPE, "labDexshow", 31, 11, 67, 213)
+labDexshow = UI_CreateCompent(frmState, LABELEX_TYPE, "labDexshow", 31, 11, 67, 175)
 UI_SetCaption(labDexshow, "9527")
 UI_SetTextColor(labDexshow, COLOR_WHITE)
 
 
 
--- §®§Ъ§Я. §С§д§С§Ь§С
-labMinAtackShow  = UI_CreateCompent(frmState, LABELEX_TYPE, "labMinAtackShow", 31, 11, 67, 240)
+-- Мин. атака
+labMinAtackShow  = UI_CreateCompent(frmState, LABELEX_TYPE, "labMinAtackShow", 31, 11, 67, 199)
 UI_SetCaption(labMinAtackShow, "95278")
 UI_SetTextColor(labMinAtackShow, COLOR_WHITE)
 
--- §®§С§Ь§г. §С§д§С§Ь§С
-labMaxAtackShow  = UI_CreateCompent(frmState, LABELEX_TYPE, "labMaxAtackShow", 31, 11, 157, 240)
+-- Макс. атака
+labMaxAtackShow  = UI_CreateCompent(frmState, LABELEX_TYPE, "labMaxAtackShow", 31, 11, 157, 199)
 UI_SetCaption(labMaxAtackShow, "95278")
 UI_SetTextColor(labMaxAtackShow, COLOR_WHITE)
 
--- §є§С§Я§г §е§в§а§Я§С
-labHitShow  = UI_CreateCompent(frmState, LABELEX_TYPE, "labHitShow", 31, 11, 67, 259)
+-- Шанс урона
+labHitShow  = UI_CreateCompent(frmState, LABELEX_TYPE, "labHitShow", 31, 11, 67, 216)
 UI_SetCaption(labHitShow, "400")
 UI_SetTextColor(labHitShow, COLOR_WHITE)
 
--- §µ§Ь§Э§а§Я§Ц§Я§Ъ§Ц
-labFleeShow  = UI_CreateCompent(frmState, LABELEX_TYPE, "labFleeShow", 31, 11, 157, 259)
+-- Уклонение
+labFleeShow  = UI_CreateCompent(frmState, LABELEX_TYPE, "labFleeShow", 31, 11, 157, 216)
 UI_SetCaption(labFleeShow, "400")
 UI_SetTextColor(labFleeShow, COLOR_WHITE)
 
--- §©§С§л§Ъ§д§С
-labDefenceShow  = UI_CreateCompent(frmState, LABELEX_TYPE, "labDefenceShow", 31, 11, 67, 278)
+-- Защита
+labDefenceShow  = UI_CreateCompent(frmState, LABELEX_TYPE, "labDefenceShow", 31, 11, 67, 233)
 UI_SetCaption(labDefenceShow, "4000")
 UI_SetTextColor(labDefenceShow, COLOR_WHITE)
 
--- §і§Ь§а§в§а§г§д§о §С§д§С§Ь§Ъ
-labAspeedShow  = UI_CreateCompent(frmState, LABELEX_TYPE, "labAspeedShow", 31, 11, 157, 278)
+-- Скорость атаки
+labAspeedShow  = UI_CreateCompent(frmState, LABELEX_TYPE, "labAspeedShow", 31, 11, 157, 233)
 UI_SetCaption(labAspeedShow, "400")
 UI_SetTextColor(labAspeedShow, COLOR_WHITE)
 
--- §¶§Ъ§Щ. §в§Ц§Щ§Ъ§г§д
-labPhysDefineShow  = UI_CreateCompent(frmState, LABELEX_TYPE, "labPhysDefineShow", 31, 11, 159, 213)
+-- Физ. резист
+labPhysDefineShow  = UI_CreateCompent(frmState, LABELEX_TYPE, "labPhysDefineShow", 31, 11, 159, 175)
 UI_SetCaption(labPhysDefineShow, "400")
 UI_SetTextColor(labPhysDefineShow, COLOR_WHITE)
 
--- §Ї§С§У§н§Ь§Ъ
-labSkillPoint  = UI_CreateCompent(frmState, LABELEX_TYPE, "labSkillPoint", 31, 11, 70, 319)
+-- Навыки
+labSkillPoint  = UI_CreateCompent(frmState, LABELEX_TYPE, "labSkillPoint", 31, 11, 70, 270)
 UI_SetCaption(labSkillPoint, "300")
 UI_SetTextColor(labSkillPoint, COLOR_WHITE)
 
--- §·§С§в§С§Ь§д§Ц§в§Ъ§г§д§Ъ§Ь§Ъ
-labStatePoint  = UI_CreateCompent(frmState, LABELEX_TYPE, "labStatePoint", 31, 11, 159, 319)
+-- Характеристики
+labStatePoint  = UI_CreateCompent(frmState, LABELEX_TYPE, "labStatePoint", 31, 11, 159, 270)
 UI_SetCaption(labStatePoint, "1500")
 UI_SetTextColor(labStatePoint, COLOR_WHITE)
 
 
--- §ґ§Ъ§д§е§Э
+-- Титул
 labTitleShow  = UI_CreateCompent(frmState, LABELEX_TYPE, "labTitleShow", 1, 1, 1, 1)
