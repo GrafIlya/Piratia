@@ -31,6 +31,7 @@ extern CAudioThread g_AudioThread;
 using namespace GUI;
 
 extern bool g_IsShowStates;
+bool Is60FPSMode = false;
 
 //---------------------------------------------------------
 // class CSystemProperties
@@ -216,6 +217,10 @@ int CSystemProperties::readFromFile(const char* szIniFileName) {
 	if (iTemp == DEFAULT_NUM)
 		return DEFAULT_NUM;
 	m_gameOption.bStateMode = int2bool(iTemp);
+	
+	iTemp = GetPrivateProfileInt("gameOption", "is60fps", DEFAULT_NUM, szIniFileName);
+	if (iTemp == DEFAULT_NUM)	return DEFAULT_NUM;
+	m_gameOption.bIs60FPSMode = int2bool(iTemp);
 
 	// Add by lark.li 20080826 begin
 	iTemp = GetPrivateProfileInt("startOption", "first", DEFAULT_NUM, szIniFileName);
@@ -288,6 +293,8 @@ int CSystemProperties::writeToFile(const char* szIniFileName) {
 		return OTHER_ERROR;
 	if (!WriteInteger("gameOption", "state", bool2int(m_gameOption.bStateMode), szIniFileName))
 		return OTHER_ERROR;
+	if (!WriteInteger("gameOption", "is60fps", bool2int(m_gameOption.bIs60FPSMode), szIniFileName))
+		return OTHER_ERROR;	
 
 	// Add by lark.li 20080826 begin
 	if (!WriteInteger("startOption", "first", bool2int(m_startOption.bFirst), szIniFileName))
@@ -356,6 +363,7 @@ void CSystemMgr::LoadCustomProp() {
 			m_sysProp.m_gameOption.bAppMode = true;
 			m_sysProp.m_gameOption.bEffMode = true;
 			m_sysProp.m_gameOption.bStateMode = false;
+			m_sysProp.m_gameOption.bIs60FPSMode = true;
 		}
 		//	m_sysProp.m_gameOption.bRunMode = true;	//无论文件的设置如何，这一项都为true，临时
 		m_isLoad = true;
@@ -364,6 +372,7 @@ void CSystemMgr::LoadCustomProp() {
 	CCharacter::SetIsShowApparel(m_sysProp.m_gameOption.bAppMode);
 	CCharacter::SetIsShowEffects(m_sysProp.m_gameOption.bEffMode);
 	g_IsShowStates = m_sysProp.m_gameOption.bStateMode;
+	Is60FPSMode = m_sysProp.m_gameOption.bIs60FPSMode;
 }
 bool CSystemMgr::Init() {
 
@@ -475,6 +484,10 @@ bool CSystemMgr::Init() {
 	cbxStateMode = (CCheckGroup*)frmGameOption->Find("cbxStatemodel");
 	if (!cbxStateMode)
 		return Error(g_oLangRec.GetString(45), frmGameOption->GetName(), "cbxStatemodel");
+	
+	cbxIs60FPSMode = (CCheckGroup*)frmGameOption->Find("cbxIs60FPSMode");
+	if (!cbxIs60FPSMode) 
+		return Error(g_oLangRec.GetString(45), frmGameOption->GetName(), "cbxIs60FPSMode");
 
 	//////// 其它
 	frmAskRelogin = _FindForm("frmAskRelogin");
@@ -867,6 +880,18 @@ void CSystemMgr::_evtGameOptionFormMouseDown(CCompent* pSender, int nMsgType, in
 		g_IsShowStates = bStateMode;
 		::WritePrivateProfileString("gameOption", "state", bStateMode ? "1" : "0", "./user/system.ini");
 	}
+	
+	pGroup = g_stUISystem.cbxIs60FPSMode;
+	if (pGroup)
+	{
+		bool bIs60FPSMode = pGroup->GetActiveIndex() == 1 ? true : false;
+		g_stUISystem.m_sysProp.m_gameOption.bIs60FPSMode = bIs60FPSMode;
+		Is60FPSMode = bIs60FPSMode;
+		g_pGameApp->SysInfo(Is60FPSMode ? "60 FPS ON" : "30 FPS ON");
+		::WritePrivateProfileString("gameOption", "is60fps", bIs60FPSMode ? "1" : "0", "./user/system.ini");
+
+
+	}
 }
 
 void CSystemMgr::_evtGameOptionFormBeforeShow(CForm* pForm, bool& IsShow) {
@@ -892,6 +917,10 @@ void CSystemMgr::_evtGameOptionFormBeforeShow(CForm* pForm, bool& IsShow) {
 	pGroup = g_stUISystem.cbxStateMode;
 	if (pGroup)
 		pGroup->SetActiveIndex(g_stUISystem.m_sysProp.m_gameOption.bStateMode ? 1 : 0);
+	
+	pGroup = g_stUISystem.cbxIs60FPSMode;
+    if (pGroup)
+        pGroup->SetActiveIndex(g_stUISystem.m_sysProp.m_gameOption.bIs60FPSMode ? 1 : 0);
 }
 
 void CSystemMgr::CloseForm() {

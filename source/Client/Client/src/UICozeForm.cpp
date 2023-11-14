@@ -25,98 +25,20 @@
 //const DWORD					CCharMsg::m_dwChannelBufferSize;
 CCharMsg::lstTextInfoType CCharMsg::m_lstMsgLink;
 CCharMsg::sChannelInfo CCharMsg::m_sChannelInfo[m_wTotalChannelsCount] =
-	{
-		{
-			CHANNEL_NONE,
-			"",
-			0xFFFFFFFF,
-			"",
-			0,
-		}, //CHANNEL_NONE
-		{
-			CHANNEL_ALL,
-			g_oLangRec.GetString(493),
-			0xFFFFFFFF,
-			"",
-			0,
-		}, //CHANNEL_ALL
-		{
-			CHANNEL_SIGHT,
-			g_oLangRec.GetString(494),
-			0xFFFFFFFF,
-			"",
-			0,
-		}, //CHANNEL_SIGHT
-		{
-			CHANNEL_PRIVATE,
-			g_oLangRec.GetString(495),
-			0xFFFFFFFF,
-			"@",
-			0,
-		}, //CHANNEL_PRIVATE
-		{
-			CHANNEL_WORLD,
-			g_oLangRec.GetString(496),
-			0xFFFFFFFF,
-			"*",
-			0,
-		}, //CHANNEL_WORLD
-		{
-			CHANNEL_TRADE,
-			g_oLangRec.GetString(497),
-			0xFFFFFFFF,
-			"^",
-			0,
-		}, //CHANNEL_TRADE
-		{
-			CHANNEL_TEAM,
-			g_oLangRec.GetString(299),
-			0xFFFFFFFF,
-			"!",
-			0,
-		}, //CHANNEL_TEAM
-		{
-			CHANNEL_GUILD,
-			g_oLangRec.GetString(468),
-			0xFFFFFFFF,
-			"%",
-			0,
-		}, //CHANNEL_GUILD
-		{
-			CHANNEL_SYSTEM,
-			g_oLangRec.GetString(498),
-			0xFFFFFFFF,
-			"",
-			0,
-		}, //CHANNEL_SYSTEM
-		{
-			CHANNEL_PUBLISH,
-			g_oLangRec.GetString(499),
-			0xFFFFFFFF,
-			"",
-			0,
-		}, //CHANNEL_PUBLISH
-		{
-			CHANNEL_SIDE,
-			g_oLangRec.GetString(932),
-			0xFFFFFFFF,
-			"|",
-			0,
-		}, //CHANNEL_SIDE
-		{
-			CHANNEL_VIP,
-			"VIP",
-			0XFFCEB02B,
-			"$",
-			0,
-		}, //CHANNEL_SIDE
-		{
-			CHANNEL_DISCORD,
-			"Discord",
-			0XFFFF45FF,
-			"`",
-			0,
-		}, //CHANNEL_SIDE
+{
+	{CHANNEL_NONE,		"",							0xFFFFFFFF,	"",		0,},				//CHANNEL_NONE
+	{CHANNEL_ALL,		g_oLangRec.GetString(493),	0xFFFFFFFF,	"",		0,},				//CHANNEL_ALL
+	{CHANNEL_SIGHT,		g_oLangRec.GetString(494),	0xFFFFFFFF,	"",		0,},				//CHANNEL_SIGHT
+	{CHANNEL_PRIVATE,	g_oLangRec.GetString(495),	0xFFFFFFFF,	"@",	0,},				//CHANNEL_PRIVATE
+	{CHANNEL_WORLD,		g_oLangRec.GetString(496),	0xFFFFFFFF,	"*",	0,},				//CHANNEL_WORLD
+	{CHANNEL_TRADE,		g_oLangRec.GetString(497),	0xFFFFFFFF,	"^",	0,},				//CHANNEL_TRADE
+	{CHANNEL_TEAM,		g_oLangRec.GetString(299),	0xFFFFFFFF,	"!",	0,},				//CHANNEL_TEAM
+	{CHANNEL_GUILD,		g_oLangRec.GetString(468),	0xFFFFFFFF,	"%",	0,},				//CHANNEL_GUILD
+	{CHANNEL_SYSTEM,	g_oLangRec.GetString(498),	0xFFFFFFFF,	"",		0,},				//CHANNEL_SYSTEM
+	{CHANNEL_PUBLISH,	g_oLangRec.GetString(499),	0xFFFFFFFF,	"",		0,},				//CHANNEL_PUBLISH
+	{CHANNEL_SIDE,		g_oLangRec.GetString(932),	0xFFFFFFFF,	"|",	0,},				//CHANNEL_SIDE
+	{CHANNEL_VIP,		"VIP",						0XFFCEB02B,	"$",	0,},				//CHANNEL_SIDE
+	{CHANNEL_DISCORD,	"System",					0XFFFF45FF,	"",	0,},				//CHANNEL_SIDE
 };
 
 CCharMsg::lstInstanceType CCharMsg::m_lstThisInstanceLink;

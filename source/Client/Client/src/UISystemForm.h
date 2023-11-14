@@ -41,6 +41,7 @@ public:
 		bool bAppMode;
 		bool bEffMode;
 		bool bStateMode;
+		bool bIs60FPSMode;
 	} m_gameOption;
 
 	// Add by lark.li 20080826 begin
@@ -218,6 +219,7 @@ private:
 	CCheckGroup* cbxAppMode;
 	CCheckGroup* cbxEffMode;
 	CCheckGroup* cbxStateMode;
+	CCheckGroup* cbxIs60FPSMode;
 
 	CForm* frmAskRelogin;
 	CForm* frmAskExit;

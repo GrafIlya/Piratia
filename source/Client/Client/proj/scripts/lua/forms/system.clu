@@ -422,6 +422,7 @@ addSystemOption(frmGame,"cbxHelpmodel","Help","Show Help","Hide","Show",86)
 addSystemOption(frmGame,"cbxAppmodel","Apparels","Show Apparels","Hide","Show",106)
 addSystemOption(frmGame,"cbxEffmodel","Effects","Show Effects","Hide","Show",126)
 addSystemOption(frmGame,"cbxStatemodel","State Icons","Show State Icons","Hide","Show",146)
+addSystemOption(frmGame,"cbxIs60FPSMode","FPS Value","Changes FPS Value","30","60",166)
  
  
  

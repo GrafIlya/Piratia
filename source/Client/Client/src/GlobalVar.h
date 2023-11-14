@@ -13,3 +13,7 @@ extern MPEditor g_Editor;
 #define CLIENT_NAME "Corsairs Online"
 #define VERSION_NAME "An Ocean Fantasy"
 #define VERSION_NUM "version 1.0.1 (1001 Release) January 2017"
+
+// 60-30 FPS 
+extern bool Is60FPSMode;
+#define FPSModeNew Is60FPSMode ? 60:30

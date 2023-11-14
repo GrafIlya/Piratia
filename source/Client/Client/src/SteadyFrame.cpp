@@ -1,14 +1,25 @@
 #include "stdafx.h"
 #include "steadyframe.h"
+#include "GlobalVar.h"
+#include "uisystemform.h"
 
+bool bIs60FPSMode = false;
 DWORD CSteadyFrame::_dwFPS = 0;
 
 bool CSteadyFrame::Init() {
 	DWORD dwThread = 0;
+	// 60 FPS
+	if (g_stUISystem.m_sysProp.m_gameOption.bIs60FPSMode)
+	{
+	_dwRefreshFPS = 60;
+	}
+	else
+	{
 	_dwRefreshFPS = 30;
-
-	_dwTotalTime = 0;
-	_dwRunCount = 0;
+	}
+	//end
+	_dwTotalTime=0; 
+	_dwRunCount=0;
 
 	hThread = CreateThread(NULL, 0, _SleepThreadProc, this, 0, &dwThread);
 
@@ -70,10 +81,21 @@ void CSteadyFrame::_Sleep() {
 				_dwRefreshFPS = _dwFPS;
 			}
 
-			if (_dwRefreshFPS > 30)
-				_dwRefreshFPS = 30;
-			else if (_dwRefreshFPS < 8)
+			// 60 FPS
+			if (g_stUISystem.m_sysProp.m_gameOption.bIs60FPSMode){	
+			if( _dwRefreshFPS>60 )
+				_dwRefreshFPS = 60;
+			else if( _dwRefreshFPS<8 )
 				_dwRefreshFPS = 8;
+			}
+			else{
+				if( _dwRefreshFPS>30 )
+					_dwRefreshFPS = 30;
+				else if( _dwRefreshFPS<8 )
+				_dwRefreshFPS = 8;
+
+
+			}
 
 			nCount = 0;
 			dwTime = dwCurTime;

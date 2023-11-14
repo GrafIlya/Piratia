@@ -12,6 +12,8 @@
 #include "uiminimapform.h"
 #include "CameraCtrl.h"
 #include "STAttack.h"
+#include "GlobalVar.h"
+#include "uisystemform.h"
 
 //---------------------------------------------------------------------------
 // class CWaitMoveState
@@ -120,12 +122,21 @@ CWaitMoveState::CWaitMoveState(CActor* p)
 CWaitMoveState::~CWaitMoveState() {
 }
 
-void CWaitMoveState::ChaRun() {
-	_pCha->CheckIsFightArea();
-
-	_pCha->PlayPose(_pCha->GetPose(POSE_RUN), PLAY_LOOP_SMOOTH);
-	_pCha->SetPoseVelocity((float)_pCha->getMoveSpeed() / 480.0f);
-	_pCha->RefreshItem();
+void CWaitMoveState::ChaRun()
+{
+   if (g_stUISystem.m_sysProp.m_gameOption.bIs60FPSMode)
+   {
+        _pCha->CheckIsFightArea();
+        _pCha->PlayPose( _pCha->GetPose(POSE_RUN), PLAY_LOOP_SMOOTH );
+        _pCha->SetPoseVelocity( (float)_pCha->getMoveSpeed() / 980.0f );
+        _pCha->RefreshItem();
+   }
+   else
+   {   _pCha->CheckIsFightArea();
+        _pCha->PlayPose( _pCha->GetPose(POSE_RUN), PLAY_LOOP_SMOOTH );
+        _pCha->SetPoseVelocity( (float)_pCha->getMoveSpeed() / 480.0f );
+        _pCha->RefreshItem();
+   }
 }
 
 bool CWaitMoveState::_Start() {

@@ -7,6 +7,7 @@
 #include "CharacterRecord.h"
 #include "stmove.h"
 #include "GameApp.h"
+#include "uisystemform.h"
 
 #define DEFAULT_NUM -999
 //---------------------------------------------------------------------------
@@ -74,10 +75,19 @@ bool CInsertState::_Start() {
 
 	_IsFirst = false;
 	CCharacter* pCha = GetActor()->GetCha();
-	if (!_IsPlayPose) {
-		_IsPlayPose = true;
-		pCha->PlayPose(POSE_SEAT, PLAY_ONCE, -1, CGameApp::GetFrameFPS(), true);
-	}
+	if (!_IsPlayPose) 
+    {
+        _IsPlayPose = true;
+        if (g_stUISystem.m_sysProp.m_gameOption.bIs60FPSMode)
+        {
+            pCha->PlayPose( POSE_SEAT, PLAY_ONCE, -1, CGameApp::GetFrameFPS() - 35, true );
+        }
+        else    
+        {    
+            pCha->PlayPose( POSE_SEAT, PLAY_ONCE, -1, CGameApp::GetFrameFPS(), true );
+        }
+        
+    }
 
 	switch (_eAngle) {
 	case enumAngle:

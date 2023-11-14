@@ -904,7 +904,7 @@ void CGameApp::ShowHint(int x, int y, const char* szStr, DWORD dwColor) {
 }
 
 void CGameApp::ShowNotify(const char* szStr, DWORD dwColor) {
-	_pNotify->SetFixWidth(430);
+	_pNotify->SetFixWidth(500);
 
 	_dwNotifyTime = GetCurTick() + 120000;
 
@@ -936,9 +936,9 @@ void CGameApp::ShowNotify(const char* szStr, DWORD dwColor) {
 //Add by sunny.sun20080804
 //Begin
 void CGameApp::ShowNotify1(const char* szStr, int setnum, DWORD dwColor) {
-	_pNotify1->SetFixWidth(430);
+	_pNotify1->SetFixWidth(500);
 
-	_dwNotifyTime1 = GetCurTick() + 120000;
+	_dwNotifyTime1 = GetCurTick() + 60000;
 
 	_pNotify1->Clear();
 
@@ -947,7 +947,7 @@ void CGameApp::ShowNotify1(const char* szStr, int setnum, DWORD dwColor) {
 	string text = szStr;
 
 	_pNotify1->PushHint(text.c_str(), dwColor);
-	_pNotify1->ReadyForHint(170, 100, setnum);
+	_pNotify1->ReadyForHint(210, 90, setnum);
 }
 //End
 
