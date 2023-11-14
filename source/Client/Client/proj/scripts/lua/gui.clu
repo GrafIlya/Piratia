@@ -926,6 +926,7 @@ UI_SetFormTempleteMax( 7 )	-- 设置最大模板数
 FORM_DIALOG = FORM_SWITCH_SCENE	-- 对话框模板-4
 
 -- 装载相关界面脚本
+UI_LoadScript("scripts/lua/forms/functions.clu")
 UI_LoadScript("scripts/lua/forms/main.clu")
 --UI_LoadScript("scripts/lua/forms/selectcha.clu")
 UI_LoadScript("scripts/lua/forms/login.clu")
