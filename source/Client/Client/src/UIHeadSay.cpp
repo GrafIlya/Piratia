@@ -38,22 +38,22 @@ CGuiPic CHeadSay::_ImgShop[3];
 int CHeadSay::_nShopFrameWidth = 0;
 int CHeadSay::_nShopFontYOff = 0;
 
-//еђЌе­—жѕз¤єж–№ејЏ (е‰ЌзјЂ) пј‹ и§’и‰ІеђЌ + (еє§еЏій“­) пј‹ [и€№еђЌ]
+//?????? (??) + ??? + (???) + [??]
 char CHeadSay::s_sNamePart[NAME_PART_NUM][64] = {0};
 
 char CHeadSay::s_szName[1024] = {0};
 
-DWORD CHeadSay::s_dwNamePartsColors[NAME_PART_NUM][2] = //	е‰ЌдёЂе€—жЇе‰Ќж™Їи‰І,еђЋдёЂе€—жЇйґеЅ±йўњи‰І
+DWORD CHeadSay::s_dwNamePartsColors[NAME_PART_NUM][2] = //	???????,????????
 	{
 		COLOR_WHITE, COLOR_BLACK,	  //	(
-		0, COLOR_BLACK,				  //	е‰ЌзјЂеђЌ
+		0, COLOR_BLACK,				  //	???
 		COLOR_WHITE, COLOR_BLACK,	  //	)
-		0, COLOR_BLACK,				  //	и§’и‰ІеђЌ
+		0, COLOR_BLACK,				  //	???
 		COLOR_BLACK, 0,				  //	(
-		COLOR_BLACK, 0,				  //	еє§еЏій“­
+		COLOR_BLACK, 0,				  //	???
 		COLOR_BLACK, 0,				  //	)
 		COLOR_WHITE, COLOR_BLACK,	  //	[
-		COLOR_SHIP_NAME, COLOR_BLACK, //	и€№еђЌ
+		COLOR_SHIP_NAME, COLOR_BLACK, //	??
 		COLOR_WHITE, COLOR_BLACK,	  //	]
 };
 
@@ -133,28 +133,28 @@ void CHeadSay::SetName(const char* name) {
 	_nChaNameOffX = 0 - CGuiFont::s_Font.GetWidth(name) / 2;
 }
 
-// Р РµРЅРґРµСЂ РїР°РЅРµР»Рё СЌС„С„РµРєС‚РѕРІ
+// Рендер панели эффектов
 void CHeadSay::RenderStateIcons(CCharacter* cha, int x, int y, float scale, float spacing, int rowSize) {
-	// РЎРѕР·РґР°РµРј РјР°СЃСЃРёРІ РёРєРѕРЅРѕРє
+	// Создаем массив иконок
 	CGuiPic* stateIcon = new CGuiPic;
 	int stateCount = 0;
 
 	int nTotalState = CSkillStateRecordSet::I()->GetLastID() + 1;
-	// РњР°СЃСЃРёРІ СЌС„С„РµРєС‚РѕРІ
+	// Массив эффектов
 	CSkillStateRecord* pState;
-	// РџСЂРѕС…РѕРґРёРј РїРѕ РІСЃРµРј СЌС„С„РµРєС‚Р°Рј
+	// Проходим по всем эффектам
 	for (int i = 0; i < nTotalState; i++) {
-		// РЈР·РЅР°РµРј, РµСЃС‚СЊ Р»Рё РЅР° РїРµСЂСЃРѕРЅР°Р¶Рµ СЌС„С„РµРєС‚С‹
+		// Узнаем, есть ли на персонаже эффекты
 		if (cha->GetStateMgr()->HasSkillState(i)) {
 			pState = GetCSkillStateRecordInfo(i);
-			// Р•СЃР»Рё СЌС„С„РµРєС‚С‹ РµСЃС‚СЊ Рё РѕРЅРё СЃ РёРєРѕРЅРєР°РјРё (РІ skilleff.txt)
+			// Если эффекты есть и они с иконками (в skilleff.txt)
 			if (pState && pState->szIcon != "0") {
 				char buf[64];
-				// Р‘РµСЂРµРј РёРєРѕРЅРєСѓ
+				// Берем иконку
 				sprintf(buf, "texture/icon/%s.png", pState->szIcon);
-				// Р—Р°РіСЂСѓР¶Р°РµРј РєР°СЂС‚РёРЅРєСѓ
+				// Загружаем картинку
 				stateIcon->LoadImage(buf, 32, 32, 0, 0, 0, scale, scale);
-				// РЎРѕР·РґР°РµРј С‚Р°Р±Р»РёС†Сѓ РґР»СЏ РІС‹РІРѕРґР°(x Рё y)
+				// Создаем таблицу для вывода(x и y)
 				int xi = x + ((stateCount % rowSize) * spacing);
 				int yi = y + ((stateCount / rowSize) * spacing);
 				stateIcon->Render(xi, yi);
@@ -163,7 +163,7 @@ void CHeadSay::RenderStateIcons(CCharacter* cha, int x, int y, float scale, floa
 				int xm = g_pGameApp->GetMouseX();
 				int ym = g_pGameApp->GetMouseY();
 				
-				//РџСЂРѕРІРµСЂСЏРµРј, РЅСѓР¶РµРЅ Р»Рё СЂРµРЅРґРµСЂ
+				//Проверяем, нужен ли рендер
 				if (xm >= xi && xm <= xi + (32 * scale)) {
 					if (ym >= yi && ym <= yi + (32 * scale)) {
 						char desc[300];
@@ -178,7 +178,7 @@ void CHeadSay::RenderStateIcons(CCharacter* cha, int x, int y, float scale, floa
 
 void CHeadSay::Render(D3DXVECTOR3& pos) {
 	static int x = 0, y = 0;
-	static int nSayTotalWidth = 32 * CGuiFont::s_Font.GetWidth("a"); //32дёЄе­—з¬¦зљ„й•їеє¦
+	static int nSayTotalWidth = 32 * CGuiFont::s_Font.GetWidth("a"); //32??????
 	g_Render.WorldToScreen(pos.x, pos.y, pos.z + _pOwn->GetDefaultChaInfo()->fHeight, &x, &y);
 
 	if (_pOwn->getHumanID() == g_stUIStart.targetInfoID && g_stUIStart.frmTargetInfo->GetIsShow()) {
@@ -187,7 +187,7 @@ void CHeadSay::Render(D3DXVECTOR3& pos) {
 		RenderStateIcons(_pOwn, 200, 40, scale, spacing, 10);
 	}
 
-	if (_IsShowLife) //иЎЂжќЎ
+	if (_IsShowLife) //??
 	{
 		static int x1 = 0, y1 = 0;
 		g_Render.WorldToScreen(pos.x, pos.y, pos.z, &x1, &y1);
@@ -251,7 +251,7 @@ void CHeadSay::Render(D3DXVECTOR3& pos) {
 	}
 
 	if (g_stUIMap.IsPKSilver()) {
-		// ењЁд№±ж–—з™Ѕй“¶еџЋй‡ЊзЋ©е®¶е¤ґдёЉдёЌжѕз¤єд»»дЅ•е†…е®№пјЊд»…жѕз¤єзЋ©е®¶ж€–жЂЄзљ„иЎЂжќЎ
+		// ??????????????????,??????????
 		return;
 	}
 
@@ -271,27 +271,27 @@ void CHeadSay::Render(D3DXVECTOR3& pos) {
 	}
 
 	if (_nShowTime <= 0) {
-#ifdef _LOG_NAME_								//и§’и‰ІеђЌз§°
-		const int LINE_HEIGHT_STEP = 14;		//дёЂиЎЊзљ„й«еє¦
-		int iNameHeightStep = LINE_HEIGHT_STEP; //и§’и‰ІеђЌж€–и€№еђЌзљ„й«еє¦
+#ifdef _LOG_NAME_								//????
+		const int LINE_HEIGHT_STEP = 14;		//?????
+		int iNameHeightStep = LINE_HEIGHT_STEP; //?????????
 
-		// е¤„зђ†ж—Ґеї—еђЌ
+		// ?????
 		if (CCharacter::IsShowLogName) {
 			int nNameLength = 0 - CGuiFont::s_Font.GetWidth(_pOwn->getLogName()) / 2;
 			CGuiFont::s_Font.BRender(_pOwn->getLogName(), x + nNameLength, y - iNameHeightStep, _dwNameColor, COLOR_BLACK);
 		} else if (_IsShowName || g_IsShowNames) {
-			// е¤„зђ†е…¬дјљеђЌ
+			// ?????
 			if (*(_pOwn->getGuildName())) {
-				iNameHeightStep += LINE_HEIGHT_STEP; //ж”ѕењЁдёЉйќўдёЂиЎЊ
+				iNameHeightStep += LINE_HEIGHT_STEP; //??????
 				int iGuildNameHeightStep = LINE_HEIGHT_STEP;
 
-				//е…¬дјљеђЌ
+				//???
 				if (*(_pOwn->getGuildName())) {
 					strncpy(s_szConsortiaNamePart[0], _pOwn->getGuildName(), NAME_LENGTH);
 				} else {
 					strncpy(s_szConsortiaNamePart[0], "", NAME_LENGTH);
 				}
-				//е…¬дјљеє§еЏій“­
+				//?????
 				if (*(_pOwn->getGuildMotto())) {
 					strncpy(s_szConsortiaNamePart[1], "(", strlen("("));
 					strncpy(s_szConsortiaNamePart[2], _pOwn->getGuildMotto(), NAME_LENGTH);
@@ -310,7 +310,7 @@ void CHeadSay::Render(D3DXVECTOR3& pos) {
 				int nNameLength = 0 - CGuiFont::s_Font.GetWidth(s_szConsortiaName) / 2;
 				int iStartPosX = 0 - CGuiFont::s_Font.GetWidth(s_szConsortiaName) / 2;
 
-				// renderжЇЏдёЂдёЄйѓЁе€†
+				// render?????
 				int perm = (_pOwn->getGuildPermission() & emGldPermLeader);
 				if (perm == emGldPermLeader) {
 					//GetGuildLeaderPic()->TintColour( 255, 0, 0 );
@@ -323,7 +323,7 @@ void CHeadSay::Render(D3DXVECTOR3& pos) {
 				}
 			}
 
-			// е‰ЌзјЂеђЌ
+			// ???
 			if (*(_pOwn->GetPreName())) {
 				strncpy(s_sNamePart[PRENAME_SEP1_INDEX], "(", strlen("("));
 				strncpy(s_sNamePart[PRENAME_INDEX], _pOwn->GetPreName(), NAME_LENGTH);
@@ -336,7 +336,7 @@ void CHeadSay::Render(D3DXVECTOR3& pos) {
 				s_dwNamePartsColors[PRENAME_INDEX][0] = 0;
 			}
 
-			//еє§еЏій“­
+			//???
 			if (*(_pOwn->getSecondName())) {
 				strncpy(s_sNamePart[MOTTO_NAME_SEP1_INDEX], "(", strlen("("));
 				strncpy(s_sNamePart[MOTTO_NAME_INDEX], _pOwn->getSecondName(), NAME_LENGTH);
@@ -347,7 +347,7 @@ void CHeadSay::Render(D3DXVECTOR3& pos) {
 				strncpy(s_sNamePart[MOTTO_NAME_SEP2_INDEX], "", NAME_LENGTH);
 			}
 
-			//и§’и‰ІеђЌж€–и€№еђЌ
+			//??????
 			s_dwNamePartsColors[NAME_INDEX][0] = _dwNameColor;
 
 			if (_pOwn->IsBoat()) {
@@ -361,22 +361,22 @@ void CHeadSay::Render(D3DXVECTOR3& pos) {
 				strncpy(s_sNamePart[BOAT_NAME_SEP2_INDEX], "", NAME_LENGTH);
 				strncpy(s_sNamePart[NAME_INDEX], _pOwn->getName(), NAME_LENGTH);
 
-				if (_pOwn->IsMonster()) { //е¦‚жћњжЇжЂЄз‰©пјЊдё”з­‰зє§й«дєЋи‡Єиє«10зє§зљ„жѕз¤єжЂЄз‰©з­‰зє§
+				if (_pOwn->IsMonster()) { //?????,???????10????????
 
-					// и‡Єиє«з­‰зє§
+					// ????
 					static int nMainLevel(0);
 					if (g_stUIBoat.GetHuman()) {
 						nMainLevel = g_stUIBoat.GetHuman()->getGameAttr()->get(ATTR_LV);
 					}
 
-					// жЂЄз‰©з­‰зє§
+					// ????
 					static int nMonsterLevel(0);
 					nMonsterLevel = _pOwn->getGameAttr()->get(ATTR_LV);
 
 					static char szBuf[NAME_LENGTH] = {0};
-					// РџСЂРѕРІРµСЂРєР°, РЅР° "РµСЃР»Рё СЂР°Р·РЅРёС†Р° СѓСЂРѕРІРЅРµР№ СЃ РјРѕРЅСЃС‚СЂРѕРј Р±РѕР»РµРµ 10"
-					//if (nMonsterLevel - nMainLevel <= 10) { //жѕз¤єз­‰зє§
-						sprintf(szBuf, "[%d] %s", nMonsterLevel, _pOwn->getName());
+					// Проверка, на "если разница уровней с монстром более 10"
+					//if (nMonsterLevel - nMainLevel <= 10) { //????
+						sprintf(szBuf, "[Ур.%d] %s", nMonsterLevel, _pOwn->getName());
 					//} else {
 					//	sprintf(szBuf, "??? %s", _pOwn->getName());
 					//}
@@ -389,7 +389,7 @@ void CHeadSay::Render(D3DXVECTOR3& pos) {
 				s_dwNamePartsColors[NAME_INDEX][0] = 0xFF9BA1E9; // D3DXCOLOR(109,87,218,1); 
 			}*/
 
-			// еѕ—е€°еђЌе­—зљ„жЂ»й•ї
+			// ???????
 			s_szName[0] = '\0';
 			//ZeroMemory( s_szName, sizeof(s_szName) );
 			for (int i(0); i < NAME_PART_NUM; i++) {
@@ -406,7 +406,7 @@ void CHeadSay::Render(D3DXVECTOR3& pos) {
 				}
 			}
 
-			// renderжЇЏдёЂдёЄйѓЁе€†
+			// render?????
 
 			for (int i(0); i < NAME_PART_NUM; i++) {
 				if (s_dwNamePartsColors[i][1]) {
@@ -419,7 +419,7 @@ void CHeadSay::Render(D3DXVECTOR3& pos) {
 		}
 #else
 		if (_IsShowName) {
-			if (_pOwn->IsBoat()) //жѕз¤єи§’и‰ІеђЌ+и€№еђЌ
+			if (_pOwn->IsBoat()) //?????+??
 			{
 				static string sNameBuf;
 				sNameBuf = _pOwn->getHumanName();
@@ -436,7 +436,7 @@ void CHeadSay::Render(D3DXVECTOR3& pos) {
 						CGuiFont::s_Font.Render(strSec.c_str(), x - nNameLength, y - LINE_HEIGHT_STEP, COLOR_BLACK);
 					}
 				}
-			} else //жѕз¤єи§’и‰ІеђЌ
+			} else //?????
 			{
 				int nNameLength = 0 - CGuiFont::s_Font.GetWidth(_pOwn->getName()) / 2;
 				CGuiFont::s_Font.BRender(_pOwn->getName(), x + nNameLength, y - LINE_HEIGHT_STEP, _dwNameColor, COLOR_BLACK);
@@ -452,7 +452,7 @@ void CHeadSay::Render(D3DXVECTOR3& pos) {
 			} //end of if (_pOwn->IsBoat())
 		}
 #endif
-	} else if (_nShowTime > 0) //иЃЉе¤©
+	} else if (_nShowTime > 0) //??
 	{
 		_nShowTime--;
 
@@ -501,7 +501,7 @@ void CHeadSay::Render(D3DXVECTOR3& pos) {
 		}
 	}
 
-	if (_pCurFace && _nFaceTime > 0) //иЎЁжѓ…
+	if (_pCurFace && _nFaceTime > 0) //??
 	{
 		_nFaceTime--;
 		y -= 20;
@@ -518,7 +518,7 @@ void CHeadSay::Render(D3DXVECTOR3& pos) {
 		_pCurFace->Render(x - _pCurFace->GetWidth() / 2, y - 20);
 	}
 
-#ifdef _LOG_NAME_ //и§’и‰ІеђЌз§°
+#ifdef _LOG_NAME_ //????
 	if (CCharacter::IsShowLogName) {
 		CChaStateMgr* pState = _pOwn->GetStateMgr();
 		int nCount = pState->GetSkillStateNum();
