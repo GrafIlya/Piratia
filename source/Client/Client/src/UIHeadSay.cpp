@@ -349,7 +349,8 @@ void CHeadSay::Render(D3DXVECTOR3& pos) {
 
 			//??????
 			s_dwNamePartsColors[NAME_INDEX][0] = _dwNameColor;
-
+			
+			// Если персонаж на корабле
 			if (_pOwn->IsBoat()) {
 				strncpy(s_sNamePart[NAME_INDEX], _pOwn->getHumanName(), NAME_LENGTH);
 				strncpy(s_sNamePart[BOAT_NAME_SEP1_INDEX], "[", strlen("["));
@@ -360,27 +361,25 @@ void CHeadSay::Render(D3DXVECTOR3& pos) {
 				strncpy(s_sNamePart[BOAT_NAME_INDEX], "", NAME_LENGTH);
 				strncpy(s_sNamePart[BOAT_NAME_SEP2_INDEX], "", NAME_LENGTH);
 				strncpy(s_sNamePart[NAME_INDEX], _pOwn->getName(), NAME_LENGTH);
-
-				if (_pOwn->IsMonster()) { //?????,???????10????????
-
+				
+				// Если это монстр, то...
+				if (_pOwn->IsMonster()) { 
 					// ????
 					static int nMainLevel(0);
 					if (g_stUIBoat.GetHuman()) {
 						nMainLevel = g_stUIBoat.GetHuman()->getGameAttr()->get(ATTR_LV);
 					}
-
+				
 					// ????
 					static int nMonsterLevel(0);
 					nMonsterLevel = _pOwn->getGameAttr()->get(ATTR_LV);
-
-					static char szBuf[NAME_LENGTH] = {0};
-					// Проверка, на "если разница уровней с монстром более 10"
-					//if (nMonsterLevel - nMainLevel <= 10) { //????
-						sprintf(szBuf, "[Ур.%d] %s", nMonsterLevel, _pOwn->getName());
-					//} else {
-					//	sprintf(szBuf, "??? %s", _pOwn->getName());
-					//}
-					strncpy(s_sNamePart[NAME_INDEX], szBuf, NAME_LENGTH);
+				
+					static char szBuf[NAME_LENGTH * 2] = {0}; // Увеличил размер буфера для уровня и имени
+				
+					// Выводим уровень на отдельной строке перед именем монстра
+					sprintf(szBuf, "Уровень %d\n%s", nMonsterLevel, _pOwn->getName());
+					
+					strncpy(s_sNamePart[NAME_INDEX], szBuf, NAME_LENGTH * 2); // Использование увеличенного размера буфера
 				}
 			}
 
