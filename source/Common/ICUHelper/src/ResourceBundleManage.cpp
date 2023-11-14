@@ -79,7 +79,7 @@ CResourceBundleManage::CResourceBundleManage(const char* configFileName)
 	const char* lpAppName = "locale";
 	const char* lpLocaleKeyName = "locale";
 	const char* lpPathKeyName = "path";
-	const char* lpDefaultLocale = "en_US";
+	const char* lpDefaultLocale = "ru_RU";
 	//char* lpDefaultPath = new char[dirLength + 1];
 	char* lpDefaultPath = cnew char[dirLength + 1];
 	memcpy(lpDefaultPath, szPath, dirLength);
