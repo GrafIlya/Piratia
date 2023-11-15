@@ -1,1 +1,0 @@
-start system\Game.exe startgame ip:95.84.228.137 autolog:wwqwr,000000,startgame
