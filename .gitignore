@@ -11,3 +11,8 @@
 *.cfg
 *.ilk
 *.sln
+*.idb
+*.lib
+*.exp
+*.htm
+*.pch
